@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jun 10 17:01:01 2021
+# Process ID: 12688
+# Current directory: D:/GITEA/UPzynq20_test/IP/LIB/Inverter_3lvl
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16188 D:\GITEA\UPzynq20_test\IP\LIB\Inverter_3lvl\Inverter_3lvl.xpr
+# Log file: D:/GITEA/UPzynq20_test/IP/LIB/Inverter_3lvl/vivado.log
+# Journal file: D:/GITEA/UPzynq20_test/IP/LIB/Inverter_3lvl\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/GITEA/UPzynq20_test/IP/LIB/Inverter_3lvl/Inverter_3lvl.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/GITEA/UPzynq20_test/IP/LIB/Inverter_3lvl/Inverter_3lvl.srcs/sources_1/bd/Inverter_3lvl/Inverter_3lvl.bd}
+open_bd_design {D:/GITEA/UPzynq20_test/IP/LIB/Inverter_3lvl/Inverter_3lvl.srcs/sources_1/bd/Inverter_3lvl/Inverter_3lvl.bd}
+ipx::edit_ip_in_project -upgrade true -name P0N_3lvl_v1_0_project -directory D:/GITEA/UPzynq20_test/IP/LIB/Inverter_3lvl/Inverter_3lvl.tmp/P0N_3lvl_v1_0_project d:/GITEA/UPzynq20_test/IP/LIB/P0N_3lvl/P0N_3lvl/P0N_3lvl.srcs/sources_1/new/component.xml
+update_compile_order -fileset sources_1
+close_project

@@ -1,0 +1,3318 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Apr 29 14:10:04 2020" VIVADOVERSION="2019.1">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="AckChecker" PACKAGE="clg484" SPEEDGRADE="-3"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" LEFT="31" NAME="ackTime_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AckCheckerConcept_0" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_1" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_4" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_5" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_2" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_6" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_3" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_7" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_8" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_9" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_10" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_11" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_12" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_13" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_14" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_15" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_16" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_17" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_18" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_19" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_20" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_21" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_22" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_23" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_24" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_26" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_27" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_28" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_29" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_30" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_31" PORT="ackTime"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_25" PORT="ackTime"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk_0" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AckCheckerConcept_0" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_4" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_1" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_5" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_2" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_6" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_3" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_7" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_11" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_10" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_9" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_8" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_12" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_13" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_14" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_15" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_16" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_17" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_18" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_19" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_23" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_22" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_21" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_20" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_24" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_25" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_26" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_27" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_31" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_30" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_29" PORT="Clk"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_28" PORT="Clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="Ready_0" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AckCheckerConcept_0" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_1" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_2" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_3" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_4" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_5" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_6" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_7" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_11" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_10" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_9" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_8" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_12" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_13" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_14" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_15" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_16" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_17" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_18" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_19" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_23" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_22" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_21" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_20" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_24" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_25" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_26" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_27" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_31" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_30" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_29" PORT="Ready"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_28" PORT="Ready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="reset_0" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="AckCheckerConcept_0" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_1" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_2" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_3" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_7" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_6" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_5" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_4" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_8" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_9" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_10" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_11" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_14" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_15" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_13" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_12" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_19" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_18" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_17" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_16" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_20" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_21" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_22" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_23" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_27" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_26" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_25" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_24" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_28" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_29" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_30" PORT="reset"/>
+        <CONNECTION INSTANCE="AckCheckerConcept_31" PORT="reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="AcknowledgeErrorGroup0" RIGHT="0" SIGIS="undef" SIGNAME="BusBlock16OUT_0_Bus_16OUT">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BusBlock16OUT_0" PORT="Bus_16OUT"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="AcknowledgeErrorGroup1" RIGHT="0" SIGIS="undef" SIGNAME="BusBlock16OUT_1_Bus_16OUT">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BusBlock16OUT_1" PORT="Bus_16OUT"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="CurrentErrorGroup0" RIGHT="0" SIGIS="undef" SIGNAME="BusBlock16OUT_3_Bus_16OUT">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BusBlock16OUT_3" PORT="Bus_16OUT"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="CurrentErrorGroup1" RIGHT="0" SIGIS="undef" SIGNAME="BusBlock16OUT_2_Bus_16OUT">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BusBlock16OUT_2" PORT="Bus_16OUT"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="MaskAcknowledgeGroup0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_MaskAcknowledgeGroup0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BusBlock16OUT_0" PORT="Mask"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="MaskAcknowledgeGroup1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_MaskAcknowledgeGroup1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BusBlock16OUT_1" PORT="Mask"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="MaskCurrentGroup0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_MaskCurrentGroup0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BusBlock16OUT_3" PORT="Mask"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="MaskCurrentGroup1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_MaskCurrentGroup1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BusBlock16OUT_2" PORT="Mask"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="AcknowledgeProtectionEnableGroup0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_AcknowledgeProtectionEnableGroup0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BusBlock16IN_0" PORT="Bus_16IN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="AcknowledgeProtectionEnableGroup1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_AcknowledgeProtectionEnableGroup1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BusBlock16IN_1" PORT="Bus_16IN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="ReceiverGroup0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ReceiverGroup0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BusBlock16IN_2" PORT="Bus_16IN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="ReceiverGroup1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ReceiverGroup1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BusBlock16IN_3" PORT="Bus_16IN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="CurrentProtectionEnableGroup0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_CurrentProtectionEnableGroup0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BusBlock16IN_4" PORT="Bus_16IN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="CurrentProtectionEnableGroup1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_CurrentProtectionEnableGroup1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BusBlock16IN_5" PORT="Bus_16IN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="TransmitterGroup0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_TransmitterGroup0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BusBlock16IN_6" PORT="Bus_16IN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="TransmitterGroup1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_TransmitterGroup1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BusBlock16IN_7" PORT="Bus_16IN"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_0" HWVERSION="1.0" INSTANCE="AckCheckerConcept_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_0" PORT="Out0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_0_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_0" PORT="In0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_2" PORT="Out0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_4" PORT="Out0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_0_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_3" PORT="In0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_6" PORT="Out0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_1" HWVERSION="1.0" INSTANCE="AckCheckerConcept_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_0" PORT="Out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_1_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_0" PORT="In1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_2" PORT="Out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_4" PORT="Out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_1_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_3" PORT="In1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_6" PORT="Out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_10" HWVERSION="1.0" INSTANCE="AckCheckerConcept_10" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_6_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out10">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_0" PORT="Out10"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_10_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_0" PORT="In10"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out10">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_2" PORT="Out10"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out10">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_4" PORT="Out10"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_10_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_3" PORT="In10"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out10">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_6" PORT="Out10"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_11" HWVERSION="1.0" INSTANCE="AckCheckerConcept_11" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_7_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_0" PORT="Out11"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_11_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_0" PORT="In11"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_2" PORT="Out11"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_4" PORT="Out11"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_11_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_3" PORT="In11"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_6" PORT="Out11"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_12" HWVERSION="1.0" INSTANCE="AckCheckerConcept_12" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_4_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_0" PORT="Out12"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_12_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_0" PORT="In12"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_2" PORT="Out12"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_4" PORT="Out12"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_12_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_3" PORT="In12"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_6" PORT="Out12"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_13" HWVERSION="1.0" INSTANCE="AckCheckerConcept_13" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_5_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out13">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_0" PORT="Out13"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_13_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_0" PORT="In13"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out13">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_2" PORT="Out13"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out13">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_4" PORT="Out13"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_13_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_3" PORT="In13"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out13">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_6" PORT="Out13"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_14" HWVERSION="1.0" INSTANCE="AckCheckerConcept_14" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_6_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_0" PORT="Out14"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_14_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_0" PORT="In14"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_2" PORT="Out14"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_4" PORT="Out14"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_14_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_3" PORT="In14"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_6" PORT="Out14"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_15" HWVERSION="1.0" INSTANCE="AckCheckerConcept_15" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_7_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_0" PORT="Out15"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_15_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_0" PORT="In15"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_2" PORT="Out15"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_4" PORT="Out15"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_15_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_3" PORT="In15"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_6" PORT="Out15"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_16" HWVERSION="1.0" INSTANCE="AckCheckerConcept_16" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_12_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_1" PORT="Out0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_16_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_1" PORT="In0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_3" PORT="Out0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_5" PORT="Out0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_16_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_2" PORT="In0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_7" PORT="Out0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_17" HWVERSION="1.0" INSTANCE="AckCheckerConcept_17" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_13_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_1" PORT="Out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_17_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_1" PORT="In1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_3" PORT="Out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_5" PORT="Out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_17_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_2" PORT="In1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_7" PORT="Out1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_18" HWVERSION="1.0" INSTANCE="AckCheckerConcept_18" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_14_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_1" PORT="Out2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_18_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_1" PORT="In2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_3" PORT="Out2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_5" PORT="Out2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_18_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_2" PORT="In2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_7" PORT="Out2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_19" HWVERSION="1.0" INSTANCE="AckCheckerConcept_19" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_15_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_1" PORT="Out3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_19_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_1" PORT="In3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_3" PORT="Out3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_5" PORT="Out3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_19_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_2" PORT="In3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_7" PORT="Out3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_2" HWVERSION="1.0" INSTANCE="AckCheckerConcept_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_0" PORT="Out2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_2_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_0" PORT="In2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_2" PORT="Out2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_4" PORT="Out2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_2_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_3" PORT="In2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_6" PORT="Out2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_20" HWVERSION="1.0" INSTANCE="AckCheckerConcept_20" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_12_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_1" PORT="Out4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_20_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_1" PORT="In4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_3" PORT="Out4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_5" PORT="Out4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_20_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_2" PORT="In4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_7" PORT="Out4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_21" HWVERSION="1.0" INSTANCE="AckCheckerConcept_21" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_13_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_1" PORT="Out5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_21_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_1" PORT="In5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_3" PORT="Out5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_5" PORT="Out5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_21_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_2" PORT="In5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_7" PORT="Out5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_22" HWVERSION="1.0" INSTANCE="AckCheckerConcept_22" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_14_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_1" PORT="Out6"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_22_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_1" PORT="In6"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_3" PORT="Out6"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_5" PORT="Out6"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_22_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_2" PORT="In6"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_7" PORT="Out6"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_23" HWVERSION="1.0" INSTANCE="AckCheckerConcept_23" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_15_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_1" PORT="Out7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_23_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_1" PORT="In7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_3" PORT="Out7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_5" PORT="Out7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_23_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_2" PORT="In7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_7" PORT="Out7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_24" HWVERSION="1.0" INSTANCE="AckCheckerConcept_24" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_12_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out8">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_1" PORT="Out8"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_24_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_1" PORT="In8"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out8">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_3" PORT="Out8"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out8">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_5" PORT="Out8"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_24_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_2" PORT="In8"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out8">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_7" PORT="Out8"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_25" HWVERSION="1.0" INSTANCE="AckCheckerConcept_25" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_13_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out9">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_1" PORT="Out9"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_25_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_1" PORT="In9"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out9">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_3" PORT="Out9"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out9">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_5" PORT="Out9"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_25_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_2" PORT="In9"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out9">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_7" PORT="Out9"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_26" HWVERSION="1.0" INSTANCE="AckCheckerConcept_26" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_14_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out10">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_1" PORT="Out10"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_26_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_1" PORT="In10"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out10">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_3" PORT="Out10"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out10">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_5" PORT="Out10"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_26_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_2" PORT="In10"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out10">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_7" PORT="Out10"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_27" HWVERSION="1.0" INSTANCE="AckCheckerConcept_27" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_15_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_1" PORT="Out11"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_27_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_1" PORT="In11"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_3" PORT="Out11"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_5" PORT="Out11"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_27_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_2" PORT="In11"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_7" PORT="Out11"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_28" HWVERSION="1.0" INSTANCE="AckCheckerConcept_28" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_12_3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_1" PORT="Out12"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_28_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_1" PORT="In12"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_3" PORT="Out12"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_5" PORT="Out12"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_28_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_2" PORT="In12"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_7" PORT="Out12"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_29" HWVERSION="1.0" INSTANCE="AckCheckerConcept_29" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_13_3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out13">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_1" PORT="Out13"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_29_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_1" PORT="In13"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out13">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_3" PORT="Out13"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out13">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_5" PORT="Out13"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_29_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_2" PORT="In13"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out13">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_7" PORT="Out13"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_3" HWVERSION="1.0" INSTANCE="AckCheckerConcept_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_0_3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_0" PORT="Out3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_3_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_0" PORT="In3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_2" PORT="Out3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_4" PORT="Out3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_3_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_3" PORT="In3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_6" PORT="Out3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_30" HWVERSION="1.0" INSTANCE="AckCheckerConcept_30" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_14_3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_1" PORT="Out14"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_30_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_1" PORT="In14"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_3" PORT="Out14"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_5" PORT="Out14"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_30_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_2" PORT="In14"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_7" PORT="Out14"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_31" HWVERSION="1.0" INSTANCE="AckCheckerConcept_31" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_15_3"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_1" PORT="Out15"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_31_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_1" PORT="In15"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_3" PORT="Out15"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_5" PORT="Out15"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_31_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_2" PORT="In15"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_7" PORT="Out15"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_4" HWVERSION="1.0" INSTANCE="AckCheckerConcept_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_0_4"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_0" PORT="Out4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_4_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_0" PORT="In4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_2" PORT="Out4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_4" PORT="Out4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_4_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_3" PORT="In4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_6" PORT="Out4"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_5" HWVERSION="1.0" INSTANCE="AckCheckerConcept_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_0" PORT="Out5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_5_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_0" PORT="In5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_2" PORT="Out5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_4" PORT="Out5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_5_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_3" PORT="In5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_6" PORT="Out5"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_6" HWVERSION="1.0" INSTANCE="AckCheckerConcept_6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_0" PORT="Out6"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_6_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_0" PORT="In6"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_2" PORT="Out6"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_4" PORT="Out6"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_6_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_3" PORT="In6"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_6" PORT="Out6"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_7" HWVERSION="1.0" INSTANCE="AckCheckerConcept_7" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_0" PORT="Out7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_7_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_0" PORT="In7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_2" PORT="Out7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_4" PORT="Out7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_7_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_3" PORT="In7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_6" PORT="Out7"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_8" HWVERSION="1.0" INSTANCE="AckCheckerConcept_8" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_4_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out8">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_0" PORT="Out8"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_8_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_0" PORT="In8"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out8">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_2" PORT="Out8"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out8">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_4" PORT="Out8"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_8_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_3" PORT="In8"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out8">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_6" PORT="Out8"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/AckCheckerConcept_9" HWVERSION="1.0" INSTANCE="AckCheckerConcept_9" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AckCheckerConcept" VLNV="ssevendenergy.com:user:AckCheckerConcept:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_AckCheckerConcept_5_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="31" NAME="ackTime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackTime_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackTime_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AckPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out9">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_0" PORT="Out9"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AckPr" SIGIS="undef" SIGNAME="AckCheckerConcept_9_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_0" PORT="In9"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="acknowledge_in" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out9">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_2" PORT="Out9"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="Clk" SIGIS="clk" SIGNAME="External_Ports_Clk_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Clk_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="currentPr_en" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out9">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_4" PORT="Out9"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="currentPr" SIGIS="undef" SIGNAME="AckCheckerConcept_9_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16OUT_3" PORT="In9"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="line" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out9">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BusBlock16IN_6" PORT="Out9"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Ready" SIGIS="undef" SIGNAME="External_Ports_Ready_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Ready_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/BusBlock16IN_0" HWVERSION="1.0" INSTANCE="BusBlock16IN_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BusBlock16IN" VLNV="ssevendenergy.com:user:BusBlock16IN:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_BusBlock16IN_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Bus_16IN" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_AcknowledgeProtectionEnableGroup0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AcknowledgeProtectionEnableGroup0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out0" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_0" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out1" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_1" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out2" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_2" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out3" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_3" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out4" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_4" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out5" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_5" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out6" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_6" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out7" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_7" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out8" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out8">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_8" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out9" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out9">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_9" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out10" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out10">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_10" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out11" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_11" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out12" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_12" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out13" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out13">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_13" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out14" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_14" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out15" SIGIS="undef" SIGNAME="BusBlock16IN_0_Out15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_15" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/BusBlock16IN_1" HWVERSION="1.0" INSTANCE="BusBlock16IN_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BusBlock16IN" VLNV="ssevendenergy.com:user:BusBlock16IN:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_BusBlock16IN_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Bus_16IN" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_AcknowledgeProtectionEnableGroup1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AcknowledgeProtectionEnableGroup1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out0" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_16" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out1" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_17" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out2" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_18" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out3" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_19" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out4" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_20" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out5" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_21" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out6" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_22" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out7" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_23" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out8" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out8">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_24" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out9" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out9">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_25" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out10" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out10">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_26" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out11" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_27" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out12" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_28" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out13" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out13">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_29" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out14" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_30" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out15" SIGIS="undef" SIGNAME="BusBlock16IN_1_Out15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_31" PORT="AckPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/BusBlock16IN_2" HWVERSION="1.0" INSTANCE="BusBlock16IN_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BusBlock16IN" VLNV="ssevendenergy.com:user:BusBlock16IN:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_BusBlock16IN_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Bus_16IN" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ReceiverGroup0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ReceiverGroup0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out0" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_0" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out1" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_1" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out2" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_2" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out3" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_3" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out4" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_4" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out5" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_5" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out6" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_6" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out7" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_7" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out8" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out8">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_8" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out9" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out9">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_9" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out10" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out10">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_10" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out11" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_11" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out12" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_12" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out13" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out13">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_13" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out14" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_14" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out15" SIGIS="undef" SIGNAME="BusBlock16IN_2_Out15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_15" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/BusBlock16IN_3" HWVERSION="1.0" INSTANCE="BusBlock16IN_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BusBlock16IN" VLNV="ssevendenergy.com:user:BusBlock16IN:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_BusBlock16IN_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Bus_16IN" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ReceiverGroup1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ReceiverGroup1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out0" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_16" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out1" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_17" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out2" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_18" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out3" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_19" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out4" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_20" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out5" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_21" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out6" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_22" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out7" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_23" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out8" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out8">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_24" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out9" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out9">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_25" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out10" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out10">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_26" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out11" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_27" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out12" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_28" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out13" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out13">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_29" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out14" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_30" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out15" SIGIS="undef" SIGNAME="BusBlock16IN_3_Out15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_31" PORT="acknowledge_in"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/BusBlock16IN_4" HWVERSION="1.0" INSTANCE="BusBlock16IN_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BusBlock16IN" VLNV="ssevendenergy.com:user:BusBlock16IN:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_BusBlock16IN_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Bus_16IN" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_CurrentProtectionEnableGroup0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CurrentProtectionEnableGroup0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out0" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_0" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out1" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_1" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out2" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_2" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out3" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_3" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out4" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_4" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out5" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_5" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out6" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_6" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out7" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_7" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out8" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out8">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_8" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out9" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out9">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_9" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out10" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out10">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_10" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out11" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_11" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out12" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_12" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out13" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out13">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_13" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out14" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_14" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out15" SIGIS="undef" SIGNAME="BusBlock16IN_4_Out15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_15" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/BusBlock16IN_5" HWVERSION="1.0" INSTANCE="BusBlock16IN_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BusBlock16IN" VLNV="ssevendenergy.com:user:BusBlock16IN:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_BusBlock16IN_4_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Bus_16IN" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_CurrentProtectionEnableGroup1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CurrentProtectionEnableGroup1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out0" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_16" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out1" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_17" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out2" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_18" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out3" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_19" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out4" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_20" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out5" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_21" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out6" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_22" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out7" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_23" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out8" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out8">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_24" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out9" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out9">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_25" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out10" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out10">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_26" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out11" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_27" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out12" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_28" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out13" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out13">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_29" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out14" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_30" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out15" SIGIS="undef" SIGNAME="BusBlock16IN_5_Out15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_31" PORT="currentPr_en"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/BusBlock16IN_6" HWVERSION="1.0" INSTANCE="BusBlock16IN_6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BusBlock16IN" VLNV="ssevendenergy.com:user:BusBlock16IN:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_BusBlock16IN_4_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Bus_16IN" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_TransmitterGroup0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="TransmitterGroup0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out0" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_0" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out1" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_1" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out2" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_2" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out3" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_3" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out4" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_4" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out5" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_5" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out6" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_6" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out7" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_7" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out8" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out8">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_8" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out9" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out9">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_9" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out10" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out10">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_10" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out11" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_11" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out12" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_12" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out13" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out13">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_13" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out14" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_14" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out15" SIGIS="undef" SIGNAME="BusBlock16IN_6_Out15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_15" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="6" FULLNAME="/BusBlock16IN_7" HWVERSION="1.0" INSTANCE="BusBlock16IN_7" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BusBlock16IN" VLNV="ssevendenergy.com:user:BusBlock16IN:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_BusBlock16IN_6_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="Bus_16IN" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_TransmitterGroup1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="TransmitterGroup1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out0" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_16" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out1" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_17" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out2" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_18" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out3" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_19" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out4" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out4">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_20" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out5" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out5">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_21" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out6" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out6">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_22" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out7" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out7">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_23" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out8" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out8">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_24" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out9" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out9">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_25" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out10" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out10">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_26" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out11" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out11">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_27" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out12" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out12">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_28" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out13" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out13">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_29" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out14" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out14">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_30" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Out15" SIGIS="undef" SIGNAME="BusBlock16IN_7_Out15">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_31" PORT="line"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="5" FULLNAME="/BusBlock16OUT_0" HWVERSION="1.0" INSTANCE="BusBlock16OUT_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BusBlock16OUT" VLNV="ssevendenergy.com:user:BusBlock16OUT:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_BusBlock16OUT_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="15" NAME="Bus_16OUT" RIGHT="0" SIGIS="undef" SIGNAME="BusBlock16OUT_0_Bus_16OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AcknowledgeErrorGroup0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In0" SIGIS="undef" SIGNAME="AckCheckerConcept_0_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_0" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In1" SIGIS="undef" SIGNAME="AckCheckerConcept_1_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_1" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In2" SIGIS="undef" SIGNAME="AckCheckerConcept_2_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_2" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In3" SIGIS="undef" SIGNAME="AckCheckerConcept_3_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_3" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In4" SIGIS="undef" SIGNAME="AckCheckerConcept_4_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_4" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In5" SIGIS="undef" SIGNAME="AckCheckerConcept_5_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_5" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In6" SIGIS="undef" SIGNAME="AckCheckerConcept_6_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_6" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In7" SIGIS="undef" SIGNAME="AckCheckerConcept_7_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_7" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In8" SIGIS="undef" SIGNAME="AckCheckerConcept_8_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_8" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In9" SIGIS="undef" SIGNAME="AckCheckerConcept_9_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_9" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In10" SIGIS="undef" SIGNAME="AckCheckerConcept_10_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_10" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In11" SIGIS="undef" SIGNAME="AckCheckerConcept_11_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_11" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In12" SIGIS="undef" SIGNAME="AckCheckerConcept_12_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_12" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In13" SIGIS="undef" SIGNAME="AckCheckerConcept_13_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_13" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In14" SIGIS="undef" SIGNAME="AckCheckerConcept_14_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_14" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In15" SIGIS="undef" SIGNAME="AckCheckerConcept_15_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_15" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="Mask" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_MaskAcknowledgeGroup0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MaskAcknowledgeGroup0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="5" FULLNAME="/BusBlock16OUT_1" HWVERSION="1.0" INSTANCE="BusBlock16OUT_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BusBlock16OUT" VLNV="ssevendenergy.com:user:BusBlock16OUT:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_BusBlock16OUT_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="15" NAME="Bus_16OUT" RIGHT="0" SIGIS="undef" SIGNAME="BusBlock16OUT_1_Bus_16OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AcknowledgeErrorGroup1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In0" SIGIS="undef" SIGNAME="AckCheckerConcept_16_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_16" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In1" SIGIS="undef" SIGNAME="AckCheckerConcept_17_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_17" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In2" SIGIS="undef" SIGNAME="AckCheckerConcept_18_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_18" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In3" SIGIS="undef" SIGNAME="AckCheckerConcept_19_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_19" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In4" SIGIS="undef" SIGNAME="AckCheckerConcept_20_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_20" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In5" SIGIS="undef" SIGNAME="AckCheckerConcept_21_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_21" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In6" SIGIS="undef" SIGNAME="AckCheckerConcept_22_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_22" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In7" SIGIS="undef" SIGNAME="AckCheckerConcept_23_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_23" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In8" SIGIS="undef" SIGNAME="AckCheckerConcept_24_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_24" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In9" SIGIS="undef" SIGNAME="AckCheckerConcept_25_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_25" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In10" SIGIS="undef" SIGNAME="AckCheckerConcept_26_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_26" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In11" SIGIS="undef" SIGNAME="AckCheckerConcept_27_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_27" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In12" SIGIS="undef" SIGNAME="AckCheckerConcept_28_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_28" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In13" SIGIS="undef" SIGNAME="AckCheckerConcept_29_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_29" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In14" SIGIS="undef" SIGNAME="AckCheckerConcept_30_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_30" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In15" SIGIS="undef" SIGNAME="AckCheckerConcept_31_AckPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_31" PORT="AckPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="Mask" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_MaskAcknowledgeGroup1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MaskAcknowledgeGroup1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="5" FULLNAME="/BusBlock16OUT_2" HWVERSION="1.0" INSTANCE="BusBlock16OUT_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BusBlock16OUT" VLNV="ssevendenergy.com:user:BusBlock16OUT:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_BusBlock16OUT_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="15" NAME="Bus_16OUT" RIGHT="0" SIGIS="undef" SIGNAME="BusBlock16OUT_2_Bus_16OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CurrentErrorGroup1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In0" SIGIS="undef" SIGNAME="AckCheckerConcept_16_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_16" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In1" SIGIS="undef" SIGNAME="AckCheckerConcept_17_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_17" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In2" SIGIS="undef" SIGNAME="AckCheckerConcept_18_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_18" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In3" SIGIS="undef" SIGNAME="AckCheckerConcept_19_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_19" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In4" SIGIS="undef" SIGNAME="AckCheckerConcept_20_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_20" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In5" SIGIS="undef" SIGNAME="AckCheckerConcept_21_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_21" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In6" SIGIS="undef" SIGNAME="AckCheckerConcept_22_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_22" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In7" SIGIS="undef" SIGNAME="AckCheckerConcept_23_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_23" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In8" SIGIS="undef" SIGNAME="AckCheckerConcept_24_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_24" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In9" SIGIS="undef" SIGNAME="AckCheckerConcept_25_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_25" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In10" SIGIS="undef" SIGNAME="AckCheckerConcept_26_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_26" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In11" SIGIS="undef" SIGNAME="AckCheckerConcept_27_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_27" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In12" SIGIS="undef" SIGNAME="AckCheckerConcept_28_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_28" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In13" SIGIS="undef" SIGNAME="AckCheckerConcept_29_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_29" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In14" SIGIS="undef" SIGNAME="AckCheckerConcept_30_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_30" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In15" SIGIS="undef" SIGNAME="AckCheckerConcept_31_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_31" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="Mask" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_MaskCurrentGroup1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MaskCurrentGroup1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="5" FULLNAME="/BusBlock16OUT_3" HWVERSION="1.0" INSTANCE="BusBlock16OUT_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BusBlock16OUT" VLNV="ssevendenergy.com:user:BusBlock16OUT:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="AckChecker_BusBlock16OUT_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="15" NAME="Bus_16OUT" RIGHT="0" SIGIS="undef" SIGNAME="BusBlock16OUT_3_Bus_16OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CurrentErrorGroup0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In0" SIGIS="undef" SIGNAME="AckCheckerConcept_0_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_0" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In1" SIGIS="undef" SIGNAME="AckCheckerConcept_1_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_1" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In2" SIGIS="undef" SIGNAME="AckCheckerConcept_2_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_2" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In3" SIGIS="undef" SIGNAME="AckCheckerConcept_3_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_3" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In4" SIGIS="undef" SIGNAME="AckCheckerConcept_4_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_4" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In5" SIGIS="undef" SIGNAME="AckCheckerConcept_5_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_5" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In6" SIGIS="undef" SIGNAME="AckCheckerConcept_6_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_6" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In7" SIGIS="undef" SIGNAME="AckCheckerConcept_7_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_7" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In8" SIGIS="undef" SIGNAME="AckCheckerConcept_8_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_8" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In9" SIGIS="undef" SIGNAME="AckCheckerConcept_9_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_9" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In10" SIGIS="undef" SIGNAME="AckCheckerConcept_10_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_10" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In11" SIGIS="undef" SIGNAME="AckCheckerConcept_11_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_11" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In12" SIGIS="undef" SIGNAME="AckCheckerConcept_12_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_12" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In13" SIGIS="undef" SIGNAME="AckCheckerConcept_13_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_13" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In14" SIGIS="undef" SIGNAME="AckCheckerConcept_14_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_14" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="In15" SIGIS="undef" SIGNAME="AckCheckerConcept_15_currentPr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AckCheckerConcept_15" PORT="currentPr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="Mask" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_MaskCurrentGroup0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MaskCurrentGroup0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

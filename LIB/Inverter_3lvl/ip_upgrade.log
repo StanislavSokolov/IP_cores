@@ -1,0 +1,612 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Fri Jun 11 07:48:47 2021
+| Host         : STAS-W10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Inverter_3lvl_P0N_3lvl_1_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Inverter_3lvl_P0N_3lvl_1_1 (ssevendenergy.com:user:P0N_3lvl:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Fri Jun 11 07:48:47 2021
+| Host         : STAS-W10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Inverter_3lvl_P0N_3lvl_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Inverter_3lvl_P0N_3lvl_1_0 (ssevendenergy.com:user:P0N_3lvl:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Fri Jun 11 07:48:47 2021
+| Host         : STAS-W10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Inverter_3lvl_P0N_3lvl_0_5'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Inverter_3lvl_P0N_3lvl_0_5 (ssevendenergy.com:user:P0N_3lvl:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Fri Jun 11 07:48:47 2021
+| Host         : STAS-W10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Inverter_3lvl_P0N_3lvl_0_4'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Inverter_3lvl_P0N_3lvl_0_4 (ssevendenergy.com:user:P0N_3lvl:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Fri Jun 11 07:48:47 2021
+| Host         : STAS-W10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Inverter_3lvl_P0N_3lvl_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Inverter_3lvl_P0N_3lvl_0_3 (ssevendenergy.com:user:P0N_3lvl:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Fri Jun 11 07:48:47 2021
+| Host         : STAS-W10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Inverter_3lvl_P0N_3lvl_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Inverter_3lvl_P0N_3lvl_0_2 (ssevendenergy.com:user:P0N_3lvl:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Fri Jun 11 07:48:47 2021
+| Host         : STAS-W10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Inverter_3lvl_P0N_3lvl_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Inverter_3lvl_P0N_3lvl_0_1 (ssevendenergy.com:user:P0N_3lvl:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Fri Jun 11 07:48:47 2021
+| Host         : STAS-W10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Inverter_3lvl_P0N_3lvl_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Inverter_3lvl_P0N_3lvl_0_0 (ssevendenergy.com:user:P0N_3lvl:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Fri Jun 11 07:48:47 2021
+| Host         : STAS-W10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Inverter_3lvl_BUS_16IN_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Inverter_3lvl_BUS_16IN_1_0 (setcorp:user:BUS_16IN:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Fri Jun 11 07:48:47 2021
+| Host         : STAS-W10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Inverter_3lvl_BUS_16IN_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Inverter_3lvl_BUS_16IN_0_0 (setcorp:user:BUS_16IN:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Jun 10 15:31:02 2021
+| Host         : STAS-W10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Inverter_3lvl_P0N_3lvl_1_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Inverter_3lvl_P0N_3lvl_1_1 (ssevendenergy.com:user:P0N_3lvl:1.0) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'Inverter_3lvl_P0N_3lvl_1_1'.
+
+
+-Upgrade has removed interface 'Clk'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Inverter_3lvl_P0N_3lvl_1_1'. These changes may impact your design.
+
+
+-Upgrade has removed port 'Clk'
+
+-Upgrade has added port 'externalCLK'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Jun 10 15:31:02 2021
+| Host         : STAS-W10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Inverter_3lvl_P0N_3lvl_1_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Inverter_3lvl_P0N_3lvl_1_0 (ssevendenergy.com:user:P0N_3lvl:1.0) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'Inverter_3lvl_P0N_3lvl_1_0'.
+
+
+-Upgrade has removed interface 'Clk'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Inverter_3lvl_P0N_3lvl_1_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'Clk'
+
+-Upgrade has added port 'externalCLK'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Jun 10 15:31:02 2021
+| Host         : STAS-W10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Inverter_3lvl_P0N_3lvl_0_5'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Inverter_3lvl_P0N_3lvl_0_5 (ssevendenergy.com:user:P0N_3lvl:1.0) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'Inverter_3lvl_P0N_3lvl_0_5'.
+
+
+-Upgrade has removed interface 'Clk'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Inverter_3lvl_P0N_3lvl_0_5'. These changes may impact your design.
+
+
+-Upgrade has removed port 'Clk'
+
+-Upgrade has added port 'externalCLK'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Jun 10 15:31:02 2021
+| Host         : STAS-W10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Inverter_3lvl_P0N_3lvl_0_4'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Inverter_3lvl_P0N_3lvl_0_4 (ssevendenergy.com:user:P0N_3lvl:1.0) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'Inverter_3lvl_P0N_3lvl_0_4'.
+
+
+-Upgrade has removed interface 'Clk'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Inverter_3lvl_P0N_3lvl_0_4'. These changes may impact your design.
+
+
+-Upgrade has removed port 'Clk'
+
+-Upgrade has added port 'externalCLK'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Jun 10 15:31:02 2021
+| Host         : STAS-W10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Inverter_3lvl_P0N_3lvl_0_3'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Inverter_3lvl_P0N_3lvl_0_3 (ssevendenergy.com:user:P0N_3lvl:1.0) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'Inverter_3lvl_P0N_3lvl_0_3'.
+
+
+-Upgrade has removed interface 'Clk'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Inverter_3lvl_P0N_3lvl_0_3'. These changes may impact your design.
+
+
+-Upgrade has removed port 'Clk'
+
+-Upgrade has added port 'externalCLK'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Jun 10 15:31:02 2021
+| Host         : STAS-W10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Inverter_3lvl_P0N_3lvl_0_2'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Inverter_3lvl_P0N_3lvl_0_2 (ssevendenergy.com:user:P0N_3lvl:1.0) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'Inverter_3lvl_P0N_3lvl_0_2'.
+
+
+-Upgrade has removed interface 'Clk'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Inverter_3lvl_P0N_3lvl_0_2'. These changes may impact your design.
+
+
+-Upgrade has removed port 'Clk'
+
+-Upgrade has added port 'externalCLK'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Jun 10 15:31:02 2021
+| Host         : STAS-W10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Inverter_3lvl_P0N_3lvl_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Inverter_3lvl_P0N_3lvl_0_1 (ssevendenergy.com:user:P0N_3lvl:1.0) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'Inverter_3lvl_P0N_3lvl_0_1'.
+
+
+-Upgrade has removed interface 'Clk'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Inverter_3lvl_P0N_3lvl_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed port 'Clk'
+
+-Upgrade has added port 'externalCLK'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Jun 10 15:31:02 2021
+| Host         : STAS-W10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Inverter_3lvl_P0N_3lvl_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of Inverter_3lvl_P0N_3lvl_0_0 (ssevendenergy.com:user:P0N_3lvl:1.0) from (Rev. 2) to (Rev. 3)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'Inverter_3lvl_P0N_3lvl_0_0'.
+
+
+-Upgrade has removed interface 'Clk'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'Inverter_3lvl_P0N_3lvl_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'Clk'
+
+-Upgrade has added port 'externalCLK'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Jun 10 15:31:02 2021
+| Host         : STAS-W10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Inverter_3lvl_BUS_16OUT_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Inverter_3lvl_BUS_16OUT_1_0 (setcorp:user:BUS_16OUT:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Jun 10 15:31:02 2021
+| Host         : STAS-W10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Inverter_3lvl_BUS_16OUT_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Inverter_3lvl_BUS_16OUT_0_1 (setcorp:user:BUS_16OUT:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Jun 10 15:31:02 2021
+| Host         : STAS-W10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-3
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'Inverter_3lvl_BUS_16OUT_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of Inverter_3lvl_BUS_16OUT_0_0 (setcorp:user:BUS_16OUT:1.0) from (Rev. 2) to (Rev. 3)
+

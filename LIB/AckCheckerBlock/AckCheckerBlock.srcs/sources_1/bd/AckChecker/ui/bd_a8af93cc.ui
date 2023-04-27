@@ -1,0 +1,285 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port Clk_0 -pg 1 -lvl 0 -x 0 -y 6710 -defaultsOSRD
+preplace port Ready_0 -pg 1 -lvl 0 -x 0 -y 6740 -defaultsOSRD
+preplace port reset_0 -pg 1 -lvl 0 -x 0 -y 6770 -defaultsOSRD
+preplace portBus ackTime_0 -pg 1 -lvl 0 -x 0 -y 6680 -defaultsOSRD
+preplace portBus AcknowledgeErrorGroup0 -pg 1 -lvl 4 -x 1610 -y 5660 -defaultsOSRD
+preplace portBus AcknowledgeErrorGroup1 -pg 1 -lvl 4 -x 1610 -y 1780 -defaultsOSRD
+preplace portBus CurrentErrorGroup0 -pg 1 -lvl 4 -x 1610 -y 6080 -defaultsOSRD
+preplace portBus CurrentErrorGroup1 -pg 1 -lvl 4 -x 1610 -y 2260 -defaultsOSRD
+preplace portBus MaskAcknowledgeGroup0 -pg 1 -lvl 0 -x 0 -y 5440 -defaultsOSRD
+preplace portBus MaskAcknowledgeGroup1 -pg 1 -lvl 0 -x 0 -y 1620 -defaultsOSRD
+preplace portBus MaskCurrentGroup0 -pg 1 -lvl 0 -x 0 -y 5860 -defaultsOSRD
+preplace portBus MaskCurrentGroup1 -pg 1 -lvl 0 -x 0 -y 2040 -defaultsOSRD
+preplace portBus AcknowledgeProtectionEnableGroup0 -pg 1 -lvl 0 -x 0 -y 5230 -defaultsOSRD
+preplace portBus AcknowledgeProtectionEnableGroup1 -pg 1 -lvl 0 -x 0 -y 1410 -defaultsOSRD
+preplace portBus ReceiverGroup0 -pg 1 -lvl 0 -x 0 -y 5650 -defaultsOSRD
+preplace portBus ReceiverGroup1 -pg 1 -lvl 0 -x 0 -y 1830 -defaultsOSRD
+preplace portBus CurrentProtectionEnableGroup0 -pg 1 -lvl 0 -x 0 -y 6070 -defaultsOSRD
+preplace portBus CurrentProtectionEnableGroup1 -pg 1 -lvl 0 -x 0 -y 2250 -defaultsOSRD
+preplace portBus TransmitterGroup0 -pg 1 -lvl 0 -x 0 -y 6470 -defaultsOSRD
+preplace portBus TransmitterGroup1 -pg 1 -lvl 0 -x 0 -y 2650 -defaultsOSRD
+preplace inst AckCheckerConcept_0 -pg 1 -lvl 2 -x 960 -y 4010 -defaultsOSRD
+preplace inst AckCheckerConcept_1 -pg 1 -lvl 2 -x 960 -y 4250 -defaultsOSRD
+preplace inst AckCheckerConcept_2 -pg 1 -lvl 2 -x 960 -y 4490 -defaultsOSRD
+preplace inst AckCheckerConcept_3 -pg 1 -lvl 2 -x 960 -y 4730 -defaultsOSRD
+preplace inst AckCheckerConcept_4 -pg 1 -lvl 2 -x 960 -y 4970 -defaultsOSRD
+preplace inst AckCheckerConcept_5 -pg 1 -lvl 2 -x 960 -y 5210 -defaultsOSRD
+preplace inst AckCheckerConcept_6 -pg 1 -lvl 2 -x 960 -y 6930 -defaultsOSRD
+preplace inst AckCheckerConcept_7 -pg 1 -lvl 2 -x 960 -y 7170 -defaultsOSRD
+preplace inst AckCheckerConcept_8 -pg 1 -lvl 2 -x 960 -y 7410 -defaultsOSRD
+preplace inst AckCheckerConcept_9 -pg 1 -lvl 2 -x 960 -y 7650 -defaultsOSRD
+preplace inst AckCheckerConcept_10 -pg 1 -lvl 2 -x 960 -y 5450 -defaultsOSRD
+preplace inst AckCheckerConcept_11 -pg 1 -lvl 2 -x 960 -y 5690 -defaultsOSRD
+preplace inst AckCheckerConcept_12 -pg 1 -lvl 2 -x 960 -y 6450 -defaultsOSRD
+preplace inst AckCheckerConcept_13 -pg 1 -lvl 2 -x 960 -y 6690 -defaultsOSRD
+preplace inst AckCheckerConcept_14 -pg 1 -lvl 2 -x 960 -y 6190 -defaultsOSRD
+preplace inst AckCheckerConcept_15 -pg 1 -lvl 2 -x 960 -y 5950 -defaultsOSRD
+preplace inst AckCheckerConcept_16 -pg 1 -lvl 2 -x 960 -y 130 -defaultsOSRD -resize 200 216
+preplace inst AckCheckerConcept_17 -pg 1 -lvl 2 -x 960 -y 370 -defaultsOSRD -resize 200 216
+preplace inst AckCheckerConcept_18 -pg 1 -lvl 2 -x 960 -y 610 -defaultsOSRD -resize 200 216
+preplace inst AckCheckerConcept_19 -pg 1 -lvl 2 -x 960 -y 850 -defaultsOSRD -resize 200 216
+preplace inst AckCheckerConcept_20 -pg 1 -lvl 2 -x 960 -y 1090 -defaultsOSRD -resize 200 216
+preplace inst AckCheckerConcept_21 -pg 1 -lvl 2 -x 960 -y 1330 -defaultsOSRD -resize 200 216
+preplace inst AckCheckerConcept_22 -pg 1 -lvl 2 -x 960 -y 1570 -defaultsOSRD -resize 200 216
+preplace inst AckCheckerConcept_23 -pg 1 -lvl 2 -x 960 -y 1810 -defaultsOSRD -resize 200 216
+preplace inst AckCheckerConcept_24 -pg 1 -lvl 2 -x 960 -y 2570 -defaultsOSRD -resize 200 216
+preplace inst AckCheckerConcept_25 -pg 1 -lvl 2 -x 960 -y 2810 -defaultsOSRD -resize 200 216
+preplace inst AckCheckerConcept_26 -pg 1 -lvl 2 -x 960 -y 2070 -defaultsOSRD -resize 200 216
+preplace inst AckCheckerConcept_27 -pg 1 -lvl 2 -x 960 -y 2310 -defaultsOSRD -resize 200 216
+preplace inst AckCheckerConcept_28 -pg 1 -lvl 2 -x 960 -y 3050 -defaultsOSRD -resize 200 216
+preplace inst AckCheckerConcept_29 -pg 1 -lvl 2 -x 960 -y 3290 -defaultsOSRD -resize 200 216
+preplace inst AckCheckerConcept_30 -pg 1 -lvl 2 -x 960 -y 3530 -defaultsOSRD -resize 200 216
+preplace inst AckCheckerConcept_31 -pg 1 -lvl 2 -x 960 -y 3770 -defaultsOSRD -resize 200 216
+preplace inst BusBlock16OUT_0 -pg 1 -lvl 3 -x 1470 -y 5660 -defaultsOSRD
+preplace inst BusBlock16OUT_1 -pg 1 -lvl 3 -x 1470 -y 1780 -defaultsOSRD
+preplace inst BusBlock16OUT_2 -pg 1 -lvl 3 -x 1470 -y 2260 -defaultsOSRD
+preplace inst BusBlock16OUT_3 -pg 1 -lvl 3 -x 1470 -y 6080 -defaultsOSRD
+preplace inst BusBlock16IN_0 -pg 1 -lvl 1 -x 130 -y 5230 -defaultsOSRD
+preplace inst BusBlock16IN_1 -pg 1 -lvl 1 -x 130 -y 1410 -defaultsOSRD
+preplace inst BusBlock16IN_2 -pg 1 -lvl 1 -x 130 -y 5650 -defaultsOSRD
+preplace inst BusBlock16IN_4 -pg 1 -lvl 1 -x 130 -y 6070 -defaultsOSRD
+preplace inst BusBlock16IN_3 -pg 1 -lvl 1 -x 130 -y 1830 -defaultsOSRD
+preplace inst BusBlock16IN_5 -pg 1 -lvl 1 -x 130 -y 2250 -defaultsOSRD
+preplace inst BusBlock16IN_6 -pg 1 -lvl 1 -x 130 -y 6470 -defaultsOSRD
+preplace inst BusBlock16IN_7 -pg 1 -lvl 1 -x 130 -y 2650 -defaultsOSRD
+preplace netloc ackTime_0_1 1 0 2 NJ 6680 660
+preplace netloc Clk_0_1 1 0 2 NJ 6710 670
+preplace netloc Ready_0_1 1 0 2 NJ 6740 680
+preplace netloc reset_0_1 1 0 2 NJ 6770 690
+preplace netloc AckCheckerConcept_0_AckPr 1 2 1 1340 4000n
+preplace netloc AckCheckerConcept_1_AckPr 1 2 1 1310 4240n
+preplace netloc AckCheckerConcept_2_AckPr 1 2 1 1280 4480n
+preplace netloc AckCheckerConcept_3_AckPr 1 2 1 1200 4720n
+preplace netloc AckCheckerConcept_4_AckPr 1 2 1 1180 4960n
+preplace netloc AckCheckerConcept_5_AckPr 1 2 1 1160 5200n
+preplace netloc AckCheckerConcept_6_AckPr 1 2 1 1220 5620n
+preplace netloc AckCheckerConcept_7_AckPr 1 2 1 1250 5640n
+preplace netloc AckCheckerConcept_8_AckPr 1 2 1 1270 5660n
+preplace netloc AckCheckerConcept_9_AckPr 1 2 1 1280 5680n
+preplace netloc AckCheckerConcept_10_AckPr 1 2 1 1140 5440n
+preplace netloc AckCheckerConcept_11_AckPr 1 2 1 1120 5680n
+preplace netloc AckCheckerConcept_12_AckPr 1 2 1 1230 5740n
+preplace netloc AckCheckerConcept_13_AckPr 1 2 1 1260 5760n
+preplace netloc AckCheckerConcept_14_AckPr 1 2 1 1240 5780n
+preplace netloc AckCheckerConcept_15_AckPr 1 2 1 1080 5800n
+preplace netloc AckCheckerConcept_16_AckPr 1 2 1 1350 120n
+preplace netloc AckCheckerConcept_17_AckPr 1 2 1 1340 360n
+preplace netloc AckCheckerConcept_18_AckPr 1 2 1 1330 600n
+preplace netloc AckCheckerConcept_19_AckPr 1 2 1 1310 840n
+preplace netloc AckCheckerConcept_20_AckPr 1 2 1 1290 1080n
+preplace netloc AckCheckerConcept_21_AckPr 1 2 1 1270 1320n
+preplace netloc AckCheckerConcept_22_AckPr 1 2 1 1250 1560n
+preplace netloc AckCheckerConcept_23_AckPr 1 2 1 1080 1760n
+preplace netloc AckCheckerConcept_24_AckPr 1 2 1 1100 1780n
+preplace netloc AckCheckerConcept_25_AckPr 1 2 1 1120 1800n
+preplace netloc AckCheckerConcept_26_AckPr 1 2 1 1090 1820n
+preplace netloc AckCheckerConcept_27_AckPr 1 2 1 1110 1840n
+preplace netloc AckCheckerConcept_28_AckPr 1 2 1 1130 1860n
+preplace netloc AckCheckerConcept_29_AckPr 1 2 1 1150 1880n
+preplace netloc AckCheckerConcept_30_AckPr 1 2 1 1180 1900n
+preplace netloc AckCheckerConcept_31_AckPr 1 2 1 1200 1920n
+preplace netloc AckCheckerConcept_0_currentPr 1 2 1 1210 4020n
+preplace netloc AckCheckerConcept_1_currentPr 1 2 1 1190 4260n
+preplace netloc AckCheckerConcept_2_currentPr 1 2 1 1170 4500n
+preplace netloc AckCheckerConcept_3_currentPr 1 2 1 1150 4740n
+preplace netloc AckCheckerConcept_4_currentPr 1 2 1 1130 4980n
+preplace netloc AckCheckerConcept_5_currentPr 1 2 1 1110 5220n
+preplace netloc AckCheckerConcept_6_currentPr 1 2 1 1290 6040n
+preplace netloc AckCheckerConcept_7_currentPr 1 2 1 1320 6060n
+preplace netloc AckCheckerConcept_8_currentPr 1 2 1 1340 6080n
+preplace netloc AckCheckerConcept_9_currentPr 1 2 1 1350 6100n
+preplace netloc AckCheckerConcept_10_currentPr 1 2 1 1100 5460n
+preplace netloc AckCheckerConcept_11_currentPr 1 2 1 1090 5700n
+preplace netloc AckCheckerConcept_12_currentPr 1 2 1 1300 6160n
+preplace netloc AckCheckerConcept_13_currentPr 1 2 1 1330 6180n
+preplace netloc AckCheckerConcept_14_currentPr 1 2 1 N 6200
+preplace netloc AckCheckerConcept_15_currentPr 1 2 1 1080 5960n
+preplace netloc AckCheckerConcept_16_currentPr 1 2 1 1320 140n
+preplace netloc AckCheckerConcept_17_currentPr 1 2 1 1300 380n
+preplace netloc AckCheckerConcept_18_currentPr 1 2 1 1280 620n
+preplace netloc AckCheckerConcept_19_currentPr 1 2 1 1260 860n
+preplace netloc AckCheckerConcept_20_currentPr 1 2 1 1240 1100n
+preplace netloc AckCheckerConcept_21_currentPr 1 2 1 1230 1340n
+preplace netloc AckCheckerConcept_22_currentPr 1 2 1 1220 1580n
+preplace netloc AckCheckerConcept_23_currentPr 1 2 1 1080 1820n
+preplace netloc AckCheckerConcept_24_currentPr 1 2 1 1140 2260n
+preplace netloc AckCheckerConcept_25_currentPr 1 2 1 1160 2280n
+preplace netloc AckCheckerConcept_26_currentPr 1 2 1 1210 2080n
+preplace netloc AckCheckerConcept_27_currentPr 1 2 1 N 2320
+preplace netloc AckCheckerConcept_28_currentPr 1 2 1 1190 2340n
+preplace netloc AckCheckerConcept_29_currentPr 1 2 1 1270 2360n
+preplace netloc AckCheckerConcept_30_currentPr 1 2 1 1310 2380n
+preplace netloc AckCheckerConcept_31_currentPr 1 2 1 1340 2400n
+preplace netloc BusBlock16OUT_0_BusBlock16OUT 1 3 1 NJ 5660
+preplace netloc BusBlock16OUT_1_BusBlock16OUT 1 3 1 NJ 1780
+preplace netloc BusBlock16OUT_3_BusBlock16OUT 1 3 1 NJ 6080
+preplace netloc BusBlock16OUT_2_BusBlock16OUT 1 3 1 NJ 2260
+preplace netloc MaskAcknowledgeGroup0_1 1 0 3 NJ 5440 620J 5820 NJ
+preplace netloc MaskAcknowledgeGroup1_1 1 0 3 NJ 1620 320J 1940 NJ
+preplace netloc MaskCurrentGroup0_1 1 0 3 NJ 5860 470J 6320 1310J
+preplace netloc MaskCurrentGroup1_1 1 0 3 NJ 2040 280J 2440 1170J
+preplace netloc BusBlock16IN_0_Out0 1 1 1 320 3960n
+preplace netloc BusBlock16IN_0_Out1 1 1 1 700 4200n
+preplace netloc BusBlock16IN_0_Out2 1 1 1 710 4440n
+preplace netloc BusBlock16IN_0_Out3 1 1 1 260 4680n
+preplace netloc BusBlock16IN_0_Out4 1 1 1 730 4920n
+preplace netloc BusBlock16IN_0_Out5 1 1 1 750 5160n
+preplace netloc BusBlock16IN_0_Out6 1 1 1 580 5200n
+preplace netloc BusBlock16IN_0_Out7 1 1 1 530 5220n
+preplace netloc BusBlock16IN_0_Out8 1 1 1 480 5240n
+preplace netloc BusBlock16IN_0_Out9 1 1 1 420 5260n
+preplace netloc BusBlock16IN_0_Out10 1 1 1 650 5280n
+preplace netloc BusBlock16IN_0_Out11 1 1 1 640 5300n
+preplace netloc BusBlock16IN_0_Out12 1 1 1 600 5320n
+preplace netloc BusBlock16IN_0_Out13 1 1 1 550 5340n
+preplace netloc BusBlock16IN_0_Out14 1 1 1 610 5360n
+preplace netloc BusBlock16IN_0_Out15 1 1 1 630 5380n
+preplace netloc BusBlock16IN_1_Out0 1 1 1 240 80n
+preplace netloc BusBlock16IN_1_Out1 1 1 1 260 320n
+preplace netloc BusBlock16IN_1_Out2 1 1 1 270 560n
+preplace netloc BusBlock16IN_1_Out3 1 1 1 300 800n
+preplace netloc BusBlock16IN_1_Out4 1 1 1 320 1040n
+preplace netloc BusBlock16IN_1_Out5 1 1 1 390 1280n
+preplace netloc BusBlock16IN_1_Out6 1 1 1 500 1380n
+preplace netloc BusBlock16IN_1_Out7 1 1 1 430 1400n
+preplace netloc BusBlock16IN_1_Out8 1 1 1 830 1420n
+preplace netloc BusBlock16IN_1_Out9 1 1 1 810 1440n
+preplace netloc BusBlock16IN_1_Out10 1 1 1 840 1460n
+preplace netloc BusBlock16IN_1_Out11 1 1 1 820 1480n
+preplace netloc BusBlock16IN_1_Out12 1 1 1 450 1500n
+preplace netloc BusBlock16IN_1_Out13 1 1 1 390 1520n
+preplace netloc BusBlock16IN_1_Out14 1 1 1 270 1540n
+preplace netloc BusBlock16IN_1_Out15 1 1 1 260 1560n
+preplace netloc AcknowledgeProtectionEnableGroup0_1 1 0 1 NJ 5230
+preplace netloc AcknowledgeProtectionEnableGroup1_1 1 0 1 NJ 1410
+preplace netloc BusBlock16IN_2_Out0 1 1 1 240 3980n
+preplace netloc BusBlock16IN_2_Out1 1 1 1 250 4220n
+preplace netloc BusBlock16IN_2_Out2 1 1 1 720 4460n
+preplace netloc BusBlock16IN_2_Out3 1 1 1 740 4700n
+preplace netloc BusBlock16IN_2_Out4 1 1 1 770 4940n
+preplace netloc BusBlock16IN_2_Out5 1 1 1 790 5180n
+preplace netloc BusBlock16IN_2_Out6 1 1 1 460 5620n
+preplace netloc BusBlock16IN_2_Out7 1 1 1 410 5640n
+preplace netloc BusBlock16IN_2_Out8 1 1 1 380 5660n
+preplace netloc BusBlock16IN_2_Out9 1 1 1 340 5680n
+preplace netloc BusBlock16IN_2_Out10 1 1 1 320 5420n
+preplace netloc BusBlock16IN_2_Out11 1 1 1 810 5660n
+preplace netloc BusBlock16IN_2_Out12 1 1 1 500 5740n
+preplace netloc BusBlock16IN_2_Out13 1 1 1 440 5760n
+preplace netloc BusBlock16IN_2_Out14 1 1 1 510 5780n
+preplace netloc BusBlock16IN_2_Out15 1 1 1 520 5800n
+preplace netloc BusBlock16IN_3_Out0 1 1 1 250 100n
+preplace netloc BusBlock16IN_3_Out1 1 1 1 280 340n
+preplace netloc BusBlock16IN_3_Out2 1 1 1 310 580n
+preplace netloc BusBlock16IN_3_Out3 1 1 1 340 820n
+preplace netloc BusBlock16IN_3_Out4 1 1 1 420 1060n
+preplace netloc BusBlock16IN_3_Out5 1 1 1 470 1300n
+preplace netloc BusBlock16IN_3_Out6 1 1 1 500 1540n
+preplace netloc BusBlock16IN_3_Out7 1 1 1 510 1780n
+preplace netloc BusBlock16IN_3_Out8 1 1 1 510 1840n
+preplace netloc BusBlock16IN_3_Out9 1 1 1 430 1860n
+preplace netloc BusBlock16IN_3_Out10 1 1 1 630 1880n
+preplace netloc BusBlock16IN_3_Out11 1 1 1 800 1900n
+preplace netloc BusBlock16IN_3_Out12 1 1 1 780 1920n
+preplace netloc BusBlock16IN_3_Out13 1 1 1 250 1940n
+preplace netloc BusBlock16IN_3_Out14 1 1 1 750 1960n
+preplace netloc BusBlock16IN_3_Out15 1 1 1 740 1980n
+preplace netloc ReceiverGroup0_1 1 0 1 NJ 5650
+preplace netloc ReceiverGroup1_1 1 0 1 NJ 1830
+preplace netloc BusBlock16IN_4_Out0 1 1 1 270 4020n
+preplace netloc BusBlock16IN_4_Out1 1 1 1 280 4260n
+preplace netloc BusBlock16IN_4_Out2 1 1 1 760 4500n
+preplace netloc BusBlock16IN_4_Out3 1 1 1 310 4740n
+preplace netloc BusBlock16IN_4_Out4 1 1 1 300 4980n
+preplace netloc BusBlock16IN_4_Out5 1 1 1 540 5220n
+preplace netloc BusBlock16IN_4_Out6 1 1 1 370 6040n
+preplace netloc BusBlock16IN_4_Out7 1 1 1 350 6060n
+preplace netloc BusBlock16IN_4_Out8 1 1 1 280 6080n
+preplace netloc BusBlock16IN_4_Out9 1 1 1 260 6100n
+preplace netloc BusBlock16IN_4_Out10 1 1 1 560 5460n
+preplace netloc BusBlock16IN_4_Out11 1 1 1 590 5700n
+preplace netloc BusBlock16IN_4_Out12 1 1 1 400 6160n
+preplace netloc BusBlock16IN_4_Out13 1 1 1 360 6180n
+preplace netloc BusBlock16IN_4_Out14 1 1 1 N 6200
+preplace netloc BusBlock16IN_4_Out15 1 1 1 810 5960n
+preplace netloc BusBlock16IN_5_Out0 1 1 1 290 140n
+preplace netloc BusBlock16IN_5_Out1 1 1 1 330 380n
+preplace netloc BusBlock16IN_5_Out2 1 1 1 410 620n
+preplace netloc BusBlock16IN_5_Out3 1 1 1 460 860n
+preplace netloc BusBlock16IN_5_Out4 1 1 1 490 1100n
+preplace netloc BusBlock16IN_5_Out5 1 1 1 530 1340n
+preplace netloc BusBlock16IN_5_Out6 1 1 1 540 1580n
+preplace netloc BusBlock16IN_5_Out7 1 1 1 570 1820n
+preplace netloc BusBlock16IN_5_Out8 1 1 1 790 2260n
+preplace netloc BusBlock16IN_5_Out9 1 1 1 770 2280n
+preplace netloc BusBlock16IN_5_Out10 1 1 1 600 2080n
+preplace netloc BusBlock16IN_5_Out11 1 1 1 N 2320
+preplace netloc BusBlock16IN_5_Out12 1 1 1 240 2340n
+preplace netloc BusBlock16IN_5_Out13 1 1 1 290 2360n
+preplace netloc BusBlock16IN_5_Out14 1 1 1 300 2380n
+preplace netloc BusBlock16IN_5_Out15 1 1 1 720 2400n
+preplace netloc CurrentProtectionEnableGroup0_1 1 0 1 NJ 6070
+preplace netloc CurrentProtectionEnableGroup1_1 1 0 1 NJ 2250
+preplace netloc BusBlock16IN_6_Out0 1 1 1 290 4040n
+preplace netloc BusBlock16IN_6_Out1 1 1 1 780 4280n
+preplace netloc BusBlock16IN_6_Out2 1 1 1 800 4520n
+preplace netloc BusBlock16IN_6_Out3 1 1 1 330 4760n
+preplace netloc BusBlock16IN_6_Out4 1 1 1 570 5000n
+preplace netloc BusBlock16IN_6_Out5 1 1 1 490 5240n
+preplace netloc BusBlock16IN_6_Out6 1 1 1 300 6440n
+preplace netloc BusBlock16IN_6_Out7 1 1 1 270 6460n
+preplace netloc BusBlock16IN_6_Out8 1 1 1 250 6480n
+preplace netloc BusBlock16IN_6_Out9 1 1 1 240 6500n
+preplace netloc BusBlock16IN_6_Out10 1 1 1 650 5480n
+preplace netloc BusBlock16IN_6_Out11 1 1 1 820 5720n
+preplace netloc BusBlock16IN_6_Out12 1 1 1 840 6480n
+preplace netloc BusBlock16IN_6_Out13 1 1 1 290 6580n
+preplace netloc BusBlock16IN_6_Out14 1 1 1 830 6220n
+preplace netloc BusBlock16IN_6_Out15 1 1 1 390 5980n
+preplace netloc BusBlock16IN_7_Out0 1 1 1 380 160n
+preplace netloc BusBlock16IN_7_Out1 1 1 1 440 400n
+preplace netloc BusBlock16IN_7_Out2 1 1 1 480 640n
+preplace netloc BusBlock16IN_7_Out3 1 1 1 520 880n
+preplace netloc BusBlock16IN_7_Out4 1 1 1 550 1120n
+preplace netloc BusBlock16IN_7_Out5 1 1 1 580 1360n
+preplace netloc BusBlock16IN_7_Out6 1 1 1 610 1600n
+preplace netloc BusBlock16IN_7_Out7 1 1 1 620 1840n
+preplace netloc BusBlock16IN_7_Out8 1 1 1 640 2600n
+preplace netloc BusBlock16IN_7_Out9 1 1 1 760 2680n
+preplace netloc BusBlock16IN_7_Out10 1 1 1 630 2100n
+preplace netloc BusBlock16IN_7_Out11 1 1 1 650 2340n
+preplace netloc BusBlock16IN_7_Out12 1 1 1 280 2740n
+preplace netloc BusBlock16IN_7_Out13 1 1 1 730 2760n
+preplace netloc BusBlock16IN_7_Out14 1 1 1 310 2780n
+preplace netloc BusBlock16IN_7_Out15 1 1 1 320 2800n
+preplace netloc TransmitterGroup0_1 1 0 1 NJ 6470
+preplace netloc TransmitterGroup1_1 1 0 1 NJ 2650
+levelinfo -pg 1 0 130 960 1470 1610
+pagesize -pg 1 -db -bbox -sgen -330 0 1860 7780
+"
+}
+0

@@ -1,0 +1,117 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port ready_0 -pg 1 -lvl 0 -x 0 -y 1720 -defaultsOSRD
+preplace port reset_0 -pg 1 -lvl 0 -x 0 -y 1750 -defaultsOSRD
+preplace port er_0 -pg 1 -lvl 0 -x 0 -y 1840 -defaultsOSRD
+preplace port minTime_En_0 -pg 1 -lvl 0 -x 0 -y 1870 -defaultsOSRD
+preplace port externalCLK_0 -pg 1 -lvl 0 -x 0 -y 2060 -defaultsOSRD
+preplace portBus deadTime_0 -pg 1 -lvl 0 -x 0 -y 1780 -defaultsOSRD
+preplace portBus minTime_0 -pg 1 -lvl 0 -x 0 -y 1810 -defaultsOSRD
+preplace portBus BreakingEnable -pg 1 -lvl 0 -x 0 -y 1450 -defaultsOSRD
+preplace portBus PWM -pg 1 -lvl 0 -x 0 -y 1050 -defaultsOSRD
+preplace portBus ChGroup0 -pg 1 -lvl 4 -x 1180 -y 490 -defaultsOSRD
+preplace portBus ChGroup1 -pg 1 -lvl 4 -x 1180 -y 1850 -defaultsOSRD
+preplace portBus MinTimeError -pg 1 -lvl 4 -x 1180 -y 1280 -defaultsOSRD
+preplace portBus MaskChGroup1 -pg 1 -lvl 0 -x 0 -y 2300 -defaultsOSRD
+preplace portBus MaskMinTimeError -pg 1 -lvl 0 -x 0 -y 1660 -defaultsOSRD
+preplace portBus MaskChGroup0 -pg 1 -lvl 0 -x 0 -y 580 -defaultsOSRD
+preplace inst BUS_16OUT_0 -pg 1 -lvl 3 -x 1020 -y 490 -defaultsOSRD
+preplace inst BUS_16OUT_1 -pg 1 -lvl 3 -x 1020 -y 1850 -defaultsOSRD
+preplace inst BUS_16OUT_2 -pg 1 -lvl 3 -x 1020 -y 1280 -defaultsOSRD
+preplace inst BUS_16IN_0 -pg 1 -lvl 1 -x 140 -y 1050 -defaultsOSRD
+preplace inst BUS_16IN_1 -pg 1 -lvl 1 -x 140 -y 1450 -defaultsOSRD
+preplace inst P0N_3lvl_0 -pg 1 -lvl 2 -x 600 -y 150 -defaultsOSRD
+preplace inst P0N_3lvl_3 -pg 1 -lvl 2 -x 600 -y 1010 -defaultsOSRD
+preplace inst P0N_3lvl_4 -pg 1 -lvl 2 -x 600 -y 1290 -defaultsOSRD
+preplace inst P0N_3lvl_5 -pg 1 -lvl 2 -x 600 -y 1590 -defaultsOSRD
+preplace inst P0N_3lvl_6 -pg 1 -lvl 2 -x 600 -y 1870 -defaultsOSRD
+preplace inst P0N_3lvl_7 -pg 1 -lvl 2 -x 600 -y 2150 -defaultsOSRD
+preplace inst P0N_3lvl_1 -pg 1 -lvl 2 -x 600 -y 430 -defaultsOSRD
+preplace inst P0N_3lvl_2 -pg 1 -lvl 2 -x 600 -y 730 -defaultsOSRD
+preplace netloc ready_0_1 1 0 2 NJ 1720 440
+preplace netloc reset_0_1 1 0 2 NJ 1750 450
+preplace netloc deadTime_0_1 1 0 2 NJ 1780 330
+preplace netloc minTime_0_1 1 0 2 NJ 1810 460
+preplace netloc er_0_1 1 0 2 NJ 1840 320
+preplace netloc minTime_En_0_1 1 0 2 NJ 1870 470
+preplace netloc PWM_1 1 0 1 NJ 1050
+preplace netloc BUS_16IN_0_Out0 1 1 1 280 200n
+preplace netloc BUS_16IN_0_Out1 1 1 1 300 220n
+preplace netloc BUS_16IN_0_Out2 1 1 1 350 480n
+preplace netloc BUS_16IN_0_Out3 1 1 1 360 500n
+preplace netloc BUS_16IN_0_Out4 1 1 1 290 780n
+preplace netloc BUS_16IN_0_Out5 1 1 1 430 800n
+preplace netloc BUS_16IN_0_Out6 1 1 1 300 1020n
+preplace netloc BUS_16IN_0_Out7 1 1 1 430 1040n
+preplace netloc BUS_16IN_0_Out8 1 1 1 290 1060n
+preplace netloc BUS_16IN_0_Out9 1 1 1 420 1080n
+preplace netloc BUS_16IN_0_Out10 1 1 1 400 1100n
+preplace netloc BUS_16IN_0_Out11 1 1 1 380 1120n
+preplace netloc BUS_16IN_0_Out12 1 1 1 370 1140n
+preplace netloc BUS_16IN_0_Out13 1 1 1 360 1160n
+preplace netloc BUS_16IN_0_Out14 1 1 1 300 1180n
+preplace netloc BUS_16IN_0_Out15 1 1 1 280 1200n
+preplace netloc BreakingEnable_1 1 0 1 NJ 1450
+preplace netloc BUS_16IN_1_Out0 1 1 1 260 240n
+preplace netloc BUS_16IN_1_Out1 1 1 1 390 520n
+preplace netloc BUS_16IN_1_Out2 1 1 1 270 820n
+preplace netloc BUS_16IN_1_Out3 1 1 1 410 1100n
+preplace netloc BUS_16IN_1_Out4 1 1 1 N 1380
+preplace netloc BUS_16IN_1_Out5 1 1 1 350 1400n
+preplace netloc BUS_16IN_1_Out6 1 1 1 310 1420n
+preplace netloc BUS_16IN_1_Out7 1 1 1 260 1440n
+preplace netloc BUS_16OUT_0_BusBlock16OUT 1 3 1 NJ 490
+preplace netloc P0N_3lvl_0_PWM_out_0 1 2 1 880 130n
+preplace netloc P0N_3lvl_0_PWM_out_1 1 2 1 870 150n
+preplace netloc P0N_3lvl_0_PWM_out_2 1 2 1 850 170n
+preplace netloc P0N_3lvl_0_PWM_out_3 1 2 1 840 190n
+preplace netloc P0N_3lvl_1_PWM_out_0 1 2 1 N 410
+preplace netloc P0N_3lvl_1_PWM_out_1 1 2 1 N 430
+preplace netloc P0N_3lvl_1_PWM_out_2 1 2 1 N 450
+preplace netloc P0N_3lvl_1_PWM_out_3 1 2 1 N 470
+preplace netloc P0N_3lvl_2_PWM_out_0 1 2 1 730 490n
+preplace netloc P0N_3lvl_2_PWM_out_1 1 2 1 740 510n
+preplace netloc P0N_3lvl_2_PWM_out_2 1 2 1 750 530n
+preplace netloc P0N_3lvl_2_PWM_out_3 1 2 1 760 550n
+preplace netloc P0N_3lvl_3_PWM_out_0 1 2 1 770 570n
+preplace netloc P0N_3lvl_3_PWM_out_1 1 2 1 780 590n
+preplace netloc P0N_3lvl_3_PWM_out_2 1 2 1 790 610n
+preplace netloc P0N_3lvl_3_PWM_out_3 1 2 1 800 630n
+preplace netloc BUS_16OUT_1_BusBlock16OUT 1 3 1 NJ 1850
+preplace netloc P0N_3lvl_4_PWM_out_0 1 2 1 810 1270n
+preplace netloc P0N_3lvl_4_PWM_out_1 1 2 1 800 1290n
+preplace netloc P0N_3lvl_4_PWM_out_2 1 2 1 790 1310n
+preplace netloc P0N_3lvl_4_PWM_out_3 1 2 1 780 1330n
+preplace netloc P0N_3lvl_5_PWM_out_0 1 2 1 770 1570n
+preplace netloc P0N_3lvl_5_PWM_out_1 1 2 1 760 1590n
+preplace netloc P0N_3lvl_5_PWM_out_2 1 2 1 750 1610n
+preplace netloc P0N_3lvl_5_PWM_out_3 1 2 1 740 1630n
+preplace netloc P0N_3lvl_6_PWM_out_0 1 2 1 N 1850
+preplace netloc P0N_3lvl_6_PWM_out_1 1 2 1 N 1870
+preplace netloc P0N_3lvl_6_PWM_out_2 1 2 1 N 1890
+preplace netloc P0N_3lvl_6_PWM_out_3 1 2 1 N 1910
+preplace netloc P0N_3lvl_7_PWM_out_0 1 2 1 840 1930n
+preplace netloc P0N_3lvl_7_PWM_out_1 1 2 1 850 1950n
+preplace netloc P0N_3lvl_7_PWM_out_2 1 2 1 860 1970n
+preplace netloc P0N_3lvl_7_PWM_out_3 1 2 1 870 1990n
+preplace netloc MaskChGroup0_1 1 0 3 NJ 580 NJ 580 840J
+preplace netloc MaskChGroup1_1 1 0 3 NJ 2300 NJ 2300 880J
+preplace netloc P0N_3lvl_0_minTimeEr 1 2 1 860 110n
+preplace netloc P0N_3lvl_1_minTimeEr 1 2 1 830 390n
+preplace netloc P0N_3lvl_2_minTimeEr 1 2 1 820 690n
+preplace netloc P0N_3lvl_3_minTimeEr 1 2 1 810 970n
+preplace netloc P0N_3lvl_4_minTimeEr 1 2 1 740 1200n
+preplace netloc P0N_3lvl_5_minTimeEr 1 2 1 820 1220n
+preplace netloc P0N_3lvl_6_minTimeEr 1 2 1 730 1240n
+preplace netloc P0N_3lvl_7_minTimeEr 1 2 1 830 1260n
+preplace netloc BUS_16OUT_2_BusBlock16OUT 1 3 1 NJ 1280
+preplace netloc MaskMinTimeError_1 1 0 3 NJ 1660 290J 1440 NJ
+preplace netloc externalCLK_0_1 1 0 2 NJ 2060 340J
+levelinfo -pg 1 0 140 600 1020 1180
+pagesize -pg 1 -db -bbox -sgen -210 0 1360 2320
+"
+}
+0

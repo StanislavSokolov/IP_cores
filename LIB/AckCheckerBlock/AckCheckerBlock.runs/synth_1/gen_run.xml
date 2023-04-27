@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-3" LaunchTime="1588158605">
+  <File Type="PA-TCL" Name="AckChecker_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="AckChecker_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="AckChecker_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="AckChecker_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="AckChecker_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="AckChecker_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="AckChecker_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="AckChecker_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="AckChecker_wrapper_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/AckChecker/AckChecker.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/AckChecker/hdl/AckChecker_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/ackchecker/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="AckChecker_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_BusBlock16OUT_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_12_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_13_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_14_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_15_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_BusBlock16IN_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_BusBlock16OUT_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_BusBlock16OUT_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_13_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_14_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_15_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_BusBlock16IN_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_BusBlock16IN_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_BusBlock16OUT_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_14_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_15_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_BusBlock16IN_2_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_BusBlock16IN_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_15_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_0_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_3_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_0_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_BusBlock16IN_4_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_4_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_BusBlock16IN_4_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_4_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_5_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_BusBlock16IN_6_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_5_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_6_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_6_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_7_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_7_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_12_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_12_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_13_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_12_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_13_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="AckChecker_AckCheckerConcept_14_0"/>
+</GenRun>

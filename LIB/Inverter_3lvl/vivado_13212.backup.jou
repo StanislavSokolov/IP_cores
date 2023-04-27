@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Apr 27 13:05:30 2020
+# Process ID: 13212
+# Current directory: D:/Projects/IP/LIB/Inverter_3lvl
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15584 D:\Projects\IP\LIB\Inverter_3lvl\Inverter_3lvl.xpr
+# Log file: D:/Projects/IP/LIB/Inverter_3lvl/vivado.log
+# Journal file: D:/Projects/IP/LIB/Inverter_3lvl\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Projects/IP/LIB/Inverter_3lvl/Inverter_3lvl.xpr
+open_bd_design {D:/Projects/IP/LIB/Inverter_3lvl/Inverter_3lvl.srcs/sources_1/bd/Inverter_3lvl/Inverter_3lvl.bd}
+update_compile_order -fileset sources_1
+set_property source_mgmt_mode DisplayOnly [current_project]
+set_property source_mgmt_mode All [current_project]
+open_bd_design {D:/Projects/IP/LIB/Inverter_3lvl/Inverter_3lvl.srcs/sources_1/bd/Inverter_3lvl/Inverter_3lvl.bd}
+export_ip_user_files -of_objects  [get_files D:/Projects/IP/LIB/Inverter_3lvl/Inverter_3lvl.srcs/sources_1/bd/Inverter_3lvl/hdl/Inverter_3lvl_wrapper.vhd] -no_script -reset -force -quiet
+remove_files  D:/Projects/IP/LIB/Inverter_3lvl/Inverter_3lvl.srcs/sources_1/bd/Inverter_3lvl/hdl/Inverter_3lvl_wrapper.vhd
+open_bd_design {D:/Projects/IP/LIB/Inverter_3lvl/Inverter_3lvl.srcs/sources_1/bd/Inverter_3lvl/Inverter_3lvl.bd}
+make_wrapper -files [get_files D:/Projects/IP/LIB/Inverter_3lvl/Inverter_3lvl.srcs/sources_1/bd/Inverter_3lvl/Inverter_3lvl.bd] -top
+add_files -norecurse D:/Projects/IP/LIB/Inverter_3lvl/Inverter_3lvl.srcs/sources_1/bd/Inverter_3lvl/hdl/Inverter_3lvl_wrapper.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/Projects/IP/LIB/Inverter_3lvl/Inverter_3lvl.srcs/sources_1/bd/Inverter_3lvl/hdl/Inverter_3lvl_wrapper.vhd] -no_script -reset -force -quiet
+remove_files  D:/Projects/IP/LIB/Inverter_3lvl/Inverter_3lvl.srcs/sources_1/bd/Inverter_3lvl/hdl/Inverter_3lvl_wrapper.vhd
+open_bd_design {D:/Projects/IP/LIB/Inverter_3lvl/Inverter_3lvl.srcs/sources_1/bd/Inverter_3lvl/Inverter_3lvl.bd}
+validate_bd_design -force
+make_wrapper -files [get_files D:/Projects/IP/LIB/Inverter_3lvl/Inverter_3lvl.srcs/sources_1/bd/Inverter_3lvl/Inverter_3lvl.bd] -top
+add_files -norecurse D:/Projects/IP/LIB/Inverter_3lvl/Inverter_3lvl.srcs/sources_1/bd/Inverter_3lvl/hdl/Inverter_3lvl_wrapper.vhd
+update_compile_order -fileset sources_1
+connect_bd_net [get_bd_pins BusBlock16OUT_2/In8] [get_bd_pins P0N_3lvl_7/minTimeEr]
+connect_bd_net [get_bd_pins BusBlock16OUT_2/In9] [get_bd_pins P0N_3lvl_7/minTimeEr]
+connect_bd_net [get_bd_pins BusBlock16OUT_2/In10] [get_bd_pins P0N_3lvl_7/minTimeEr]
+connect_bd_net [get_bd_pins BusBlock16OUT_2/In11] [get_bd_pins P0N_3lvl_7/minTimeEr]
+connect_bd_net [get_bd_pins BusBlock16OUT_2/In12] [get_bd_pins P0N_3lvl_7/minTimeEr]
+connect_bd_net [get_bd_pins BusBlock16OUT_2/In13] [get_bd_pins P0N_3lvl_7/minTimeEr]
+connect_bd_net [get_bd_pins BusBlock16OUT_2/In14] [get_bd_pins P0N_3lvl_7/minTimeEr]
+connect_bd_net [get_bd_pins BusBlock16OUT_2/In15] [get_bd_pins P0N_3lvl_7/minTimeEr]
+save_bd_design
+export_ip_user_files -of_objects  [get_files D:/Projects/IP/LIB/Inverter_3lvl/Inverter_3lvl.srcs/sources_1/bd/Inverter_3lvl/hdl/Inverter_3lvl_wrapper.vhd] -no_script -reset -force -quiet
+remove_files  D:/Projects/IP/LIB/Inverter_3lvl/Inverter_3lvl.srcs/sources_1/bd/Inverter_3lvl/hdl/Inverter_3lvl_wrapper.vhd
+make_wrapper -files [get_files D:/Projects/IP/LIB/Inverter_3lvl/Inverter_3lvl.srcs/sources_1/bd/Inverter_3lvl/Inverter_3lvl.bd] -top
+add_files -norecurse D:/Projects/IP/LIB/Inverter_3lvl/Inverter_3lvl.srcs/sources_1/bd/Inverter_3lvl/hdl/Inverter_3lvl_wrapper.vhd
+update_compile_order -fileset sources_1
+open_bd_design {D:/Projects/IP/LIB/Inverter_3lvl/Inverter_3lvl.srcs/sources_1/bd/Inverter_3lvl/Inverter_3lvl.bd}
+open_bd_design {D:/Projects/IP/LIB/Inverter_3lvl/Inverter_3lvl.srcs/sources_1/bd/Inverter_3lvl/Inverter_3lvl.bd}
+validate_bd_design -force
+delete_bd_objs [get_bd_nets P0N_3lvl_7_minTimeEr]
+connect_bd_net [get_bd_pins BusBlock16OUT_2/In7] [get_bd_pins P0N_3lvl_7/minTimeEr]
+save_bd_design
+ipx::package_project -root_dir d:/projects/ip/lib/inverter_3lvl/inverter_3lvl.srcs/sources_1/bd/inverter_3lvl -vendor setcorp -library user -taxonomy /UserIP -force
+set_property core_revision 2 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path d:/Projects/IP

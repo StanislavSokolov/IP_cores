@@ -1,0 +1,733 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x7D932C1EE271F213",
+      "device": "xc7z020clg484-3",
+      "name": "Inverter_3lvl",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "BUS_16OUT_0": "",
+      "BUS_16OUT_1": "",
+      "BUS_16OUT_2": "",
+      "BUS_16IN_0": "",
+      "BUS_16IN_1": "",
+      "P0N_3lvl_0": "",
+      "P0N_3lvl_3": "",
+      "P0N_3lvl_4": "",
+      "P0N_3lvl_5": "",
+      "P0N_3lvl_6": "",
+      "P0N_3lvl_7": "",
+      "P0N_3lvl_1": "",
+      "P0N_3lvl_2": ""
+    },
+    "ports": {
+      "ready_0": {
+        "direction": "I"
+      },
+      "reset_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "deadTime_0": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "minTime_0": {
+        "direction": "I",
+        "left": "31",
+        "right": "0"
+      },
+      "er_0": {
+        "direction": "I"
+      },
+      "minTime_En_0": {
+        "direction": "I"
+      },
+      "BreakingEnable": {
+        "type": "data",
+        "direction": "I",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "PWM": {
+        "type": "data",
+        "direction": "I",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "ChGroup0": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "ChGroup1": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "MinTimeError": {
+        "type": "data",
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "MaskChGroup1": {
+        "direction": "I",
+        "left": "15",
+        "right": "0"
+      },
+      "MaskMinTimeError": {
+        "direction": "I",
+        "left": "15",
+        "right": "0"
+      },
+      "MaskChGroup0": {
+        "direction": "I",
+        "left": "15",
+        "right": "0"
+      },
+      "externalCLK_0": {
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "Inverter_3lvl_Clk_0",
+            "value_src": "default_prop"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default_prop"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "BUS_16OUT_0": {
+        "vlnv": "setcorp:user:BUS_16OUT:1.0",
+        "xci_name": "Inverter_3lvl_BUS_16OUT_0_0"
+      },
+      "BUS_16OUT_1": {
+        "vlnv": "setcorp:user:BUS_16OUT:1.0",
+        "xci_name": "Inverter_3lvl_BUS_16OUT_0_1"
+      },
+      "BUS_16OUT_2": {
+        "vlnv": "setcorp:user:BUS_16OUT:1.0",
+        "xci_name": "Inverter_3lvl_BUS_16OUT_1_0"
+      },
+      "BUS_16IN_0": {
+        "vlnv": "setcorp:user:BUS_16IN:1.0",
+        "xci_name": "Inverter_3lvl_BUS_16IN_0_0"
+      },
+      "BUS_16IN_1": {
+        "vlnv": "setcorp:user:BUS_16IN:1.0",
+        "xci_name": "Inverter_3lvl_BUS_16IN_1_0"
+      },
+      "P0N_3lvl_0": {
+        "vlnv": "ssevendenergy.com:user:P0N_3lvl:1.0",
+        "xci_name": "Inverter_3lvl_P0N_3lvl_0_0"
+      },
+      "P0N_3lvl_3": {
+        "vlnv": "ssevendenergy.com:user:P0N_3lvl:1.0",
+        "xci_name": "Inverter_3lvl_P0N_3lvl_0_1"
+      },
+      "P0N_3lvl_4": {
+        "vlnv": "ssevendenergy.com:user:P0N_3lvl:1.0",
+        "xci_name": "Inverter_3lvl_P0N_3lvl_0_2"
+      },
+      "P0N_3lvl_5": {
+        "vlnv": "ssevendenergy.com:user:P0N_3lvl:1.0",
+        "xci_name": "Inverter_3lvl_P0N_3lvl_0_3"
+      },
+      "P0N_3lvl_6": {
+        "vlnv": "ssevendenergy.com:user:P0N_3lvl:1.0",
+        "xci_name": "Inverter_3lvl_P0N_3lvl_0_4"
+      },
+      "P0N_3lvl_7": {
+        "vlnv": "ssevendenergy.com:user:P0N_3lvl:1.0",
+        "xci_name": "Inverter_3lvl_P0N_3lvl_0_5"
+      },
+      "P0N_3lvl_1": {
+        "vlnv": "ssevendenergy.com:user:P0N_3lvl:1.0",
+        "xci_name": "Inverter_3lvl_P0N_3lvl_1_0"
+      },
+      "P0N_3lvl_2": {
+        "vlnv": "ssevendenergy.com:user:P0N_3lvl:1.0",
+        "xci_name": "Inverter_3lvl_P0N_3lvl_1_1"
+      }
+    },
+    "nets": {
+      "ready_0_1": {
+        "ports": [
+          "ready_0",
+          "P0N_3lvl_0/ready",
+          "P0N_3lvl_3/ready",
+          "P0N_3lvl_4/ready",
+          "P0N_3lvl_5/ready",
+          "P0N_3lvl_6/ready",
+          "P0N_3lvl_7/ready",
+          "P0N_3lvl_1/ready",
+          "P0N_3lvl_2/ready"
+        ]
+      },
+      "reset_0_1": {
+        "ports": [
+          "reset_0",
+          "P0N_3lvl_0/reset",
+          "P0N_3lvl_3/reset",
+          "P0N_3lvl_4/reset",
+          "P0N_3lvl_5/reset",
+          "P0N_3lvl_6/reset",
+          "P0N_3lvl_7/reset",
+          "P0N_3lvl_1/reset",
+          "P0N_3lvl_2/reset"
+        ]
+      },
+      "deadTime_0_1": {
+        "ports": [
+          "deadTime_0",
+          "P0N_3lvl_0/deadTime",
+          "P0N_3lvl_3/deadTime",
+          "P0N_3lvl_4/deadTime",
+          "P0N_3lvl_5/deadTime",
+          "P0N_3lvl_6/deadTime",
+          "P0N_3lvl_7/deadTime",
+          "P0N_3lvl_1/deadTime",
+          "P0N_3lvl_2/deadTime"
+        ]
+      },
+      "minTime_0_1": {
+        "ports": [
+          "minTime_0",
+          "P0N_3lvl_0/minTime",
+          "P0N_3lvl_3/minTime",
+          "P0N_3lvl_4/minTime",
+          "P0N_3lvl_5/minTime",
+          "P0N_3lvl_6/minTime",
+          "P0N_3lvl_7/minTime",
+          "P0N_3lvl_1/minTime",
+          "P0N_3lvl_2/minTime"
+        ]
+      },
+      "er_0_1": {
+        "ports": [
+          "er_0",
+          "P0N_3lvl_0/er",
+          "P0N_3lvl_3/er",
+          "P0N_3lvl_4/er",
+          "P0N_3lvl_5/er",
+          "P0N_3lvl_6/er",
+          "P0N_3lvl_7/er",
+          "P0N_3lvl_1/er",
+          "P0N_3lvl_2/er"
+        ]
+      },
+      "minTime_En_0_1": {
+        "ports": [
+          "minTime_En_0",
+          "P0N_3lvl_0/minTime_En",
+          "P0N_3lvl_3/minTime_En",
+          "P0N_3lvl_4/minTime_En",
+          "P0N_3lvl_5/minTime_En",
+          "P0N_3lvl_6/minTime_En",
+          "P0N_3lvl_7/minTime_En",
+          "P0N_3lvl_1/minTime_En",
+          "P0N_3lvl_2/minTime_En"
+        ]
+      },
+      "PWM_1": {
+        "ports": [
+          "PWM",
+          "BUS_16IN_0/BusBlock16IN"
+        ]
+      },
+      "BUS_16IN_0_Out0": {
+        "ports": [
+          "BUS_16IN_0/Out0",
+          "P0N_3lvl_0/TKin0"
+        ]
+      },
+      "BUS_16IN_0_Out1": {
+        "ports": [
+          "BUS_16IN_0/Out1",
+          "P0N_3lvl_0/TKin1"
+        ]
+      },
+      "BUS_16IN_0_Out2": {
+        "ports": [
+          "BUS_16IN_0/Out2",
+          "P0N_3lvl_1/TKin0"
+        ]
+      },
+      "BUS_16IN_0_Out3": {
+        "ports": [
+          "BUS_16IN_0/Out3",
+          "P0N_3lvl_1/TKin1"
+        ]
+      },
+      "BUS_16IN_0_Out4": {
+        "ports": [
+          "BUS_16IN_0/Out4",
+          "P0N_3lvl_2/TKin0"
+        ]
+      },
+      "BUS_16IN_0_Out5": {
+        "ports": [
+          "BUS_16IN_0/Out5",
+          "P0N_3lvl_2/TKin1"
+        ]
+      },
+      "BUS_16IN_0_Out6": {
+        "ports": [
+          "BUS_16IN_0/Out6",
+          "P0N_3lvl_3/TKin0"
+        ]
+      },
+      "BUS_16IN_0_Out7": {
+        "ports": [
+          "BUS_16IN_0/Out7",
+          "P0N_3lvl_3/TKin1"
+        ]
+      },
+      "BUS_16IN_0_Out8": {
+        "ports": [
+          "BUS_16IN_0/Out8",
+          "P0N_3lvl_4/TKin0"
+        ]
+      },
+      "BUS_16IN_0_Out9": {
+        "ports": [
+          "BUS_16IN_0/Out9",
+          "P0N_3lvl_4/TKin1"
+        ]
+      },
+      "BUS_16IN_0_Out10": {
+        "ports": [
+          "BUS_16IN_0/Out10",
+          "P0N_3lvl_5/TKin0"
+        ]
+      },
+      "BUS_16IN_0_Out11": {
+        "ports": [
+          "BUS_16IN_0/Out11",
+          "P0N_3lvl_5/TKin1"
+        ]
+      },
+      "BUS_16IN_0_Out12": {
+        "ports": [
+          "BUS_16IN_0/Out12",
+          "P0N_3lvl_6/TKin0"
+        ]
+      },
+      "BUS_16IN_0_Out13": {
+        "ports": [
+          "BUS_16IN_0/Out13",
+          "P0N_3lvl_6/TKin1"
+        ]
+      },
+      "BUS_16IN_0_Out14": {
+        "ports": [
+          "BUS_16IN_0/Out14",
+          "P0N_3lvl_7/TKin0"
+        ]
+      },
+      "BUS_16IN_0_Out15": {
+        "ports": [
+          "BUS_16IN_0/Out15",
+          "P0N_3lvl_7/TKin1"
+        ]
+      },
+      "BreakingEnable_1": {
+        "ports": [
+          "BreakingEnable",
+          "BUS_16IN_1/BusBlock16IN"
+        ]
+      },
+      "BUS_16IN_1_Out0": {
+        "ports": [
+          "BUS_16IN_1/Out0",
+          "P0N_3lvl_0/breaking_en"
+        ]
+      },
+      "BUS_16IN_1_Out1": {
+        "ports": [
+          "BUS_16IN_1/Out1",
+          "P0N_3lvl_1/breaking_en"
+        ]
+      },
+      "BUS_16IN_1_Out2": {
+        "ports": [
+          "BUS_16IN_1/Out2",
+          "P0N_3lvl_2/breaking_en"
+        ]
+      },
+      "BUS_16IN_1_Out3": {
+        "ports": [
+          "BUS_16IN_1/Out3",
+          "P0N_3lvl_3/breaking_en"
+        ]
+      },
+      "BUS_16IN_1_Out4": {
+        "ports": [
+          "BUS_16IN_1/Out4",
+          "P0N_3lvl_4/breaking_en"
+        ]
+      },
+      "BUS_16IN_1_Out5": {
+        "ports": [
+          "BUS_16IN_1/Out5",
+          "P0N_3lvl_5/breaking_en"
+        ]
+      },
+      "BUS_16IN_1_Out6": {
+        "ports": [
+          "BUS_16IN_1/Out6",
+          "P0N_3lvl_6/breaking_en"
+        ]
+      },
+      "BUS_16IN_1_Out7": {
+        "ports": [
+          "BUS_16IN_1/Out7",
+          "P0N_3lvl_7/breaking_en"
+        ]
+      },
+      "BUS_16OUT_0_BusBlock16OUT": {
+        "ports": [
+          "BUS_16OUT_0/BusBlock16OUT",
+          "ChGroup0"
+        ]
+      },
+      "P0N_3lvl_0_PWM_out_0": {
+        "ports": [
+          "P0N_3lvl_0/PWM_out_0",
+          "BUS_16OUT_0/In0"
+        ]
+      },
+      "P0N_3lvl_0_PWM_out_1": {
+        "ports": [
+          "P0N_3lvl_0/PWM_out_1",
+          "BUS_16OUT_0/In1"
+        ]
+      },
+      "P0N_3lvl_0_PWM_out_2": {
+        "ports": [
+          "P0N_3lvl_0/PWM_out_2",
+          "BUS_16OUT_0/In2"
+        ]
+      },
+      "P0N_3lvl_0_PWM_out_3": {
+        "ports": [
+          "P0N_3lvl_0/PWM_out_3",
+          "BUS_16OUT_0/In3"
+        ]
+      },
+      "P0N_3lvl_1_PWM_out_0": {
+        "ports": [
+          "P0N_3lvl_1/PWM_out_0",
+          "BUS_16OUT_0/In4"
+        ]
+      },
+      "P0N_3lvl_1_PWM_out_1": {
+        "ports": [
+          "P0N_3lvl_1/PWM_out_1",
+          "BUS_16OUT_0/In5"
+        ]
+      },
+      "P0N_3lvl_1_PWM_out_2": {
+        "ports": [
+          "P0N_3lvl_1/PWM_out_2",
+          "BUS_16OUT_0/In6"
+        ]
+      },
+      "P0N_3lvl_1_PWM_out_3": {
+        "ports": [
+          "P0N_3lvl_1/PWM_out_3",
+          "BUS_16OUT_0/In7"
+        ]
+      },
+      "P0N_3lvl_2_PWM_out_0": {
+        "ports": [
+          "P0N_3lvl_2/PWM_out_0",
+          "BUS_16OUT_0/In8"
+        ]
+      },
+      "P0N_3lvl_2_PWM_out_1": {
+        "ports": [
+          "P0N_3lvl_2/PWM_out_1",
+          "BUS_16OUT_0/In9"
+        ]
+      },
+      "P0N_3lvl_2_PWM_out_2": {
+        "ports": [
+          "P0N_3lvl_2/PWM_out_2",
+          "BUS_16OUT_0/In10"
+        ]
+      },
+      "P0N_3lvl_2_PWM_out_3": {
+        "ports": [
+          "P0N_3lvl_2/PWM_out_3",
+          "BUS_16OUT_0/In11"
+        ]
+      },
+      "P0N_3lvl_3_PWM_out_0": {
+        "ports": [
+          "P0N_3lvl_3/PWM_out_0",
+          "BUS_16OUT_0/In12"
+        ]
+      },
+      "P0N_3lvl_3_PWM_out_1": {
+        "ports": [
+          "P0N_3lvl_3/PWM_out_1",
+          "BUS_16OUT_0/In13"
+        ]
+      },
+      "P0N_3lvl_3_PWM_out_2": {
+        "ports": [
+          "P0N_3lvl_3/PWM_out_2",
+          "BUS_16OUT_0/In14"
+        ]
+      },
+      "P0N_3lvl_3_PWM_out_3": {
+        "ports": [
+          "P0N_3lvl_3/PWM_out_3",
+          "BUS_16OUT_0/In15"
+        ]
+      },
+      "BUS_16OUT_1_BusBlock16OUT": {
+        "ports": [
+          "BUS_16OUT_1/BusBlock16OUT",
+          "ChGroup1"
+        ]
+      },
+      "P0N_3lvl_4_PWM_out_0": {
+        "ports": [
+          "P0N_3lvl_4/PWM_out_0",
+          "BUS_16OUT_1/In0"
+        ]
+      },
+      "P0N_3lvl_4_PWM_out_1": {
+        "ports": [
+          "P0N_3lvl_4/PWM_out_1",
+          "BUS_16OUT_1/In1"
+        ]
+      },
+      "P0N_3lvl_4_PWM_out_2": {
+        "ports": [
+          "P0N_3lvl_4/PWM_out_2",
+          "BUS_16OUT_1/In2"
+        ]
+      },
+      "P0N_3lvl_4_PWM_out_3": {
+        "ports": [
+          "P0N_3lvl_4/PWM_out_3",
+          "BUS_16OUT_1/In3"
+        ]
+      },
+      "P0N_3lvl_5_PWM_out_0": {
+        "ports": [
+          "P0N_3lvl_5/PWM_out_0",
+          "BUS_16OUT_1/In4"
+        ]
+      },
+      "P0N_3lvl_5_PWM_out_1": {
+        "ports": [
+          "P0N_3lvl_5/PWM_out_1",
+          "BUS_16OUT_1/In5"
+        ]
+      },
+      "P0N_3lvl_5_PWM_out_2": {
+        "ports": [
+          "P0N_3lvl_5/PWM_out_2",
+          "BUS_16OUT_1/In6"
+        ]
+      },
+      "P0N_3lvl_5_PWM_out_3": {
+        "ports": [
+          "P0N_3lvl_5/PWM_out_3",
+          "BUS_16OUT_1/In7"
+        ]
+      },
+      "P0N_3lvl_6_PWM_out_0": {
+        "ports": [
+          "P0N_3lvl_6/PWM_out_0",
+          "BUS_16OUT_1/In8"
+        ]
+      },
+      "P0N_3lvl_6_PWM_out_1": {
+        "ports": [
+          "P0N_3lvl_6/PWM_out_1",
+          "BUS_16OUT_1/In9"
+        ]
+      },
+      "P0N_3lvl_6_PWM_out_2": {
+        "ports": [
+          "P0N_3lvl_6/PWM_out_2",
+          "BUS_16OUT_1/In10"
+        ]
+      },
+      "P0N_3lvl_6_PWM_out_3": {
+        "ports": [
+          "P0N_3lvl_6/PWM_out_3",
+          "BUS_16OUT_1/In11"
+        ]
+      },
+      "P0N_3lvl_7_PWM_out_0": {
+        "ports": [
+          "P0N_3lvl_7/PWM_out_0",
+          "BUS_16OUT_1/In12"
+        ]
+      },
+      "P0N_3lvl_7_PWM_out_1": {
+        "ports": [
+          "P0N_3lvl_7/PWM_out_1",
+          "BUS_16OUT_1/In13"
+        ]
+      },
+      "P0N_3lvl_7_PWM_out_2": {
+        "ports": [
+          "P0N_3lvl_7/PWM_out_2",
+          "BUS_16OUT_1/In14"
+        ]
+      },
+      "P0N_3lvl_7_PWM_out_3": {
+        "ports": [
+          "P0N_3lvl_7/PWM_out_3",
+          "BUS_16OUT_1/In15"
+        ]
+      },
+      "MaskChGroup0_1": {
+        "ports": [
+          "MaskChGroup0",
+          "BUS_16OUT_0/Mask"
+        ]
+      },
+      "MaskChGroup1_1": {
+        "ports": [
+          "MaskChGroup1",
+          "BUS_16OUT_1/Mask"
+        ]
+      },
+      "P0N_3lvl_0_minTimeEr": {
+        "ports": [
+          "P0N_3lvl_0/minTimeEr",
+          "BUS_16OUT_2/In0"
+        ]
+      },
+      "P0N_3lvl_1_minTimeEr": {
+        "ports": [
+          "P0N_3lvl_1/minTimeEr",
+          "BUS_16OUT_2/In1"
+        ]
+      },
+      "P0N_3lvl_2_minTimeEr": {
+        "ports": [
+          "P0N_3lvl_2/minTimeEr",
+          "BUS_16OUT_2/In2"
+        ]
+      },
+      "P0N_3lvl_3_minTimeEr": {
+        "ports": [
+          "P0N_3lvl_3/minTimeEr",
+          "BUS_16OUT_2/In3"
+        ]
+      },
+      "P0N_3lvl_4_minTimeEr": {
+        "ports": [
+          "P0N_3lvl_4/minTimeEr",
+          "BUS_16OUT_2/In4"
+        ]
+      },
+      "P0N_3lvl_5_minTimeEr": {
+        "ports": [
+          "P0N_3lvl_5/minTimeEr",
+          "BUS_16OUT_2/In5"
+        ]
+      },
+      "P0N_3lvl_6_minTimeEr": {
+        "ports": [
+          "P0N_3lvl_6/minTimeEr",
+          "BUS_16OUT_2/In6"
+        ]
+      },
+      "P0N_3lvl_7_minTimeEr": {
+        "ports": [
+          "P0N_3lvl_7/minTimeEr",
+          "BUS_16OUT_2/In7"
+        ]
+      },
+      "BUS_16OUT_2_BusBlock16OUT": {
+        "ports": [
+          "BUS_16OUT_2/BusBlock16OUT",
+          "MinTimeError"
+        ]
+      },
+      "MaskMinTimeError_1": {
+        "ports": [
+          "MaskMinTimeError",
+          "BUS_16OUT_2/Mask"
+        ]
+      },
+      "externalCLK_0_1": {
+        "ports": [
+          "externalCLK_0",
+          "P0N_3lvl_0/externalCLK",
+          "P0N_3lvl_3/externalCLK",
+          "P0N_3lvl_4/externalCLK",
+          "P0N_3lvl_5/externalCLK",
+          "P0N_3lvl_6/externalCLK",
+          "P0N_3lvl_7/externalCLK",
+          "P0N_3lvl_1/externalCLK",
+          "P0N_3lvl_2/externalCLK"
+        ]
+      }
+    }
+  }
+}

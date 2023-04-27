@@ -1,0 +1,56 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jun 10 16:38:51 2021
+# Process ID: 18536
+# Current directory: D:/GITEA/UPzynq20_test/IP/LIB/Inverter_3lvl
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1296 D:\GITEA\UPzynq20_test\IP\LIB\Inverter_3lvl\Inverter_3lvl.xpr
+# Log file: D:/GITEA/UPzynq20_test/IP/LIB/Inverter_3lvl/vivado.log
+# Journal file: D:/GITEA/UPzynq20_test/IP/LIB/Inverter_3lvl\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/GITEA/UPzynq20_test/IP/LIB/Inverter_3lvl/Inverter_3lvl.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/GITEA/UPzynq20_test/IP'.
+WARNING: [IP_Flow 19-3656] If you move the project, the path for repository 'd:/GITEA/UPzynq20_test/IP' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is 'd:/GITEA/UPzynq20_test/IP/LIB/Inverter_3lvl'.)
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 877.152 ; gain = 225.738
+update_compile_order -fileset sources_1
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg484-3
+INFO: [Netlist 29-17] Analyzing 288 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.243 . Memory (MB): peak = 1266.246 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.243 . Memory (MB): peak = 1266.246 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1266.246 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1453.648 ; gain = 454.965
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+open_bd_design {D:/GITEA/UPzynq20_test/IP/LIB/Inverter_3lvl/Inverter_3lvl.srcs/sources_1/bd/Inverter_3lvl/Inverter_3lvl.bd}
+Adding component instance block -- setcorp:user:BUS_16IN:1.0 - BUS_16IN_0
+Adding component instance block -- setcorp:user:BUS_16IN:1.0 - BUS_16IN_1
+Adding component instance block -- setcorp:user:BUS_16OUT:1.0 - BUS_16OUT_0
+Adding component instance block -- setcorp:user:BUS_16OUT:1.0 - BUS_16OUT_1
+Adding component instance block -- setcorp:user:BUS_16OUT:1.0 - BUS_16OUT_2
+Adding component instance block -- ssevendenergy.com:user:P0N_3lvl:1.0 - P0N_3lvl_0
+Adding component instance block -- ssevendenergy.com:user:P0N_3lvl:1.0 - P0N_3lvl_3
+Adding component instance block -- ssevendenergy.com:user:P0N_3lvl:1.0 - P0N_3lvl_4
+Adding component instance block -- ssevendenergy.com:user:P0N_3lvl:1.0 - P0N_3lvl_5
+Adding component instance block -- ssevendenergy.com:user:P0N_3lvl:1.0 - P0N_3lvl_6
+Adding component instance block -- ssevendenergy.com:user:P0N_3lvl:1.0 - P0N_3lvl_7
+Adding component instance block -- ssevendenergy.com:user:P0N_3lvl:1.0 - P0N_3lvl_1
+Adding component instance block -- ssevendenergy.com:user:P0N_3lvl:1.0 - P0N_3lvl_2
+Successfully read diagram <Inverter_3lvl> from BD file <D:/GITEA/UPzynq20_test/IP/LIB/Inverter_3lvl/Inverter_3lvl.srcs/sources_1/bd/Inverter_3lvl/Inverter_3lvl.bd>
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 10 16:40:10 2021...

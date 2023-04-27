@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Apr 29 12:15:31 2020
+# Process ID: 10784
+# Current directory: D:/Projects/IP/LIB/P0N_3lvl/P0N_3lvl
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7996 D:\Projects\IP\LIB\P0N_3lvl\P0N_3lvl\P0N_3lvl.xpr
+# Log file: D:/Projects/IP/LIB/P0N_3lvl/P0N_3lvl/vivado.log
+# Journal file: D:/Projects/IP/LIB/P0N_3lvl/P0N_3lvl\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Projects/IP/LIB/P0N_3lvl/P0N_3lvl/P0N_3lvl.xpr
+update_compile_order -fileset sources_1

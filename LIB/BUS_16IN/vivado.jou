@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Apr 29 12:36:43 2020
+# Process ID: 14768
+# Current directory: D:/Projects/IP/LIB/BUS_16IN
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11128 D:\Projects\IP\LIB\BUS_16IN\BUS_16IN.xpr
+# Log file: D:/Projects/IP/LIB/BUS_16IN/vivado.log
+# Journal file: D:/Projects/IP/LIB/BUS_16IN\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Projects/IP/LIB/BUS_16IN/BUS_16IN.xpr
+update_compile_order -fileset sources_1
