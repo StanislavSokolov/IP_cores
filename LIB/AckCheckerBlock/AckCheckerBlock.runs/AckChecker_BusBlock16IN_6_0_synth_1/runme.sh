@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Projects/IP/LIB/AckCheckerBlock/AckCheckerBlock.runs/AckChecker_BusBlock16IN_6_0_synth_1'
+HD_PWD='D:/GITEA/GitHub/ES/IP_cores/LIB/AckCheckerBlock/AckCheckerBlock.runs/AckChecker_BusBlock16IN_6_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -993,13 +993,14 @@
     <xilinx:coreExtensions>
       <xilinx:supportedFamilies>
         <xilinx:family xilinx:lifeCycle="Pre-Production">zynq</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">artix7</xilinx:family>
       </xilinx:supportedFamilies>
       <xilinx:taxonomies>
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>IP_AXI_ADC_v2.0</xilinx:displayName>
-      <xilinx:coreRevision>18</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2021-09-10T09:11:34Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>20</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2023-04-27T15:23:05Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@54e67f7c_ARCHIVE_LOCATION">d:/GITEA/IP/IP_AXI_ADC/IP_AXI_ADC_2.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@2f9b0e0_ARCHIVE_LOCATION">d:/GITEA/IP/IP_AXI_ADC/IP_AXI_ADC_2.0</xilinx:tag>
@@ -1199,6 +1200,20 @@
         <xilinx:tag xilinx:name="ui.data.coregen.dd@10fac931_ARCHIVE_LOCATION">d:/GITEA/UPzynq20_test/IP/IP_AXI_ADC/IP_AXI_ADC_2.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@704f3371_ARCHIVE_LOCATION">d:/GITEA/UPzynq20_test/IP/IP_AXI_ADC/IP_AXI_ADC_2.0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@513ab4f0_ARCHIVE_LOCATION">d:/GITEA/UPzynq20_test/IP/IP_AXI_ADC/IP_AXI_ADC_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b05f49f_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/IP_AXI_ADC/IP_AXI_ADC_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9543d56_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/IP_AXI_ADC/IP_AXI_ADC_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e6706b0_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/IP_AXI_ADC/IP_AXI_ADC_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e6d697b_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/IP_AXI_ADC/IP_AXI_ADC_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e09642b_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/IP_AXI_ADC/IP_AXI_ADC_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63cb7369_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/IP_AXI_ADC/IP_AXI_ADC_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@370750c_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/IP_AXI_ADC/IP_AXI_ADC_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65ee75fc_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/IP_AXI_ADC/IP_AXI_ADC_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4bda784a_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/IP_AXI_ADC/IP_AXI_ADC_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4faf27fd_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/IP_AXI_ADC/IP_AXI_ADC_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ebe40d5_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/IP_AXI_ADC/IP_AXI_ADC_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25599cd_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/IP_AXI_ADC/IP_AXI_ADC_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@953d961_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/IP_AXI_ADC/IP_AXI_ADC_2.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65ba1a1b_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/IP_AXI_ADC/IP_AXI_ADC_2.0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>

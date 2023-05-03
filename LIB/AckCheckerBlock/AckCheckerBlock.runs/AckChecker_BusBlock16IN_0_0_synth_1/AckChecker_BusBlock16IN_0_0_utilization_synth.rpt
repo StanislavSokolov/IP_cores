@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Wed Apr 29 14:08:38 2020
-| Host         : Stas running 64-bit major release  (build 9200)
+| Date         : Wed May  3 11:35:54 2023
+| Host         : STAS-W10 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file AckChecker_BusBlock16IN_0_0_utilization_synth.rpt -pb AckChecker_BusBlock16IN_0_0_utilization_synth.pb
 | Design       : AckChecker_BusBlock16IN_0_0
 | Device       : 7z020clg484-3

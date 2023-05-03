@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-3" LaunchTime="1623386958">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-3" LaunchTime="1683103493">
   <File Type="PA-TCL" Name="Inverter_3lvl_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="Inverter_3lvl_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="Inverter_3lvl_wrapper_reports.tcl"/>
@@ -49,14 +49,4 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="Inverter_3lvl_P0N_3lvl_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Inverter_3lvl_BUS_16IN_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Inverter_3lvl_P0N_3lvl_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="Inverter_3lvl_P0N_3lvl_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="Inverter_3lvl_P0N_3lvl_1_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="Inverter_3lvl_P0N_3lvl_0_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="Inverter_3lvl_P0N_3lvl_0_3"/>
-  <BlockFileSet Type="BlockSrcs" Name="Inverter_3lvl_P0N_3lvl_0_4"/>
-  <BlockFileSet Type="BlockSrcs" Name="Inverter_3lvl_P0N_3lvl_0_5"/>
-  <BlockFileSet Type="BlockSrcs" Name="Inverter_3lvl_BUS_16IN_1_0"/>
 </GenRun>

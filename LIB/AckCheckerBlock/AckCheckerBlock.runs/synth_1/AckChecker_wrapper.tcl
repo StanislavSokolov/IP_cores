@@ -23,17 +23,17 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir D:/Projects/IP/LIB/AckCheckerBlock/AckCheckerBlock.cache/wt [current_project]
-set_property parent.project_path D:/Projects/IP/LIB/AckCheckerBlock/AckCheckerBlock.xpr [current_project]
+set_property webtalk.parent_dir D:/GITEA/GitHub/ES/IP_cores/LIB/AckCheckerBlock/AckCheckerBlock.cache/wt [current_project]
+set_property parent.project_path D:/GITEA/GitHub/ES/IP_cores/LIB/AckCheckerBlock/AckCheckerBlock.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_repo_paths d:/Projects/IP [current_project]
+set_property ip_repo_paths d:/GITEA/GitHub/ES/IP_cores [current_project]
 update_ip_catalog
-set_property ip_output_repo d:/Projects/IP/LIB/AckCheckerBlock/AckCheckerBlock.cache/ip [current_project]
+set_property ip_output_repo d:/GITEA/GitHub/ES/IP_cores/LIB/AckCheckerBlock/AckCheckerBlock.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_vhdl -library xil_defaultlib D:/Projects/IP/LIB/AckCheckerBlock/AckCheckerBlock.srcs/sources_1/bd/AckChecker/hdl/AckChecker_wrapper.vhd
-add_files D:/Projects/IP/LIB/AckCheckerBlock/AckCheckerBlock.srcs/sources_1/bd/AckChecker/AckChecker.bd
-set_property used_in_implementation false [get_files -all D:/Projects/IP/LIB/AckCheckerBlock/AckCheckerBlock.srcs/sources_1/bd/AckChecker/AckChecker_ooc.xdc]
+read_vhdl -library xil_defaultlib D:/GITEA/GitHub/ES/IP_cores/LIB/AckCheckerBlock/AckCheckerBlock.srcs/sources_1/bd/AckChecker/hdl/AckChecker_wrapper.vhd
+add_files D:/GITEA/GitHub/ES/IP_cores/LIB/AckCheckerBlock/AckCheckerBlock.srcs/sources_1/bd/AckChecker/AckChecker.bd
+set_property used_in_implementation false [get_files -all D:/GITEA/GitHub/ES/IP_cores/LIB/AckCheckerBlock/AckCheckerBlock.srcs/sources_1/bd/AckChecker/AckChecker_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

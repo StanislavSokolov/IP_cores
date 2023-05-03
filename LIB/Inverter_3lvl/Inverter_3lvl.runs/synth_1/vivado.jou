@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Jun 11 07:50:20 2021
-# Process ID: 1640
-# Current directory: D:/GITEA/UPzynq20_test/IP/LIB/Inverter_3lvl/Inverter_3lvl.runs/synth_1
+# Start of session at: Wed May  3 11:44:56 2023
+# Process ID: 9860
+# Current directory: D:/GITEA/GitHub/ES/IP_cores/LIB/Inverter_3lvl/Inverter_3lvl.runs/synth_1
 # Command line: vivado.exe -log Inverter_3lvl_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Inverter_3lvl_wrapper.tcl
-# Log file: D:/GITEA/UPzynq20_test/IP/LIB/Inverter_3lvl/Inverter_3lvl.runs/synth_1/Inverter_3lvl_wrapper.vds
-# Journal file: D:/GITEA/UPzynq20_test/IP/LIB/Inverter_3lvl/Inverter_3lvl.runs/synth_1\vivado.jou
+# Log file: D:/GITEA/GitHub/ES/IP_cores/LIB/Inverter_3lvl/Inverter_3lvl.runs/synth_1/Inverter_3lvl_wrapper.vds
+# Journal file: D:/GITEA/GitHub/ES/IP_cores/LIB/Inverter_3lvl/Inverter_3lvl.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Inverter_3lvl_wrapper.tcl -notrace
