@@ -756,14 +756,19 @@
       </xilinx:taxonomies>
       <xilinx:displayName>HDL_DUT_ip_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2023-07-05T12:47:08Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>3</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2023-07-11T14:06:42Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@473637c9_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/Matlab/HDL_DUT_ip_v1_0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@7224831e_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/Matlab/HDL_DUT_ip_v1_0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@6dbe464a_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/Matlab/HDL_DUT_ip_v1_0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3157dc95_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/Matlab/HDL_DUT_ip_v1_0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@7894902a_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/Matlab/HDL_DUT_ip_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c9b8edb_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/Matlab/HDL_DUT_ip_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@185b7a9f_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/Matlab/HDL_DUT_ip_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9fbeb7a_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/Matlab/HDL_DUT_ip_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13b8d860_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/Matlab/HDL_DUT_ip_v1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3167850b_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/Matlab/HDL_DUT_ip_v1_0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>

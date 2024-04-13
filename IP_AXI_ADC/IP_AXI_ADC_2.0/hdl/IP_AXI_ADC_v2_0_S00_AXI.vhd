@@ -131,6 +131,13 @@ architecture arch_imp of IP_AXI_ADC_v2_0_S00_AXI is
     
     signal clk_sign : std_logic := '0';
     
+    signal hwp_interrupt_0 : std_logic := '1';
+    signal hwp_interrupt_0_prev : std_logic := '1';
+    signal hwp_interrupt_1 : std_logic := '1';
+    signal hwp_interrupt_1_prev : std_logic := '1';
+    signal latch : std_logic := '1';
+    signal countInterrupt : std_logic_vector(3 downto 0) := x"0";
+    
     signal ch0 :std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
     signal ch1 :std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
     signal ch2 :std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
@@ -1037,6 +1044,7 @@ begin
 
     begin
         if falling_edge(sclk_sign) then
+
 --            if slv_reg17(0) = '1' then
 --                maz_er0 <= '0';
 --                errors_channel <= x"00000000";
@@ -1090,75 +1098,59 @@ begin
                     
                     -- error и errors_channel по нижней границе
 
-                        if setpoint_ch1_down > receive_data_a0 then
-                            hwp_interrupt <= '1';
+                        if setpoint_ch1_down > receive_data_a0 then                            
                             errors_channel(1) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(1) <= '0';
                             end if;
                         end if;
                         if setpoint_ch3_down > receive_data_b0 then
-                            hwp_interrupt <= '1';
                             errors_channel(3) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(3) <= '0';
                             end if;   
                         end if;
                         if setpoint_ch5_down > receive_data_a1 then
-                            hwp_interrupt <= '1';
                             errors_channel(5) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(5) <= '0';
                             end if;
                         end if;
                         if setpoint_ch7_down > receive_data_b1 then
-                            hwp_interrupt <= '1';
                             errors_channel(7) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(7) <= '0';
                             end if;
                         end if;
                         if setpoint_ch9_down > receive_data_a2 then
-                            hwp_interrupt <= '1';
                             errors_channel(9) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(9) <= '0';
                             end if;
                         end if;
                         if setpoint_ch11_down > receive_data_b2 then
-                            hwp_interrupt <= '1';
                             errors_channel(11) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(11) <= '0';
                             end if;
                         end if;
                         if setpoint_ch13_down > receive_data_a3 then
-                            hwp_interrupt <= '1';
                             errors_channel(13) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(13) <= '0';
                             end if;
                         end if;
                         if setpoint_ch15_down > receive_data_b3 then
-                            hwp_interrupt <= '1';
                             errors_channel(15) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(15) <= '0';
                             end if;
                         end if;
@@ -1166,79 +1158,78 @@ begin
                         -- error и errors_channel по верхней границе
                         
                         if setpoint_ch1_up < receive_data_a0 then
-                            hwp_interrupt <= '1';
                             errors_channel(17) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(17) <= '0';
                             end if;
                         end if;
                         if setpoint_ch3_up < receive_data_b0 then
-                            hwp_interrupt <= '1';
                             errors_channel(19) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(19) <= '0';
                             end if;
                         end if;
                         if setpoint_ch5_up < receive_data_a1 then
-                            hwp_interrupt <= '1';
                             errors_channel(21) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(21) <= '0';
                             end if;
                         end if;
                         if setpoint_ch7_up < receive_data_b1 then
-                            hwp_interrupt <= '1';
                             errors_channel(23) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(23) <= '0';
                             end if;
                         end if;
                         if setpoint_ch9_up < receive_data_a2 then
-                            hwp_interrupt <= '1';
                             errors_channel(25) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(25) <= '0';
                             end if;
                         end if;
                         if setpoint_ch11_up < receive_data_b2 then
-                            hwp_interrupt <= '1';
                             errors_channel(27) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(27) <= '0';
                             end if;
                         end if;
                         if setpoint_ch13_up < receive_data_a3 then
-                            hwp_interrupt <= '1';
                             errors_channel(29) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(29) <= '0';
                             end if;
                         end if;
                         if setpoint_ch15_up < receive_data_b3 then
-                            hwp_interrupt <= '1';
                             errors_channel(31) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(31) <= '0';
                             end if;
                         end if;
                     
-                    
+                    if setpoint_ch1_down > receive_data_a0 or setpoint_ch1_up < receive_data_a0
+                        or setpoint_ch3_down > receive_data_b0 or setpoint_ch3_up < receive_data_b0
+                        or setpoint_ch5_down > receive_data_a1 or setpoint_ch5_up < receive_data_a1
+                        or setpoint_ch7_down > receive_data_b1 or setpoint_ch7_up < receive_data_b1
+                        or setpoint_ch9_down > receive_data_a2 or setpoint_ch9_up < receive_data_a2
+                        or setpoint_ch11_down > receive_data_b2 or setpoint_ch11_up < receive_data_b2
+                        or setpoint_ch13_down > receive_data_a3 or setpoint_ch13_up < receive_data_a3
+                        or setpoint_ch15_down > receive_data_b3 or setpoint_ch15_up < receive_data_b3 then
+    
+                        hwp_interrupt_1 <= '1';
+                        
+                    else
+                     
+                        hwp_interrupt_1 <= '0';    
+                
+                    end if;
                     
                 when 16 to 19 =>
                     even_updated <= '0';
@@ -1290,74 +1281,58 @@ begin
                     -- error и errors_channel по нижней границе
                   
                         if setpoint_ch0_down > receive_data_a0 then
-                            hwp_interrupt <= '1';
                             errors_channel(0) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(0) <= '0';
                             end if;
                         end if;
                         if setpoint_ch2_down > receive_data_b0 then
-                            hwp_interrupt <= '1';
                             errors_channel(2) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(2) <= '0';
                             end if;   
                         end if;
                         if setpoint_ch4_down > receive_data_a1 then
-                            hwp_interrupt <= '1';
                             errors_channel(4) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(4) <= '0';
                             end if;
                         end if;
                         if setpoint_ch6_down > receive_data_b1 then
-                            hwp_interrupt <= '1';
                             errors_channel(6) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(6) <= '0';
                             end if;
                         end if;
                         if setpoint_ch8_down > receive_data_a2 then
-                            hwp_interrupt <= '1';
                             errors_channel(8) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(8) <= '0';
                             end if;
                         end if;
                         if setpoint_ch10_down > receive_data_b2 then
-                            hwp_interrupt <= '1';
                             errors_channel(10) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(10) <= '0';
                             end if;
                         end if;
                         if setpoint_ch12_down > receive_data_a3 then
-                            hwp_interrupt <= '1';
                             errors_channel(12) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(12) <= '0';
                             end if;
                         end if;
                         if setpoint_ch14_down > receive_data_b3 then
-                            hwp_interrupt <= '1';
                             errors_channel(14) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(14) <= '0';
                             end if;
                         end if;
@@ -1365,77 +1340,78 @@ begin
                         -- error и errors_channel по верхней границе
                         
                         if setpoint_ch0_up < receive_data_a0 then
-                            hwp_interrupt <= '1';
                             errors_channel(16) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(16) <= '0';
                             end if;
                         end if;
                         if setpoint_ch2_up < receive_data_b0 then
-                            hwp_interrupt <= '1';
                             errors_channel(18) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(18) <= '0';
                             end if;
                         end if;
                         if setpoint_ch4_up < receive_data_a1 then
-                            hwp_interrupt <= '1';
                             errors_channel(20) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(20) <= '0';
                             end if;
                         end if;
                         if setpoint_ch6_up < receive_data_b1 then
-                            hwp_interrupt <= '1';
                             errors_channel(22) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(22) <= '0';
                             end if;
                         end if;
                         if setpoint_ch8_up < receive_data_a2 then
-                            hwp_interrupt <= '1';
                             errors_channel(24) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(24) <= '0';
                             end if;
                         end if;
                         if setpoint_ch10_up < receive_data_b2 then
-                            hwp_interrupt <= '1';
                             errors_channel(26) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(26) <= '0';
                             end if;
                         end if;
                         if setpoint_ch12_up < receive_data_a3 then
-                            hwp_interrupt <= '1';
                             errors_channel(28) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(28) <= '0';
                             end if;
                         end if;
                         if setpoint_ch14_up < receive_data_b3 then
-                            hwp_interrupt <= '1';
                             errors_channel(30) <= '1';
                         else 
                             if slv_reg4(0) = '1' then
-                                hwp_interrupt <= '0';
                                 errors_channel(30) <= '0';
                             end if;
                         end if;
+                        
+                if setpoint_ch0_down > receive_data_a0 or setpoint_ch0_up < receive_data_a0
+                    or setpoint_ch2_down > receive_data_b0 or setpoint_ch2_up < receive_data_b0
+                    or setpoint_ch4_down > receive_data_a1 or setpoint_ch4_up < receive_data_a1
+                    or setpoint_ch6_down > receive_data_b1 or setpoint_ch6_up < receive_data_b1
+                    or setpoint_ch8_down > receive_data_a2 or setpoint_ch8_up < receive_data_a2
+                    or setpoint_ch10_down > receive_data_b2 or setpoint_ch10_up < receive_data_b2
+                    or setpoint_ch12_down > receive_data_a3 or setpoint_ch12_up < receive_data_a3
+                    or setpoint_ch14_down > receive_data_b3 or setpoint_ch14_up < receive_data_b3 then
+
+                    hwp_interrupt_0 <= '1';
+                    
+                else
+                 
+                    hwp_interrupt_0 <= '0';    
+            
+                end if;
                     
                     
                 when others =>
@@ -1634,6 +1610,32 @@ begin
                 end if;  
                                  
             end if;
+        end if;
+    end process;
+    
+    process(S_AXI_ACLK) is
+    begin       
+        if(rising_edge (S_AXI_ACLK)) then
+            if hwp_interrupt_0 = '1' and hwp_interrupt_0_prev = '0' then
+                hwp_interrupt <= '1';
+                latch <= '1';
+            elsif hwp_interrupt_1 = '1' and hwp_interrupt_1_prev = '0' then 
+                hwp_interrupt <= '1';
+                latch <= '1';
+            else     
+                if latch = '1' then
+                    if countInterrupt < x"4" then
+                        hwp_interrupt <= '1'; -- when in the first time
+                        countInterrupt <= countInterrupt + 1;
+                    else 
+                        countInterrupt <= (others => '0');
+                        hwp_interrupt <= '0';
+                        latch <= '0';
+                    end if;
+                end if;
+            end if;
+            hwp_interrupt_0_prev <= hwp_interrupt_0;
+            hwp_interrupt_1_prev <= hwp_interrupt_1;
         end if;
     end process;
 
