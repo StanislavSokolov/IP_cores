@@ -45,7 +45,11 @@ entity EventCapturer64bit is
         s_axis_tready : in  std_logic;
         s_axis_tdata  : out std_logic_vector(31 downto 0);
         s_axis_tkeep  : out std_logic_vector(3 downto 0);
-        s_axis_tlast  : out std_logic
+        s_axis_tlast  : out std_logic;
+        
+        
+        
+        test  : out std_logic := '0'
     );
 end EventCapturer64bit;
 
@@ -88,7 +92,8 @@ begin
                 if s_axis_tvalid_int = '0' and event_pending = '1' then
                     s_axis_tvalid_int <= '1';
                     phase <= "00";
-                elsif s_axis_tvalid_int = '1' and s_axis_tready = '1' then
+--                elsif s_axis_tvalid_int = '1' and s_axis_tready = '1' then
+                elsif s_axis_tvalid_int = '1' then
                     if phase = "11" then
                         s_axis_tvalid_int <= '0';
                         event_pending <= '0';  -- Сброс здесь!
@@ -114,5 +119,6 @@ begin
     s_axis_tkeep  <= "1111";   -- Все 4 байта валидны
     s_axis_tlast  <= '0';      -- Непрерывный поток (DMA simple mode)
     s_axis_tvalid <= s_axis_tvalid_int;
+    test <= s_axis_tready;
 
 end Behavioral;
