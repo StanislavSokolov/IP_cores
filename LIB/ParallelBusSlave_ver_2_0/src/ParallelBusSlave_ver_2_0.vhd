@@ -5,8 +5,7 @@
 
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.std_logic_arith.all;
-use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
 
 --! @brief Entity for the parallel bus slave component.
 --! @details This entity defines the interface for a component that communicates with a parallel bus.
