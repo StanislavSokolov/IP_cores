@@ -38,7 +38,7 @@ entity EventCapturer64bit is
         resetn     : in  std_logic;  -- активный низкий
 
         -- 64-битный входной вектор
-        datain    : in  std_logic_vector(31 downto 0);
+        datain    : in  std_logic_vector(15 downto 0);
 
         -- AXI4-Stream Master ? подключается к S_AXIS_S2MM AXI DMA
         s_axis_tvalid : out std_logic;
@@ -55,8 +55,7 @@ end EventCapturer64bit;
 
 architecture Behavioral of EventCapturer64bit is
 
-    signal dataprev      : std_logic_vector(31 downto 0) := (others => '0');
-    signal databuf      : std_logic_vector(31 downto 0) := (others => '0');
+    signal databuf      : std_logic_vector(15 downto 0) := (others => '0');
     signal timestamp      : unsigned(63 downto 0) := (others => '0');
     signal timestampbuf      : unsigned(63 downto 0) := (others => '0');
     signal event_pending  : std_logic := '0';
@@ -74,11 +73,12 @@ begin
         if rising_edge(clk) then
             if resetn = '0' then
                 -- сброс всех сигналов
-                databuf <= (others => '0');        
-                timestamp      <= (others => '0');
-                event_pending  <= '0';
+                databuf <= (others => '0');       
+                timestamp  <= (others => '0');
+                event_pending <= '0';
                 s_axis_tvalid_int <= '0';
-                phase          <= "00";
+                phase <= "00";
+                s_axis_tlast  <= '0';
             else
                 -- 1. Обновление счётчика и детекция события
                 timestamp <= timestamp + 1;
@@ -92,12 +92,17 @@ begin
                 if s_axis_tvalid_int = '0' and event_pending = '1' then
                     s_axis_tvalid_int <= '1';
                     phase <= "00";
---                elsif s_axis_tvalid_int = '1' and s_axis_tready = '1' then
-                elsif s_axis_tvalid_int = '1' then
-                    if phase = "11" then
+                    s_axis_tlast  <= '0';
+                elsif s_axis_tvalid_int = '1' and s_axis_tready = '1' then
+                    if phase = "10" then
+                        -- Переходим к фазе "11". Сигнал tlast встанет в '1' СТРОГО на фазе "11"
+                        phase        <= "11";
+                        s_axis_tlast <= '1'; 
+                    elsif phase = "11" then
+                        -- Последнее слово успешно передано (Handshake завершен)
                         s_axis_tvalid_int <= '0';
-                        event_pending <= '0';  -- Сброс здесь!
-                        phase <= "00";
+                        phase        <= "00";
+                        s_axis_tlast <= '0';
                     else
                         phase <= phase + 1;
                     end if;
@@ -108,7 +113,7 @@ begin
 
     -- Формирование данных в зависимости от фазы
     data_to_send <=
-        databuf      when phase = "00" else  -- data_lo
+        databuf & x"FFFF"  when phase = "00" else  -- data_lo
         x"FFFF0000"     when phase = "01" else  -- data_hi
         std_logic_vector(timestampbuf(31 downto 0))  when phase = "10" else  -- ts_lo
         std_logic_vector(timestampbuf(63 downto 32));         -- ts_hi
@@ -117,7 +122,6 @@ begin
     -- Выходы AXI4-Stream
     s_axis_tdata  <= data_to_send;
     s_axis_tkeep  <= "1111";   -- Все 4 байта валидны
-    s_axis_tlast  <= '0';      -- Непрерывный поток (DMA simple mode)
     s_axis_tvalid <= s_axis_tvalid_int;
     test <= s_axis_tready;
 

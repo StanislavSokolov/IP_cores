@@ -26,8 +26,6 @@ entity IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI is
         rw : in std_logic;  --! Read/Write signal (1 = read, 0 = write).
         dataready : in std_logic;  --! Data ready signal.
         
-        done : out std_logic;                      --! Done signal.
-
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -880,7 +878,6 @@ begin
         end if;
     end process;
     
-    done <= memDtToRead(0)(0); 
 	-- User logic ends
 
 end arch_imp;
