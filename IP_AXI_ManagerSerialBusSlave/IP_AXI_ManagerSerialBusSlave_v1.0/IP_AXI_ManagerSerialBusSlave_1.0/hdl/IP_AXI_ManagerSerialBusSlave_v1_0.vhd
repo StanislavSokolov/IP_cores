@@ -25,9 +25,7 @@ entity IP_AXI_ManagerSerialBusSlave_v1_0 is
         
         rw : in std_logic;  --! Read/Write signal (1 = read, 0 = write).
         dataready : in std_logic;  --! Data ready signal.
-        
-        done : out std_logic;                      --! Done signal.
- 
+         
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -74,7 +72,6 @@ architecture arch_imp of IP_AXI_ManagerSerialBusSlave_v1_0 is
         datain : in std_logic_vector(DATA_BUS_WIDTH - 1 downto 0);              --! Data input.
         rw : in std_logic;  --! Read/Write signal (1 = read, 0 = write).
         dataready : in std_logic;  --! Data ready signal.
-        done : out std_logic;                      --! Done signal.
 		S_AXI_ACLK	: in std_logic;
 		S_AXI_ARESETN	: in std_logic;
 		S_AXI_AWADDR	: in std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
@@ -116,7 +113,6 @@ IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI_inst : IP_AXI_ManagerSerialBusSlave_v1
         datain => datain,        
         rw => rw,
         dataready => dataready,        
-        done => done,
 		S_AXI_ACLK	=> s00_axi_aclk,
 		S_AXI_ARESETN	=> s00_axi_aresetn,
 		S_AXI_AWADDR	=> s00_axi_awaddr,
