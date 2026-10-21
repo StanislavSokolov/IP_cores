@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Oct 21 18:04:52 2026
+# Process ID: 3952
+# Current directory: D:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5572 D:\GITEA\GitHub\ES\IP_cores\LIB\SignalChangeControl_ver_1_0\SignalChangeControl_ver_1_0.xpr
+# Log file: D:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0/vivado.log
+# Journal file: D:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0/SignalChangeControl_ver_1_0.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 773.242 ; gain = 163.613
+update_compile_order -fileset sources_1
+ipx::open_ipxact_file D:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0/component.xml
+WARNING: [IP_Flow 19-5226] Project source file 'd:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-4308] Project file 'd:/GITEA/altera/Library/SignalChangeControl_ver_1_0.vhd' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-4308] Project file 'd:/GITEA/altera/Library/SignalChangeControl_ver_1_0.vhd' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+set_property core_revision 3 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path d:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0'
+set_property core_revision 4 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path d:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'd:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0'
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 21 18:08:03 2026...

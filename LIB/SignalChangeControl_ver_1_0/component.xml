@@ -2,7 +2,7 @@
 <spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <spirit:vendor>setcorp</spirit:vendor>
   <spirit:library>user</spirit:library>
-  <spirit:name>SignalChangeControl_ver_1_0</spirit:name>
+  <spirit:name>SignalChangeControl</spirit:name>
   <spirit:version>1.0</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
@@ -163,7 +163,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/SignalChangeControl_ver_1_0_v1_0.tcl</spirit:name>
+        <spirit:name>xgui/SignalChangeControl_v1_0.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
         <spirit:userFileType>CHECKSUM_f64a5dae</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
@@ -209,14 +209,27 @@
       </xilinx:taxonomies>
       <xilinx:displayName>SignalChangeControl_ver_1_0_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-10-21T14:48:32Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>4</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-10-21T15:07:57Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3e758b8b_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@3d1f97c5_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@77f99b24_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@47c12b90_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0</xilinx:tag>
         <xilinx:tag xilinx:name="ui.data.coregen.dd@4c86ba9_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@fa13fbe_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2469adaa_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13652b98_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ee3f48c_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@529e439_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e0b0248_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23bab703_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4cfe07c5_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dd25e6_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f320ccb_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@76484dd4_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70b6300_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68266dbf_ARCHIVE_LOCATION">d:/GITEA/GitHub/ES/IP_cores/LIB/SignalChangeControl_ver_1_0</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
