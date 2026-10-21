@@ -26,6 +26,50 @@ entity IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI is
         rw : in std_logic;  --! Read/Write signal (1 = read, 0 = write).
         dataready : in std_logic;  --! Data ready signal.
         
+        enableChannels5 : out std_logic_vector(7 downto 0);
+        deadTime5  : out std_logic_vector(7 downto 0);
+        minTime5 : out std_logic_vector(7 downto 0);
+        ackTime5 : out std_logic_vector(7 downto 0);
+        currentpren5 : out std_logic_vector(7 downto 0);
+        ackpren5 : out std_logic_vector(7 downto 0);
+        mintimepren5 : out std_logic;
+        linepren5 : out std_logic;
+        softshutdownen5 : out std_logic;
+        softShutdownTimer5 : out std_logic_vector(15 downto 0);
+        
+        enableChannels6 : out std_logic_vector(7 downto 0);
+        deadTime6  : out std_logic_vector(7 downto 0);
+        minTime6 : out std_logic_vector(7 downto 0);
+        ackTime6 : out std_logic_vector(7 downto 0);
+        currentpren6 : out std_logic_vector(7 downto 0);
+        ackpren6 : out std_logic_vector(7 downto 0);
+        mintimepren6 : out std_logic;
+        linepren6 : out std_logic;
+        softshutdownen6 : out std_logic;
+        softShutdownTimer6 : out std_logic_vector(15 downto 0);
+        
+        enableChannels9 : out std_logic_vector(7 downto 0);
+        deadTime9  : out std_logic_vector(7 downto 0);
+        minTime9 : out std_logic_vector(7 downto 0);
+        ackTime9 : out std_logic_vector(7 downto 0);
+        currentpren9 : out std_logic_vector(7 downto 0);
+        ackpren9 : out std_logic_vector(7 downto 0);
+        mintimepren9 : out std_logic;
+        linepren9 : out std_logic;
+        softshutdownen9 : out std_logic;
+        softShutdownTimer9 : out std_logic_vector(15 downto 0);
+        
+        enableChannelsA : out std_logic_vector(7 downto 0);
+        deadTimeA  : out std_logic_vector(7 downto 0);
+        minTimeA : out std_logic_vector(7 downto 0);
+        ackTimeA : out std_logic_vector(7 downto 0);
+        currentprenA : out std_logic_vector(7 downto 0);
+        ackprenA : out std_logic_vector(7 downto 0);
+        mintimeprenA : out std_logic;
+        lineprenA : out std_logic;
+        softshutdownenA : out std_logic;
+        softShutdownTimerA : out std_logic_vector(15 downto 0);
+        
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -877,6 +921,63 @@ begin
             end if;                        
         end if;
     end process;
+    
+--    enableChannels <= memDtToRead(to_integer(unsigned(std_logic_vector'(x"50"))))(7 downto 0);
+--    deadTime <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"51"))))(15 downto 8);
+--    minTime <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"51"))))(7 downto 0);
+--    ackTime <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"52"))))(7 downto 0);
+--    currentpren <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"53"))))(15 downto 8);
+--    ackpren <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"53"))))(7 downto 0);
+--    mintimepren <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"54"))))(11);
+--    linepren <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"54"))))(10);
+--    softshutdownen <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"54"))))(9);
+--    softShutdownTimer <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"5D"))))(15 downto 0);
+    
+    enableChannels5 <= memDtToRead(to_integer(unsigned(std_logic_vector'(x"50"))))(7 downto 0);
+    deadTime5 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"51"))))(15 downto 8);
+    minTime5 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"51"))))(7 downto 0);
+    ackTime5 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"52"))))(7 downto 0);
+    currentpren5 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"53"))))(15 downto 8);
+    ackpren5 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"53"))))(7 downto 0);
+    mintimepren5 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"54"))))(11);
+    linepren5 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"54"))))(10);
+    softshutdownen5 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"54"))))(9);
+    softShutdownTimer5 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"5D"))))(15 downto 0);
+    
+    enableChannels6 <= memDtToRead(to_integer(unsigned(std_logic_vector'(x"60"))))(7 downto 0);
+    deadTime6 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"61"))))(15 downto 8);
+    minTime6 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"61"))))(7 downto 0);
+    ackTime6 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"62"))))(7 downto 0);
+    currentpren6 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"63"))))(15 downto 8);
+    ackpren6 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"63"))))(7 downto 0);
+    mintimepren6 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"64"))))(11);
+    linepren6 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"64"))))(10);
+    softshutdownen6 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"64"))))(9);
+    softShutdownTimer6 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"6D"))))(15 downto 0);
+    
+    
+    enableChannels9 <= memDtToRead(to_integer(unsigned(std_logic_vector'(x"90"))))(7 downto 0);
+    deadTime9 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"91"))))(15 downto 8);
+    minTime9 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"91"))))(7 downto 0);
+    ackTime9 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"92"))))(7 downto 0);
+    currentpren9 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"93"))))(15 downto 8);
+    ackpren9 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"93"))))(7 downto 0);
+    mintimepren9 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"94"))))(11);
+    linepren9 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"94"))))(10);
+    softshutdownen9 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"94"))))(9);
+    softShutdownTimer9 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"9D"))))(15 downto 0);
+    
+    
+    enableChannelsA <= memDtToRead(to_integer(unsigned(std_logic_vector'(x"A0"))))(7 downto 0);
+    deadTimeA <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"A1"))))(15 downto 8);
+    minTimeA <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"A1"))))(7 downto 0);
+    ackTimeA <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"A2"))))(7 downto 0);
+    currentprenA <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"A3"))))(15 downto 8);
+    ackprenA <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"A3"))))(7 downto 0);
+    mintimeprenA <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"A4"))))(11);
+    lineprenA <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"A4"))))(10);
+    softshutdownenA <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"A4"))))(9);
+    softShutdownTimerA <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"AD"))))(15 downto 0);
     
 	-- User logic ends
 
