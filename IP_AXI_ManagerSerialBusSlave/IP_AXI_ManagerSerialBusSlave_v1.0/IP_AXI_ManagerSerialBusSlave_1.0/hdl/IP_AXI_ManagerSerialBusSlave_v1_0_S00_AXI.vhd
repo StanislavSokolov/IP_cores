@@ -26,7 +26,7 @@ entity IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI is
         rw : in std_logic;  --! Read/Write signal (1 = read, 0 = write).
         dataready : in std_logic;  --! Data ready signal.
         
-        enableChannels5 : out std_logic_vector(7 downto 0);
+        keysen5 : out std_logic_vector(7 downto 0);
         deadTime5  : out std_logic_vector(7 downto 0);
         minTime5 : out std_logic_vector(7 downto 0);
         ackTime5 : out std_logic_vector(7 downto 0);
@@ -34,10 +34,21 @@ entity IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI is
         ackpren5 : out std_logic_vector(7 downto 0);
         mintimepren5 : out std_logic;
         linepren5 : out std_logic;
-        softshutdownen5 : out std_logic;
+        softshutdownpren5 : out std_logic;
         softShutdownTimer5 : out std_logic_vector(15 downto 0);
+        keysin5 : in std_logic_vector(7 downto 0);
+        ackin5 : in std_logic_vector(7 downto 0);
+        ackpr5 : in std_logic_vector(7 downto 0);
+        currentpr5 : in std_logic_vector(7 downto 0);
+        linepr5 : in std_logic;
+        softshutdownpr5 : in std_logic;
+        mintimepr5 : in std_logic;
+        timeerror5 : in std_logic_vector(15 downto 0);
+        breaken5 : out std_logic;
+        ready5 : out std_logic;
+        reset5 : out std_logic;
         
-        enableChannels6 : out std_logic_vector(7 downto 0);
+        keysen6 : out std_logic_vector(7 downto 0);
         deadTime6  : out std_logic_vector(7 downto 0);
         minTime6 : out std_logic_vector(7 downto 0);
         ackTime6 : out std_logic_vector(7 downto 0);
@@ -45,10 +56,21 @@ entity IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI is
         ackpren6 : out std_logic_vector(7 downto 0);
         mintimepren6 : out std_logic;
         linepren6 : out std_logic;
-        softshutdownen6 : out std_logic;
+        softshutdownpren6 : out std_logic;
         softShutdownTimer6 : out std_logic_vector(15 downto 0);
+        keysin6 : in std_logic_vector(7 downto 0);
+        ackin6 : in std_logic_vector(7 downto 0);
+        ackpr6 : in std_logic_vector(7 downto 0);
+        currentpr6 : in std_logic_vector(7 downto 0);
+        linepr6 : in std_logic;
+        softshutdownpr6 : in std_logic;
+        mintimepr6 : in std_logic;
+        timeerror6 : in std_logic_vector(15 downto 0);
+        breaken6 : out std_logic;
+        ready6 : out std_logic;
+        reset6 : out std_logic;
         
-        enableChannels9 : out std_logic_vector(7 downto 0);
+        keysen9 : out std_logic_vector(7 downto 0);
         deadTime9  : out std_logic_vector(7 downto 0);
         minTime9 : out std_logic_vector(7 downto 0);
         ackTime9 : out std_logic_vector(7 downto 0);
@@ -56,10 +78,21 @@ entity IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI is
         ackpren9 : out std_logic_vector(7 downto 0);
         mintimepren9 : out std_logic;
         linepren9 : out std_logic;
-        softshutdownen9 : out std_logic;
+        softshutdownpren9 : out std_logic;
         softShutdownTimer9 : out std_logic_vector(15 downto 0);
+        keysin9 : in std_logic_vector(7 downto 0);
+        ackin9 : in std_logic_vector(7 downto 0);
+        ackpr9 : in std_logic_vector(7 downto 0);
+        currentpr9 : in std_logic_vector(7 downto 0);
+        linepr9 : in std_logic;
+        softshutdownpr9 : in std_logic;
+        mintimepr9 : in std_logic;
+        timeerror9 : in std_logic_vector(15 downto 0);
+        breaken9 : out std_logic;
+        ready9 : out std_logic;
+        reset9 : out std_logic;
         
-        enableChannelsA : out std_logic_vector(7 downto 0);
+        keysenA : out std_logic_vector(7 downto 0);
         deadTimeA  : out std_logic_vector(7 downto 0);
         minTimeA : out std_logic_vector(7 downto 0);
         ackTimeA : out std_logic_vector(7 downto 0);
@@ -67,9 +100,21 @@ entity IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI is
         ackprenA : out std_logic_vector(7 downto 0);
         mintimeprenA : out std_logic;
         lineprenA : out std_logic;
-        softshutdownenA : out std_logic;
+        softshutdownprenA : out std_logic;
         softShutdownTimerA : out std_logic_vector(15 downto 0);
+        keysinA : in std_logic_vector(7 downto 0);
+        ackinA : in std_logic_vector(7 downto 0);
+        ackprA : in std_logic_vector(7 downto 0);
+        currentprA : in std_logic_vector(7 downto 0);
+        lineprA : in std_logic;
+        softshutdownprA : in std_logic;
+        mintimeprA : in std_logic;
+        timeerrorA : in std_logic_vector(15 downto 0);
+        breakenA : out std_logic;
+        readyA : out std_logic;
+        resetA : out std_logic;
         
+        tkin : in std_logic_vector(15 downto 0);
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -163,6 +208,13 @@ architecture arch_imp of IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI is
 	type memoryData is array (2**ADDRESS_BUS_WIDTH - 1 downto 0) of std_logic_vector(C_S_AXI_DATA_WIDTH - 1 downto 0);
     signal memDtToRead : memoryData;
     signal memDtToWrite : memoryData;
+    signal resetBuf5 : std_logic := '0';
+    signal resetBuf6 : std_logic := '0';
+    signal resetBuf9 : std_logic := '0';
+    signal resetBufA : std_logic := '0';
+    signal initKeyMasks : std_logic_vector(3 downto 0) := (others => '0');
+    signal initTime : std_logic_vector(3 downto 0) := (others => '0');
+    signal initAckTime : std_logic_vector(3 downto 0) := (others => '0');
 	--------------------------------------------------
 	---- Number of Slave Registers 256
 	signal slv_reg_rden	: std_logic;
@@ -913,12 +965,77 @@ begin
         if(rising_edge (clk)) then
             dataReadyPrev <= dataready;  
             if dataready = '1' and dataReadyPrev = '0' then
-                if (rw = '0') then 
-                    dataout <= memDtToRead(to_integer(unsigned(addressregister)))(DATA_BUS_WIDTH - 1 downto 0);
+                if (rw = '0') then
+                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"55"))) then
+                         dataout(15 downto 8) <= keysin5;
+                         dataout(7 downto 0) <= ackin5;
+                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"56"))) then
+                         dataout <= tkin;    
+                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"53"))) then
+                         dataout(15 downto 8) <= currentpr5;
+                         dataout(7 downto 0) <= ackpr5;
+                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"5B"))) then
+                         dataout <= timeerror5;
+                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"65"))) then
+                         dataout(15 downto 8) <= keysin6;
+                         dataout(7 downto 0) <= ackin6;
+                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"66"))) then
+                         dataout <= tkin;    
+                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"63"))) then
+                         dataout(15 downto 8) <= currentpr6;
+                         dataout(7 downto 0) <= ackpr6;
+                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"6B"))) then
+                         dataout <= timeerror6; 
+                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"95"))) then
+                         dataout(15 downto 8) <= keysin9;
+                         dataout(7 downto 0) <= ackin9;
+                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"96"))) then
+                         dataout <= tkin;    
+                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"93"))) then
+                         dataout(15 downto 8) <= currentpr9;
+                         dataout(7 downto 0) <= ackpr9;
+                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"9B"))) then
+                         dataout <= timeerror9; 
+                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"A5"))) then
+                         dataout(15 downto 8) <= keysinA;
+                         dataout(7 downto 0) <= ackinA;
+                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"A6"))) then
+                         dataout <= tkin;    
+                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"A3"))) then
+                         dataout(15 downto 8) <= currentprA;
+                         dataout(7 downto 0) <= ackprA;
+                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"AB"))) then
+                         dataout <= timeerrorA;                                            
+                    else
+                        dataout <= memDtToRead(to_integer(unsigned(addressregister)))(DATA_BUS_WIDTH - 1 downto 0);
+                    end if;                        
                 else
                     memDtToWrite(to_integer(unsigned(addressregister)))(DATA_BUS_WIDTH - 1 downto 0) <= datain;
+                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"57"))) then resetBuf5 <= '1'; end if;
+                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"50"))) then initKeyMasks(0) <= '1'; end if;
+                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"51"))) then initTime(0) <= '1'; end if;
+                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"52"))) then initAckTime(0) <= '1'; end if;
+                    
+                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"67"))) then resetBuf6 <= '1'; end if;
+                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"60"))) then initKeyMasks(1) <= '1'; end if;
+                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"61"))) then initTime(1) <= '1'; end if;
+                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"62"))) then initAckTime(1) <= '1'; end if;
+                    
+                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"97"))) then resetBuf9 <= '1'; end if;
+                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"90"))) then initKeyMasks(2) <= '1'; end if;
+                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"91"))) then initTime(2) <= '1'; end if;
+                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"92"))) then initAckTime(2) <= '1'; end if;
+                    
+                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"A7"))) then resetBufA <= '1'; end if;
+                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"A0"))) then initKeyMasks(3) <= '1'; end if;
+                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"A1"))) then initTime(3) <= '1'; end if;
+                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"A2"))) then initAckTime(3) <= '1'; end if;
                 end if;
-            end if;                        
+            end if;
+            if resetBuf5 = '1' then resetBuf5 <= '0'; end if;
+            if resetBuf6 = '1' then resetBuf6 <= '0'; end if; 
+            if resetBuf9 = '1' then resetBuf9 <= '0'; end if; 
+            if resetBufA = '1' then resetBufA <= '0'; end if;                          
         end if;
     end process;
     
@@ -933,7 +1050,7 @@ begin
 --    softshutdownen <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"54"))))(9);
 --    softShutdownTimer <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"5D"))))(15 downto 0);
     
-    enableChannels5 <= memDtToRead(to_integer(unsigned(std_logic_vector'(x"50"))))(7 downto 0);
+    keysen5 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"50"))))(7 downto 0);
     deadTime5 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"51"))))(15 downto 8);
     minTime5 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"51"))))(7 downto 0);
     ackTime5 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"52"))))(7 downto 0);
@@ -941,10 +1058,13 @@ begin
     ackpren5 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"53"))))(7 downto 0);
     mintimepren5 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"54"))))(11);
     linepren5 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"54"))))(10);
-    softshutdownen5 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"54"))))(9);
-    softShutdownTimer5 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"5D"))))(15 downto 0);
+    softshutdownpren5 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"54"))))(9);
+    softShutdownTimer5 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"5A"))))(15 downto 0);
+    breaken5 <= '0';
+    ready5 <= '1' when initKeyMasks(0) = '1' and initTime(0) = '1' and initAckTime(0) = '1';
+    reset5 <= resetBuf5;
     
-    enableChannels6 <= memDtToRead(to_integer(unsigned(std_logic_vector'(x"60"))))(7 downto 0);
+    keysen6 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"60"))))(7 downto 0);
     deadTime6 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"61"))))(15 downto 8);
     minTime6 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"61"))))(7 downto 0);
     ackTime6 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"62"))))(7 downto 0);
@@ -952,11 +1072,13 @@ begin
     ackpren6 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"63"))))(7 downto 0);
     mintimepren6 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"64"))))(11);
     linepren6 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"64"))))(10);
-    softshutdownen6 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"64"))))(9);
-    softShutdownTimer6 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"6D"))))(15 downto 0);
+    softshutdownpren6 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"64"))))(9);
+    softShutdownTimer6 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"6A"))))(15 downto 0);
+    breaken6 <= '0';
+    ready6 <= '1' when initKeyMasks(1) = '1' and initTime(1) = '1' and initAckTime(1) = '1';
+    reset6 <= resetBuf6;
     
-    
-    enableChannels9 <= memDtToRead(to_integer(unsigned(std_logic_vector'(x"90"))))(7 downto 0);
+    keysen9 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"90"))))(7 downto 0);
     deadTime9 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"91"))))(15 downto 8);
     minTime9 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"91"))))(7 downto 0);
     ackTime9 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"92"))))(7 downto 0);
@@ -964,11 +1086,13 @@ begin
     ackpren9 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"93"))))(7 downto 0);
     mintimepren9 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"94"))))(11);
     linepren9 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"94"))))(10);
-    softshutdownen9 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"94"))))(9);
-    softShutdownTimer9 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"9D"))))(15 downto 0);
+    softshutdownpren9 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"94"))))(9);
+    softShutdownTimer9 <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"9A"))))(15 downto 0);
+    breaken9 <= '0';
+    ready9 <= '1' when initKeyMasks(2) = '1' and initTime(2) = '1' and initAckTime(2) = '1';
+    reset9 <= resetBuf9;
     
-    
-    enableChannelsA <= memDtToRead(to_integer(unsigned(std_logic_vector'(x"A0"))))(7 downto 0);
+    keysenA <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"A0"))))(7 downto 0);
     deadTimeA <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"A1"))))(15 downto 8);
     minTimeA <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"A1"))))(7 downto 0);
     ackTimeA <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"A2"))))(7 downto 0);
@@ -976,9 +1100,11 @@ begin
     ackprenA <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"A3"))))(7 downto 0);
     mintimeprenA <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"A4"))))(11);
     lineprenA <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"A4"))))(10);
-    softshutdownenA <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"A4"))))(9);
-    softShutdownTimerA <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"AD"))))(15 downto 0);
-    
+    softshutdownprenA <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"A4"))))(9);
+    softShutdownTimerA <= memDtToWrite(to_integer(unsigned(std_logic_vector'(x"AA"))))(15 downto 0);
+    breakenA <= '1';
+    readyA <= '1' when initKeyMasks(3) = '1' and initTime(3) = '1' and initAckTime(3) = '1';
+    resetA <= resetBufA;
 	-- User logic ends
 
 end arch_imp;

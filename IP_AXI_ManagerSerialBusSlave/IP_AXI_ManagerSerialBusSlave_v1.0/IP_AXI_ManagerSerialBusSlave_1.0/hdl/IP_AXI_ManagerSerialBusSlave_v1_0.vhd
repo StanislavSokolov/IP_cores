@@ -26,7 +26,7 @@ entity IP_AXI_ManagerSerialBusSlave_v1_0 is
         rw : in std_logic;  --! Read/Write signal (1 = read, 0 = write).
         dataready : in std_logic;  --! Data ready signal.
         
-                enableChannels5 : out std_logic_vector(7 downto 0);
+        keysen5 : out std_logic_vector(7 downto 0);
         deadTime5  : out std_logic_vector(7 downto 0);
         minTime5 : out std_logic_vector(7 downto 0);
         ackTime5 : out std_logic_vector(7 downto 0);
@@ -34,10 +34,21 @@ entity IP_AXI_ManagerSerialBusSlave_v1_0 is
         ackpren5 : out std_logic_vector(7 downto 0);
         mintimepren5 : out std_logic;
         linepren5 : out std_logic;
-        softshutdownen5 : out std_logic;
+        softshutdownpren5 : out std_logic;
         softShutdownTimer5 : out std_logic_vector(15 downto 0);
+        keysin5 : in std_logic_vector(7 downto 0);
+        ackin5 : in std_logic_vector(7 downto 0);
+        ackpr5 : in std_logic_vector(7 downto 0);
+        currentpr5 : in std_logic_vector(7 downto 0);
+        linepr5 : in std_logic;
+        softshutdownpr5 : in std_logic;
+        mintimepr5 : in std_logic;
+        timeerror5 : in std_logic_vector(15 downto 0);
+        breaken5 : out std_logic;
+        ready5 : out std_logic;
+        reset5 : out std_logic;
         
-        enableChannels6 : out std_logic_vector(7 downto 0);
+        keysen6 : out std_logic_vector(7 downto 0);
         deadTime6  : out std_logic_vector(7 downto 0);
         minTime6 : out std_logic_vector(7 downto 0);
         ackTime6 : out std_logic_vector(7 downto 0);
@@ -45,10 +56,21 @@ entity IP_AXI_ManagerSerialBusSlave_v1_0 is
         ackpren6 : out std_logic_vector(7 downto 0);
         mintimepren6 : out std_logic;
         linepren6 : out std_logic;
-        softshutdownen6 : out std_logic;
+        softshutdownpren6 : out std_logic;
         softShutdownTimer6 : out std_logic_vector(15 downto 0);
+        keysin6 : in std_logic_vector(7 downto 0);
+        ackin6 : in std_logic_vector(7 downto 0);
+        ackpr6 : in std_logic_vector(7 downto 0);
+        currentpr6 : in std_logic_vector(7 downto 0);
+        linepr6 : in std_logic;
+        softshutdownpr6 : in std_logic;
+        mintimepr6 : in std_logic;
+        timeerror6 : in std_logic_vector(15 downto 0);
+        breaken6 : out std_logic;
+        ready6 : out std_logic;
+        reset6 : out std_logic;
         
-        enableChannels9 : out std_logic_vector(7 downto 0);
+        keysen9 : out std_logic_vector(7 downto 0);
         deadTime9  : out std_logic_vector(7 downto 0);
         minTime9 : out std_logic_vector(7 downto 0);
         ackTime9 : out std_logic_vector(7 downto 0);
@@ -56,10 +78,21 @@ entity IP_AXI_ManagerSerialBusSlave_v1_0 is
         ackpren9 : out std_logic_vector(7 downto 0);
         mintimepren9 : out std_logic;
         linepren9 : out std_logic;
-        softshutdownen9 : out std_logic;
+        softshutdownpren9 : out std_logic;
         softShutdownTimer9 : out std_logic_vector(15 downto 0);
+        keysin9 : in std_logic_vector(7 downto 0);
+        ackin9 : in std_logic_vector(7 downto 0);
+        ackpr9 : in std_logic_vector(7 downto 0);
+        currentpr9 : in std_logic_vector(7 downto 0);
+        linepr9 : in std_logic;
+        softshutdownpr9 : in std_logic;
+        mintimepr9 : in std_logic;
+        timeerror9 : in std_logic_vector(15 downto 0);
+        breaken9 : out std_logic;
+        ready9 : out std_logic;
+        reset9 : out std_logic;
         
-        enableChannelsA : out std_logic_vector(7 downto 0);
+        keysenA : out std_logic_vector(7 downto 0);
         deadTimeA  : out std_logic_vector(7 downto 0);
         minTimeA : out std_logic_vector(7 downto 0);
         ackTimeA : out std_logic_vector(7 downto 0);
@@ -67,9 +100,21 @@ entity IP_AXI_ManagerSerialBusSlave_v1_0 is
         ackprenA : out std_logic_vector(7 downto 0);
         mintimeprenA : out std_logic;
         lineprenA : out std_logic;
-        softshutdownenA : out std_logic;
+        softshutdownprenA : out std_logic;
         softShutdownTimerA : out std_logic_vector(15 downto 0);
-         
+        keysinA : in std_logic_vector(7 downto 0);
+        ackinA : in std_logic_vector(7 downto 0);
+        ackprA : in std_logic_vector(7 downto 0);
+        currentprA : in std_logic_vector(7 downto 0);
+        lineprA : in std_logic;
+        softshutdownprA : in std_logic;
+        mintimeprA : in std_logic;
+        timeerrorA : in std_logic_vector(15 downto 0);
+        breakenA : out std_logic;
+        readyA : out std_logic;
+        resetA : out std_logic;
+        
+        tkin : in std_logic_vector(15 downto 0);         
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -117,7 +162,7 @@ architecture arch_imp of IP_AXI_ManagerSerialBusSlave_v1_0 is
         rw : in std_logic;  --! Read/Write signal (1 = read, 0 = write).
         dataready : in std_logic;  --! Data ready signal.
         
-        enableChannels5 : out std_logic_vector(7 downto 0);
+        keysen5 : out std_logic_vector(7 downto 0);
         deadTime5  : out std_logic_vector(7 downto 0);
         minTime5 : out std_logic_vector(7 downto 0);
         ackTime5 : out std_logic_vector(7 downto 0);
@@ -125,10 +170,21 @@ architecture arch_imp of IP_AXI_ManagerSerialBusSlave_v1_0 is
         ackpren5 : out std_logic_vector(7 downto 0);
         mintimepren5 : out std_logic;
         linepren5 : out std_logic;
-        softshutdownen5 : out std_logic;
+        softshutdownpren5 : out std_logic;
         softShutdownTimer5 : out std_logic_vector(15 downto 0);
+        keysin5 : in std_logic_vector(7 downto 0);
+        ackin5 : in std_logic_vector(7 downto 0);
+        ackpr5 : in std_logic_vector(7 downto 0);
+        currentpr5 : in std_logic_vector(7 downto 0);
+        linepr5 : in std_logic;
+        softshutdownpr5 : in std_logic;
+        mintimepr5 : in std_logic;
+        timeerror5 : in std_logic_vector(15 downto 0);
+        breaken5 : out std_logic;
+        ready5 : out std_logic;
+        reset5 : out std_logic;
         
-        enableChannels6 : out std_logic_vector(7 downto 0);
+        keysen6 : out std_logic_vector(7 downto 0);
         deadTime6  : out std_logic_vector(7 downto 0);
         minTime6 : out std_logic_vector(7 downto 0);
         ackTime6 : out std_logic_vector(7 downto 0);
@@ -136,10 +192,21 @@ architecture arch_imp of IP_AXI_ManagerSerialBusSlave_v1_0 is
         ackpren6 : out std_logic_vector(7 downto 0);
         mintimepren6 : out std_logic;
         linepren6 : out std_logic;
-        softshutdownen6 : out std_logic;
+        softshutdownpren6 : out std_logic;
         softShutdownTimer6 : out std_logic_vector(15 downto 0);
+        keysin6 : in std_logic_vector(7 downto 0);
+        ackin6 : in std_logic_vector(7 downto 0);
+        ackpr6 : in std_logic_vector(7 downto 0);
+        currentpr6 : in std_logic_vector(7 downto 0);
+        linepr6 : in std_logic;
+        softshutdownpr6 : in std_logic;
+        mintimepr6 : in std_logic;
+        timeerror6 : in std_logic_vector(15 downto 0);
+        breaken6 : out std_logic;
+        ready6 : out std_logic;
+        reset6 : out std_logic;
         
-        enableChannels9 : out std_logic_vector(7 downto 0);
+        keysen9 : out std_logic_vector(7 downto 0);
         deadTime9  : out std_logic_vector(7 downto 0);
         minTime9 : out std_logic_vector(7 downto 0);
         ackTime9 : out std_logic_vector(7 downto 0);
@@ -147,10 +214,21 @@ architecture arch_imp of IP_AXI_ManagerSerialBusSlave_v1_0 is
         ackpren9 : out std_logic_vector(7 downto 0);
         mintimepren9 : out std_logic;
         linepren9 : out std_logic;
-        softshutdownen9 : out std_logic;
+        softshutdownpren9 : out std_logic;
         softShutdownTimer9 : out std_logic_vector(15 downto 0);
+        keysin9 : in std_logic_vector(7 downto 0);
+        ackin9 : in std_logic_vector(7 downto 0);
+        ackpr9 : in std_logic_vector(7 downto 0);
+        currentpr9 : in std_logic_vector(7 downto 0);
+        linepr9 : in std_logic;
+        softshutdownpr9 : in std_logic;
+        mintimepr9 : in std_logic;
+        timeerror9 : in std_logic_vector(15 downto 0);
+        breaken9 : out std_logic;
+        ready9 : out std_logic;
+        reset9 : out std_logic;
         
-        enableChannelsA : out std_logic_vector(7 downto 0);
+        keysenA : out std_logic_vector(7 downto 0);
         deadTimeA  : out std_logic_vector(7 downto 0);
         minTimeA : out std_logic_vector(7 downto 0);
         ackTimeA : out std_logic_vector(7 downto 0);
@@ -158,8 +236,21 @@ architecture arch_imp of IP_AXI_ManagerSerialBusSlave_v1_0 is
         ackprenA : out std_logic_vector(7 downto 0);
         mintimeprenA : out std_logic;
         lineprenA : out std_logic;
-        softshutdownenA : out std_logic;
+        softshutdownprenA : out std_logic;
         softShutdownTimerA : out std_logic_vector(15 downto 0);
+        keysinA : in std_logic_vector(7 downto 0);
+        ackinA : in std_logic_vector(7 downto 0);
+        ackprA : in std_logic_vector(7 downto 0);
+        currentprA : in std_logic_vector(7 downto 0);
+        lineprA : in std_logic;
+        softshutdownprA : in std_logic;
+        mintimeprA : in std_logic;
+        timeerrorA : in std_logic_vector(15 downto 0);
+        breakenA : out std_logic;
+        readyA : out std_logic;
+        resetA : out std_logic;
+        
+        tkin : in std_logic_vector(15 downto 0);
         
 		S_AXI_ACLK	: in std_logic;
 		S_AXI_ARESETN	: in std_logic;
@@ -202,7 +293,7 @@ IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI_inst : IP_AXI_ManagerSerialBusSlave_v1
         datain => datain,        
         rw => rw,
         dataready => dataready,
-        enableChannels5 => enableChannels5,
+        keysen5 => keysen5,
         deadTime5 => deadTime5,
         minTime5 => minTime5,
         ackTime5 => ackTime5,
@@ -210,9 +301,20 @@ IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI_inst : IP_AXI_ManagerSerialBusSlave_v1
         ackpren5 => ackpren5,
         mintimepren5 => mintimepren5,
         linepren5 => linepren5,
-        softshutdownen5 => softshutdownen5,
-        softShutdownTimer5 => softShutdownTimer5, 
-        enableChannels6 => enableChannels6,
+        softshutdownpren5 => softshutdownpren5,
+        softShutdownTimer5 => softShutdownTimer5,
+        keysin5 => keysin5,
+        ackin5 => ackin5,
+        ackpr5 => ackpr5,
+        currentpr5 => currentpr5,
+        linepr5 => linepr5, 
+        softshutdownpr5 => softshutdownpr5,
+        mintimepr5 => mintimepr5,
+        timeerror5 => timeerror5,
+        breaken5 => breaken5,
+        ready5 => ready5,
+        reset5 => reset5, 
+        keysen6 => keysen6,
         deadTime6 => deadTime6,
         minTime6 => minTime6,
         ackTime6 => ackTime6,
@@ -220,9 +322,20 @@ IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI_inst : IP_AXI_ManagerSerialBusSlave_v1
         ackpren6 => ackpren6,
         mintimepren6 => mintimepren6,
         linepren6 => linepren6,
-        softshutdownen6 => softshutdownen6,
-        softShutdownTimer6 => softShutdownTimer6, 
-        enableChannels9 => enableChannels9,
+        softshutdownpren6 => softshutdownpren6,
+        softShutdownTimer6 => softShutdownTimer6,
+        keysin6 => keysin6,
+        ackin6 => ackin6,
+        ackpr6 => ackpr6,
+        currentpr6 => currentpr6,
+        linepr6 => linepr6, 
+        softshutdownpr6 => softshutdownpr6,
+        mintimepr6 => mintimepr6,
+        timeerror6 => timeerror6,
+        breaken6 => breaken6,
+        ready6 => ready6,
+        reset6 => reset6,  
+        keysen9 => keysen9,
         deadTime9 => deadTime9,
         minTime9 => minTime9,
         ackTime9 => ackTime9,
@@ -230,9 +343,20 @@ IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI_inst : IP_AXI_ManagerSerialBusSlave_v1
         ackpren9 => ackpren9,
         mintimepren9 => mintimepren9,
         linepren9 => linepren9,
-        softshutdownen9 => softshutdownen9,
+        softshutdownpren9 => softshutdownpren9,
         softShutdownTimer9 => softShutdownTimer9,
-        enableChannelsA => enableChannelsA,
+        keysin9 => keysin9,
+        ackin9 => ackin9,
+        ackpr9 => ackpr9,
+        currentpr9 => currentpr9,
+        linepr9 => linepr9, 
+        softshutdownpr9 => softshutdownpr9,
+        mintimepr9 => mintimepr9,
+        timeerror9 => timeerror9,
+        breaken9 => breaken9,
+        ready9 => ready9,
+        reset9 => reset9, 
+        keysenA => keysenA,
         deadTimeA => deadTimeA,
         minTimeA => minTimeA,
         ackTimeA => ackTimeA,
@@ -240,8 +364,20 @@ IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI_inst : IP_AXI_ManagerSerialBusSlave_v1
         ackprenA => ackprenA,
         mintimeprenA => mintimeprenA,
         lineprenA => lineprenA,
-        softshutdownenA => softshutdownenA,
-        softShutdownTimerA => softShutdownTimerA,         
+        softshutdownprenA => softshutdownprenA,
+        softShutdownTimerA => softShutdownTimerA, 
+        keysinA => keysinA,
+        ackinA => ackinA,
+        ackprA => ackprA,
+        currentprA => currentprA,
+        lineprA => lineprA, 
+        softshutdownprA => softshutdownprA,
+        mintimeprA => mintimeprA,
+        timeerrorA => timeerrorA,
+        breakenA => breakenA,
+        readyA => readyA,
+        resetA => resetA,  
+        tkin => tkin,       
 		S_AXI_ACLK	=> s00_axi_aclk,
 		S_AXI_ARESETN	=> s00_axi_aresetn,
 		S_AXI_AWADDR	=> s00_axi_awaddr,
