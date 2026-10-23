@@ -84,7 +84,7 @@ begin
     end process;
 
     -- @brief Assigns the output data buffer to the serial data output.
-    sbdataout <= sbDataOutBuf;
+    sbdataout <= '0' when sbDataOutBuf = '0' else 'Z';
 
     --! @brief Main communication process.
 	--! @param bitCnt - Bit counter for communication.
@@ -116,13 +116,8 @@ begin
                         CommunicationState <= ReceiveAddress;
                         cntTimeout := 0;
                         resetCRC <= '1';
-                    else  
-                        if sbDataOutBuf = '0' then 
-                            sbDataOutBuf <= '1'; -- Prevent floating output
-                        else  
-                            sbDataOutBuf <= 'Z';
-                        end if;
-                    end if;      
+                    end if; 
+                    sbDataOutBuf <= '1';     
                     
                 when ReceiveAddress =>    
                     -- @brief ReceiveAddress state.
