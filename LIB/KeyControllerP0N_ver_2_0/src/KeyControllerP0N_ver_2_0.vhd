@@ -14,9 +14,11 @@ entity KeyControllerP0N_ver_2_0 is
 		linepren : in std_logic;
 		linepr : out std_logic := '0';
 
-        keyout : out std_logic_vector(3 downto 0) := (others => '1');
+        keysout : out std_logic_vector(3 downto 0) := (others => '1');
 
         keysel : in std_logic_vector(1 downto 0);
+        
+        keysen : in std_logic_vector(3 downto 0);
         
         breaken : in std_logic;
         
@@ -40,10 +42,12 @@ architecture behavorial of KeyControllerP0N_ver_2_0 is
 	
 	signal linePrBuf : std_logic := '0';
 	signal errorBuf : std_logic := '0';
+	signal keys : std_logic_vector(3 downto 0) := x"F";
 
 begin
 
 	linepr <= linePrBuf;
+	keysout <= keys or keysen;
 	
     process(clk)
 		variable cnt : integer range 0 to 1 := 0;
@@ -59,17 +63,17 @@ begin
 				cntsoftsd := 0;
 				lineState <= Closed;
 				if breaken = '0' then
-					keyout <= (others => '1');
+					keys <= (others => '1');
 				else
-					keyout(1 downto 0) <= (others => '1');
-					keyout(3 downto 2) <= ob;
+					keys(1 downto 0) <= (others => '1');
+					keys(3 downto 2) <= ob;
 				end if;	
 			else
 				if breaken = '0' then
 					if errorBuf = '0' and er0in = '0' and linePrBuf = '0' and ready = '1' then
 						case lineState is
 							when Closed =>
-								keyout <= (others => '1');
+								keys <= (others => '1');
 								cntsoftsd := 0;
 								cnt := 0;
 								start <= '0';
@@ -90,7 +94,7 @@ begin
 										lineState <= Closed;
 								end case;
 							when Zero =>
-								keyout <= b"1001";																								
+								keys <= b"1001";																								
 								case keysel is
 									when b"00" =>
 										lineState <= Zero;
@@ -108,7 +112,7 @@ begin
 										lineState <= Closed;
 								end case;
 							when ZeroP =>
-								keyout <= b"1011";
+								keys <= b"1011";
 								if isDeadTimeOk = '1' and cnt = 1 then									
 									case keysel is
 										when b"00" =>
@@ -131,7 +135,7 @@ begin
 									start <= '0';	
 								end if;
 							when ZeroN =>
-								keyout <= b"1101";
+								keys <= b"1101";
 								if isDeadTimeOk = '1' and cnt = 1 then									
 									case keysel is
 										when b"00" =>
@@ -154,7 +158,7 @@ begin
 									start <= '0';	
 								end if;
 							when P =>
-								keyout <= b"0011";
+								keys <= b"0011";
 								case keysel is
 									when b"00" =>
 										lineState <= ZeroP;
@@ -172,7 +176,7 @@ begin
 										lineState <= Closed;
 								end case;
 							when N =>
-								keyout <= b"1100";
+								keys <= b"1100";
 								case keysel is
 									when b"00" =>
 										lineState <= ZeroN;
@@ -190,7 +194,7 @@ begin
 										lineState <= Closed;
 								end case;
 							when others =>
-								keyout <= (others => '1');
+								keys <= (others => '1');
 								lineState <= Closed;
 								cntsoftsd := 0;
 								cnt := 0;
@@ -204,11 +208,11 @@ begin
 								cntsoftsd := cntsoftsd + 1;
 								case lineState is
 									when Closed =>
-										keyout <= (others => '1');
+										keys <= (others => '1');
 									when Zero => 
-										keyout <= b"1001";
+										keys <= b"1001";
 									when ZeroP =>
-										keyout <= b"1011";
+										keys <= b"1011";
 										if isDeadTimeOk = '1' and cnt = 1 then									
 											lineState <= Zero;
 										else 
@@ -218,7 +222,7 @@ begin
 											start <= '0';	
 										end if;	
 									when ZeroN =>
-										keyout <= b"1101";
+										keys <= b"1101";
 										if isDeadTimeOk = '1' and cnt = 1 then									
 											lineState <= Zero;
 										else 
@@ -228,33 +232,33 @@ begin
 											start <= '0';	
 										end if;		
 									when P =>
-										keyout <= b"1011";									
+										keys <= b"1011";									
 										start <= '1';
 										cnt := 0;
 										lineState <= ZeroP;
 									when N =>
-										keyout <= b"1101";									
+										keys <= b"1101";									
 										start <= '1';
 										lineState <= ZeroN;									
 									when others => 
 										start <= '0';
 								end case;
 							else
-								keyout <= (others => '1');
+								keys <= (others => '1');
 								lineState <= Closed;
 							end if;
 						else			
-							keyout <= (others => '1');
+							keys <= (others => '1');
 							lineState <= Closed;							
 						end if;	
 					end if;	
 				else
 					if errorBuf = '0' and er0in = '0' and ready = '1' then
-						keyout(1 downto 0) <= keysel;
-						keyout(3 downto 2) <= ob;
+						keys(1 downto 0) <= keysel;
+						keys(3 downto 2) <= ob;
 					else
-						keyout(1 downto 0) <= (others => '1');
-						keyout(3 downto 2) <= ob;
+						keys(1 downto 0) <= (others => '1');
+						keys(3 downto 2) <= ob;
 						errorBuf <= '1';
 					end if;	
 				end if;
