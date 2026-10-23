@@ -28,7 +28,7 @@ proc create_ipi_design { offsetfile design_name } {
 	connect_bd_net [get_bd_pins sys_clk_0/locked] [get_bd_pins sys_reset_0/dcm_locked]
 
 	# Create instance: IP_AXI_ManagerSerialBusSlave_0, and set properties
-	set IP_AXI_ManagerSerialBusSlave_0 [ create_bd_cell -type ip -vlnv setcorp:user:IP_AXI_ManagerSerialBusSlave:1.0 IP_AXI_ManagerSerialBusSlave_0 ]
+	set IP_AXI_ManagerSerialBusSlave_0 [ create_bd_cell -type ip -vlnv setcorp:user:IP_AXI_ManagerSerialBusSlave:2.0 IP_AXI_ManagerSerialBusSlave_0 ]
 
 	# Create instance: jtag_axi_0, and set properties
 	set jtag_axi_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:jtag_axi jtag_axi_0 ]
@@ -58,10 +58,10 @@ proc create_ipi_design { offsetfile design_name } {
 	# Auto assign address
 	assign_bd_address
 
-	# Copy all address to IP_AXI_ManagerSerialBusSlave_v1_0_include.tcl file
+	# Copy all address to IP_AXI_ManagerSerialBusSlave_v2_0_include.tcl file
 	set bd_path [get_property DIRECTORY [current_project]]/[current_project].srcs/[current_fileset]/bd
 	upvar 1 $offsetfile offset_file
-	set offset_file "${bd_path}/IP_AXI_ManagerSerialBusSlave_v1_0_include.tcl"
+	set offset_file "${bd_path}/IP_AXI_ManagerSerialBusSlave_v2_0_include.tcl"
 	set fp [open $offset_file "w"]
 	puts $fp "# Configuration address parameters"
 
@@ -72,8 +72,8 @@ proc create_ipi_design { offsetfile design_name } {
 }
 
 # Set IP Repository and Update IP Catalogue 
-set ip_path [file dirname [file normalize [get_property XML_FILE_NAME [ipx::get_cores setcorp:user:IP_AXI_ManagerSerialBusSlave:1.0]]]]
-set hw_test_file ${ip_path}/example_designs/debug_hw_design/IP_AXI_ManagerSerialBusSlave_v1_0_hw_test.tcl
+set ip_path [file dirname [file normalize [get_property XML_FILE_NAME [ipx::get_cores setcorp:user:IP_AXI_ManagerSerialBusSlave:2.0]]]]
+set hw_test_file ${ip_path}/example_designs/debug_hw_design/IP_AXI_ManagerSerialBusSlave_v2_0_hw_test.tcl
 
 set repo_paths [get_property ip_repo_paths [current_fileset]] 
 if { [lsearch -exact -nocase $repo_paths $ip_path ] == -1 } {
@@ -91,7 +91,7 @@ lappend all_bd $bd_name
 }
 
 for { set i 1 } { 1 } { incr i } {
-	set design_name "IP_AXI_ManagerSerialBusSlave_v1_0_hw_${i}"
+	set design_name "IP_AXI_ManagerSerialBusSlave_v2_0_hw_${i}"
 	if { [lsearch -exact -nocase $all_bd $design_name ] == -1 } {
 		break
 	}

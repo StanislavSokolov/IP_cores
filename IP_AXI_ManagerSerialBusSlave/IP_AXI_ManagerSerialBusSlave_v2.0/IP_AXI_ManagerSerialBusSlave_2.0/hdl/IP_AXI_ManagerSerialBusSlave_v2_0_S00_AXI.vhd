@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI is
+entity IP_AXI_ManagerSerialBusSlave_v2_0_S00_AXI is
 	generic (
 		-- Users to add parameters here
         ADDRESS_BUS_WIDTH : integer := 8;  --! Width of the address bus.
@@ -16,9 +16,7 @@ entity IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI is
 		C_S_AXI_ADDR_WIDTH	: integer	:= 10
 	);
 	port (
-		-- Users to add ports here
-		clk : in std_logic;  --! Clock signal.
-        
+		-- Users to add ports here		
         addressregister : in std_logic_vector(ADDRESS_BUS_WIDTH - 1 downto 0);  --! Address register input.
         dataout : out std_logic_vector(DATA_BUS_WIDTH - 1 downto 0);            --! Data output.
         datain : in std_logic_vector(DATA_BUS_WIDTH - 1 downto 0);              --! Data input.
@@ -179,9 +177,9 @@ entity IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI is
     		-- accept the read data and response information.
 		S_AXI_RREADY	: in std_logic
 	);
-end IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI;
+end IP_AXI_ManagerSerialBusSlave_v2_0_S00_AXI;
 
-architecture arch_imp of IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI is
+architecture arch_imp of IP_AXI_ManagerSerialBusSlave_v2_0_S00_AXI is
 
 	-- AXI4LITE signals
 	signal axi_awaddr	: std_logic_vector(C_S_AXI_ADDR_WIDTH-1 downto 0);
@@ -960,78 +958,100 @@ begin
 
 	-- Add user logic here
     --! @brief Updating buffer regs after AXI-buf had recieved new data
-    process(clk) is
+    process(S_AXI_ACLK) is
+        variable addr_idx : integer;
     begin
-        if(rising_edge (clk)) then
+        if(rising_edge(S_AXI_ACLK)) then
             dataReadyPrev <= dataready;  
+            
+            -- Вычисляем индекс адреса один раз для оптимизации логики
+            addr_idx := to_integer(unsigned(addressregister));
+
             if dataready = '1' and dataReadyPrev = '0' then
-                if (rw = '0') then
-                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"55"))) then
-                         dataout(15 downto 8) <= keysin5;
-                         dataout(7 downto 0) <= ackin5;
-                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"56"))) then
-                         dataout <= tkin;    
-                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"53"))) then
-                         dataout(15 downto 8) <= currentpr5;
-                         dataout(7 downto 0) <= ackpr5;
-                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"5B"))) then
-                         dataout <= timeerror5;
-                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"65"))) then
-                         dataout(15 downto 8) <= keysin6;
-                         dataout(7 downto 0) <= ackin6;
-                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"66"))) then
-                         dataout <= tkin;    
-                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"63"))) then
-                         dataout(15 downto 8) <= currentpr6;
-                         dataout(7 downto 0) <= ackpr6;
-                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"6B"))) then
-                         dataout <= timeerror6; 
-                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"95"))) then
-                         dataout(15 downto 8) <= keysin9;
-                         dataout(7 downto 0) <= ackin9;
-                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"96"))) then
-                         dataout <= tkin;    
-                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"93"))) then
-                         dataout(15 downto 8) <= currentpr9;
-                         dataout(7 downto 0) <= ackpr9;
-                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"9B"))) then
-                         dataout <= timeerror9; 
-                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"A5"))) then
-                         dataout(15 downto 8) <= keysinA;
-                         dataout(7 downto 0) <= ackinA;
-                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"A6"))) then
-                         dataout <= tkin;    
-                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"A3"))) then
-                         dataout(15 downto 8) <= currentprA;
-                         dataout(7 downto 0) <= ackprA;
-                    elsif to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"AB"))) then
-                         dataout <= timeerrorA;                                            
-                    else
-                        dataout <= memDtToRead(to_integer(unsigned(addressregister)))(DATA_BUS_WIDTH - 1 downto 0);
-                    end if;                        
-                else
-                    memDtToWrite(to_integer(unsigned(addressregister)))(DATA_BUS_WIDTH - 1 downto 0) <= datain;
-                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"57"))) then resetBuf5 <= '1'; end if;
-                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"50"))) then initKeyMasks(0) <= '1'; end if;
-                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"51"))) then initTime(0) <= '1'; end if;
-                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"52"))) then initAckTime(0) <= '1'; end if;
+                if (rw = '0') then  -- Режим Чтения (Read)
+                    case addr_idx is
+                        -- Блок 5
+                        when 85 => -- 0x55
+                            dataout(15 downto 8) <= keysin5;
+                            dataout(7 downto 0)  <= ackin5;
+                        when 86 => -- 0x56
+                            dataout <= tkin;    
+                        when 83 => -- 0x53
+                            dataout(15 downto 8) <= currentpr5;
+                            dataout(7 downto 0)  <= ackpr5;
+                        when 91 => -- 0x5B
+                            dataout <= timeerror5(DATA_BUS_WIDTH-1 downto 0);
+
+                        -- Блок 6
+                        when 101 => -- 0x65
+                            dataout(15 downto 8) <= keysin6;
+                            dataout(7 downto 0)  <= ackin6;
+                        when 102 => -- 0x66
+                            dataout <= tkin;    
+                        when 103 => -- 0x63
+                            dataout(15 downto 8) <= currentpr6;
+                            dataout(7 downto 0)  <= ackpr6;
+                        when 107 => -- 0x6B
+                            dataout <= timeerror6(DATA_BUS_WIDTH-1 downto 0);
+
+                        -- Блок 9
+                        when 149 => -- 0x95
+                            dataout(15 downto 8) <= keysin9;
+                            dataout(7 downto 0)  <= ackin9;
+                        when 150 => -- 0x96
+                            dataout <= tkin;    
+                        when 151 => -- 0x93
+                            dataout(15 downto 8) <= currentpr9;
+                            dataout(7 downto 0)  <= ackpr9;
+                        when 155 => -- 0x9B
+                            dataout <= timeerror9(DATA_BUS_WIDTH-1 downto 0);
+
+                        -- Блок A
+                        when 165 => -- 0xA5
+                            dataout(15 downto 8) <= keysinA;
+                            dataout(7 downto 0)  <= ackinA;
+                        when 166 => -- 0xA6
+                            dataout <= tkin;    
+                        when 167 => -- 0xA3
+                            dataout(15 downto 8) <= currentprA;
+                            dataout(7 downto 0)  <= ackprA;
+                        when 171 => -- 0xAB
+                            dataout <= timeerrorA(DATA_BUS_WIDTH-1 downto 0);
+                                                                    
+                        when others =>
+                            -- Читаем из memDtToWrite, так как memDtToRead заблокирован под AXI-интерфейс
+                            dataout <= memDtToWrite(addr_idx)(DATA_BUS_WIDTH - 1 downto 0);
+                    end case;                        
+                else  -- Режим Записи (Write)
+                    memDtToWrite(addr_idx)(DATA_BUS_WIDTH - 1 downto 0) <= datain;
                     
-                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"67"))) then resetBuf6 <= '1'; end if;
-                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"60"))) then initKeyMasks(1) <= '1'; end if;
-                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"61"))) then initTime(1) <= '1'; end if;
-                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"62"))) then initAckTime(1) <= '1'; end if;
+                    -- Триггеры записи Блок 5
+                    if addr_idx = 87 then resetBuf5 <= '1'; end if; -- 0x57
+                    if addr_idx = 80 then initKeyMasks(0) <= '1'; end if; -- 0x50
+                    if addr_idx = 81 then initTime(0) <= '1'; end if; -- 0x51
+                    if addr_idx = 82 then initAckTime(0) <= '1'; end if; -- 0x52
                     
-                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"97"))) then resetBuf9 <= '1'; end if;
-                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"90"))) then initKeyMasks(2) <= '1'; end if;
-                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"91"))) then initTime(2) <= '1'; end if;
-                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"92"))) then initAckTime(2) <= '1'; end if;
+                    -- Триггеры записи Блок 6
+                    if addr_idx = 103 then resetBuf6 <= '1'; end if; -- 0x67
+                    if addr_idx = 96  then initKeyMasks(1) <= '1'; end if; -- 0x60
+                    if addr_idx = 97  then initTime(1) <= '1'; end if; -- 0x61
+                    if addr_idx = 98  then initAckTime(1) <= '1'; end if; -- 0x62
                     
-                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"A7"))) then resetBufA <= '1'; end if;
-                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"A0"))) then initKeyMasks(3) <= '1'; end if;
-                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"A1"))) then initTime(3) <= '1'; end if;
-                    if to_integer(unsigned(addressregister)) = to_integer(unsigned(std_logic_vector'(x"A2"))) then initAckTime(3) <= '1'; end if;
+                    -- Триггеры записи Блок 9
+                    if addr_idx = 151 then resetBuf9 <= '1'; end if; -- 0x97
+                    if addr_idx = 144 then initKeyMasks(2) <= '1'; end if; -- 0x90
+                    if addr_idx = 145 then initTime(2) <= '1'; end if; -- 0x91
+                    if addr_idx = 146 then initAckTime(2) <= '1'; end if; -- 0x92
+                    
+                    -- Триггеры записи Блок A
+                    if addr_idx = 167 then resetBufA <= '1'; end if; -- 0xA7
+                    if addr_idx = 160 then initKeyMasks(3) <= '1'; end if; -- 0xA0
+                    if addr_idx = 161 then initTime(3) <= '1'; end if; -- 0xA1
+                    if addr_idx = 162 then initAckTime(3) <= '1'; end if; -- 0xA2
                 end if;
             end if;
+
+            -- Автосброс буферов (Strobe логика)
             if resetBuf5 = '1' then resetBuf5 <= '0'; end if;
             if resetBuf6 = '1' then resetBuf6 <= '0'; end if; 
             if resetBuf9 = '1' then resetBuf9 <= '0'; end if; 

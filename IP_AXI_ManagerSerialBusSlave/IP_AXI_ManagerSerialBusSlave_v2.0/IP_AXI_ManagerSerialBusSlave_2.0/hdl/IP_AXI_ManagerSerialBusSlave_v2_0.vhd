@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity IP_AXI_ManagerSerialBusSlave_v1_0 is
+entity IP_AXI_ManagerSerialBusSlave_v2_0 is
 	generic (
 		-- Users to add parameters here
         ADDRESS_BUS_WIDTH : integer := 8;  --! Width of the address bus.
@@ -17,7 +17,6 @@ entity IP_AXI_ManagerSerialBusSlave_v1_0 is
 	);
 	port (
 		-- Users to add ports here
-        clk : in std_logic;  --! Clock signal.
         
         addressregister : in std_logic_vector(ADDRESS_BUS_WIDTH - 1 downto 0);  --! Address register input.
         dataout : out std_logic_vector(DATA_BUS_WIDTH - 1 downto 0);            --! Data output.
@@ -142,12 +141,12 @@ entity IP_AXI_ManagerSerialBusSlave_v1_0 is
 		s00_axi_rvalid	: out std_logic;
 		s00_axi_rready	: in std_logic
 	);
-end IP_AXI_ManagerSerialBusSlave_v1_0;
+end IP_AXI_ManagerSerialBusSlave_v2_0;
 
-architecture arch_imp of IP_AXI_ManagerSerialBusSlave_v1_0 is
+architecture arch_imp of IP_AXI_ManagerSerialBusSlave_v2_0 is
 
 	-- component declaration
-	component IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI is
+	component IP_AXI_ManagerSerialBusSlave_v2_0_S00_AXI is
 		generic (
 		ADDRESS_BUS_WIDTH : integer := 8;  --! Width of the address bus.
         DATA_BUS_WIDTH : integer := 16;    --! Width of the data bus.
@@ -155,7 +154,6 @@ architecture arch_imp of IP_AXI_ManagerSerialBusSlave_v1_0 is
 		C_S_AXI_ADDR_WIDTH	: integer	:= 10
 		);
 		port (
-		clk : in std_logic;  --! Clock signal.
         addressregister : in std_logic_vector(ADDRESS_BUS_WIDTH - 1 downto 0);  --! Address register input.
         dataout : out std_logic_vector(DATA_BUS_WIDTH - 1 downto 0);            --! Data output.
         datain : in std_logic_vector(DATA_BUS_WIDTH - 1 downto 0);              --! Data input.
@@ -274,20 +272,19 @@ architecture arch_imp of IP_AXI_ManagerSerialBusSlave_v1_0 is
 		S_AXI_RVALID	: out std_logic;
 		S_AXI_RREADY	: in std_logic
 		);
-	end component IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI;
+	end component IP_AXI_ManagerSerialBusSlave_v2_0_S00_AXI;
 
 begin
 
 -- Instantiation of Axi Bus Interface S00_AXI
-IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI_inst : IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI
+IP_AXI_ManagerSerialBusSlave_v1_0_S00_AXI_inst : IP_AXI_ManagerSerialBusSlave_v2_0_S00_AXI
 	generic map (
 		C_S_AXI_DATA_WIDTH	=> C_S00_AXI_DATA_WIDTH,
 		C_S_AXI_ADDR_WIDTH	=> C_S00_AXI_ADDR_WIDTH,
 		ADDRESS_BUS_WIDTH => ADDRESS_BUS_WIDTH,
         DATA_BUS_WIDTH => DATA_BUS_WIDTH
 	)
-	port map (
-	    clk => clk,        
+	port map (       
         addressregister => addressregister,
         dataout => dataout,
         datain => datain,        
