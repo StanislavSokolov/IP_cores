@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_1_AcknowledgeChecker_v_0_1_synth_1" LaunchDir="D:/GITEA/GitHub/ES/IP_cores/LIB/TransistorKeys_ver_1_0/TransistorKeys_ver_1_0.runs/design_1_AcknowledgeChecker_v_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_SignalChangeControl_0_0_synth_1" LaunchDir="D:/GITEA/GitHub/ES/IP_cores/LIB/TransistorKeys_ver_1_0/TransistorKeys_ver_1_0.runs/design_1_SignalChangeControl_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_FrequencyDividerWith_0_0_synth_1" LaunchDir="D:/GITEA/GitHub/ES/IP_cores/LIB/TransistorKeys_ver_1_0/TransistorKeys_ver_1_0.runs/design_1_FrequencyDividerWith_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_CalculatingMintime_v_0_0_synth_1" LaunchDir="D:/GITEA/GitHub/ES/IP_cores/LIB/TransistorKeys_ver_1_0/TransistorKeys_ver_1_0.runs/design_1_CalculatingMintime_v_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_CalculatingDeadtime_0_0_synth_1" LaunchDir="D:/GITEA/GitHub/ES/IP_cores/LIB/TransistorKeys_ver_1_0/TransistorKeys_ver_1_0.runs/design_1_CalculatingDeadtime_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_FrequencyDividerWith_1_0_synth_1" LaunchDir="D:/GITEA/GitHub/ES/IP_cores/LIB/TransistorKeys_ver_1_0/TransistorKeys_ver_1_0.runs/design_1_FrequencyDividerWith_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_FrequencyDividerWith_0_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_KeyControllerP0N_ver_0_0_synth_1" LaunchDir="D:/GITEA/GitHub/ES/IP_cores/LIB/TransistorKeys_ver_1_0/TransistorKeys_ver_1_0.runs/design_1_KeyControllerP0N_ver_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_CalculatingDeadtime_0_3_synth_1" LaunchDir="D:/GITEA/GitHub/ES/IP_cores/LIB/TransistorKeys_ver_1_0/TransistorKeys_ver_1_0.runs/design_1_CalculatingDeadtime_0_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_CalculatingDeadtime_0_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_KeyControllerP0N_ver_0_3_synth_1" LaunchDir="D:/GITEA/GitHub/ES/IP_cores/LIB/TransistorKeys_ver_1_0/TransistorKeys_ver_1_0.runs/design_1_KeyControllerP0N_ver_0_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_KeyControllerP0N_ver_0_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_FrequencyDividerWith_0_3_synth_1" LaunchDir="D:/GITEA/GitHub/ES/IP_cores/LIB/TransistorKeys_ver_1_0/TransistorKeys_ver_1_0.runs/design_1_FrequencyDividerWith_0_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_FrequencyDividerWith_0_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_FrequencyDividerWith_2_2_synth_1" LaunchDir="D:/GITEA/GitHub/ES/IP_cores/LIB/TransistorKeys_ver_1_0/TransistorKeys_ver_1_0.runs/design_1_FrequencyDividerWith_2_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_FrequencyDividerWith_0_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_CalculatingMintime_v_0_3_synth_1" LaunchDir="D:/GITEA/GitHub/ES/IP_cores/LIB/TransistorKeys_ver_1_0/TransistorKeys_ver_1_0.runs/design_1_CalculatingMintime_v_0_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_CalculatingMintime_v_0_0_synth_1"/>
+	</Run>
+	<Run Id="design_1_AcknowledgeChecker_v_0_4_synth_1" LaunchDir="D:/GITEA/GitHub/ES/IP_cores/LIB/TransistorKeys_ver_1_0/TransistorKeys_ver_1_0.runs/design_1_AcknowledgeChecker_v_0_4_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_AcknowledgeChecker_v_0_1_synth_1"/>
+	</Run>
+	<Run Id="design_1_SignalChangeControl_0_3_synth_1" LaunchDir="D:/GITEA/GitHub/ES/IP_cores/LIB/TransistorKeys_ver_1_0/TransistorKeys_ver_1_0.runs/design_1_SignalChangeControl_0_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="design_1_SignalChangeControl_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

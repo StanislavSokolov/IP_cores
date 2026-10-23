@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Oct 22 16:19:20 2026
+# Process ID: 2944
+# Current directory: D:/GITEA/GitHub/ES/IP_cores/LIB/TransistorKeys_ver_1_0/TransistorKeys_ver_1_0.runs/impl_1
+# Command line: vivado.exe -log TransistorKeys_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TransistorKeys_wrapper.tcl -notrace
+# Log file: D:/GITEA/GitHub/ES/IP_cores/LIB/TransistorKeys_ver_1_0/TransistorKeys_ver_1_0.runs/impl_1/TransistorKeys_wrapper.vdi
+# Journal file: D:/GITEA/GitHub/ES/IP_cores/LIB/TransistorKeys_ver_1_0/TransistorKeys_ver_1_0.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source TransistorKeys_wrapper.tcl -notrace

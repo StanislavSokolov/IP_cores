@@ -1,0 +1,1530 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Oct 22 17:49:28 2026" VIVADOVERSION="2019.1">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z020" NAME="TransistorKeys" PACKAGE="clg484" SPEEDGRADE="-3"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="TransistorKeys0_AcknowledgeChecker_v_0" PORT="clk"/>
+        <CONNECTION INSTANCE="TransistorKeys0_SignalChangeControl_0" PORT="clk"/>
+        <CONNECTION INSTANCE="TransistorKeys0_FrequencyDividerWith_0" PORT="clk"/>
+        <CONNECTION INSTANCE="TransistorKeys0_CalculatingMintime_v_0" PORT="clk"/>
+        <CONNECTION INSTANCE="TransistorKeys0_FrequencyDividerWith_2" PORT="clk"/>
+        <CONNECTION INSTANCE="TransistorKeys0_CalculatingDeadtime_0" PORT="clk"/>
+        <CONNECTION INSTANCE="TransistorKeys0_KeyControllerP0N_ver_0" PORT="clk"/>
+        <CONNECTION INSTANCE="TransistorKeys1_AcknowledgeChecker_v_0" PORT="clk"/>
+        <CONNECTION INSTANCE="TransistorKeys1_SignalChangeControl_0" PORT="clk"/>
+        <CONNECTION INSTANCE="TransistorKeys1_FrequencyDividerWith_0" PORT="clk"/>
+        <CONNECTION INSTANCE="TransistorKeys1_CalculatingMintime_v_0" PORT="clk"/>
+        <CONNECTION INSTANCE="TransistorKeys1_FrequencyDividerWith_2" PORT="clk"/>
+        <CONNECTION INSTANCE="TransistorKeys1_CalculatingDeadtime_0" PORT="clk"/>
+        <CONNECTION INSTANCE="TransistorKeys1_KeyControllerP0N_ver_0" PORT="clk"/>
+        <CONNECTION INSTANCE="OneStageSynchronizer_1" PORT="clk"/>
+        <CONNECTION INSTANCE="OneStageSynchronizer_0" PORT="clk"/>
+        <CONNECTION INSTANCE="OneStageSynchronizer_2" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ready" SIGIS="undef" SIGNAME="External_Ports_ready">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="TransistorKeys0_AcknowledgeChecker_v_0" PORT="ready"/>
+        <CONNECTION INSTANCE="TransistorKeys0_KeyControllerP0N_ver_0" PORT="ready"/>
+        <CONNECTION INSTANCE="TransistorKeys1_AcknowledgeChecker_v_0" PORT="ready"/>
+        <CONNECTION INSTANCE="TransistorKeys1_KeyControllerP0N_ver_0" PORT="ready"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="TransistorKeys0_AcknowledgeChecker_v_0" PORT="reset"/>
+        <CONNECTION INSTANCE="TransistorKeys0_CalculatingMintime_v_0" PORT="reset"/>
+        <CONNECTION INSTANCE="TransistorKeys0_CalculatingDeadtime_0" PORT="reset"/>
+        <CONNECTION INSTANCE="TransistorKeys0_KeyControllerP0N_ver_0" PORT="reset"/>
+        <CONNECTION INSTANCE="TransistorKeys1_AcknowledgeChecker_v_0" PORT="reset"/>
+        <CONNECTION INSTANCE="TransistorKeys1_CalculatingMintime_v_0" PORT="reset"/>
+        <CONNECTION INSTANCE="TransistorKeys1_CalculatingDeadtime_0" PORT="reset"/>
+        <CONNECTION INSTANCE="TransistorKeys1_KeyControllerP0N_ver_0" PORT="reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="acktime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_acktime">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="TransistorKeys0_AcknowledgeChecker_v_0" PORT="acktime"/>
+        <CONNECTION INSTANCE="TransistorKeys1_AcknowledgeChecker_v_0" PORT="acktime"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="mintimepren" SIGIS="undef" SIGNAME="External_Ports_mintimepren">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="TransistorKeys0_CalculatingMintime_v_0" PORT="en"/>
+        <CONNECTION INSTANCE="TransistorKeys1_CalculatingMintime_v_0" PORT="en"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="mintime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_mintime">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="TransistorKeys0_CalculatingMintime_v_0" PORT="mintime"/>
+        <CONNECTION INSTANCE="TransistorKeys1_CalculatingMintime_v_0" PORT="mintime"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="deadtime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_deadtime">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="TransistorKeys0_CalculatingDeadtime_0" PORT="deadtime"/>
+        <CONNECTION INSTANCE="TransistorKeys1_CalculatingDeadtime_0" PORT="deadtime"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="er0in" SIGIS="undef" SIGNAME="External_Ports_er0in">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="TransistorKeys0_KeyControllerP0N_ver_0" PORT="er0in"/>
+        <CONNECTION INSTANCE="TransistorKeys1_KeyControllerP0N_ver_0" PORT="er0in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="linepren" SIGIS="undef" SIGNAME="External_Ports_linepren">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="TransistorKeys0_KeyControllerP0N_ver_0" PORT="linepren"/>
+        <CONNECTION INSTANCE="TransistorKeys1_KeyControllerP0N_ver_0" PORT="linepren"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="breaken" SIGIS="undef" SIGNAME="External_Ports_breaken">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="TransistorKeys0_KeyControllerP0N_ver_0" PORT="breaken"/>
+        <CONNECTION INSTANCE="TransistorKeys1_KeyControllerP0N_ver_0" PORT="breaken"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="softshutdownen" SIGIS="undef" SIGNAME="External_Ports_softshutdownen">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="TransistorKeys0_KeyControllerP0N_ver_0" PORT="softshutdownen"/>
+        <CONNECTION INSTANCE="TransistorKeys1_KeyControllerP0N_ver_0" PORT="softshutdownen"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="ackpr" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlconcat_0" PORT="dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="currentpr" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_1_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlconcat_1" PORT="dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="ackpren" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackpren">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlslice_6" PORT="Din"/>
+        <CONNECTION INSTANCE="xlslice_5" PORT="Din"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="currentpren" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_currentpren">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlslice_7" PORT="Din"/>
+        <CONNECTION INSTANCE="xlslice_4" PORT="Din"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="softshutdowntimer" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_softshutdowntimer">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="TransistorKeys0_KeyControllerP0N_ver_0" PORT="softshutdowntimer"/>
+        <CONNECTION INSTANCE="TransistorKeys1_KeyControllerP0N_ver_0" PORT="softshutdowntimer"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="ob_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ob_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="TransistorKeys0_KeyControllerP0N_ver_0" PORT="ob"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="keysel_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_keysel_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="OneStageSynchronizer_0" PORT="async_signal"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="keysel_1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_keysel_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="OneStageSynchronizer_2" PORT="async_signal"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="ob_1" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ob_1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="TransistorKeys1_KeyControllerP0N_ver_0" PORT="ob"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="acknowledges" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_acknowledges">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="OneStageSynchronizer_1" PORT="async_signal"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="keysout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_2_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlconcat_2" PORT="dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="timeerror" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_6_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlconcat_6" PORT="dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="keysen" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_keysen">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlslice_0" PORT="Din"/>
+        <CONNECTION INSTANCE="xlslice_1" PORT="Din"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="linepr" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_3_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlconcat_3" PORT="dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="mintimepr" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_4_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlconcat_4" PORT="dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="softshutdownpr" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_5_dout">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlconcat_5" PORT="dout"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="ackout" RIGHT="0" SIGIS="undef" SIGNAME="OneStageSynchronizer_1_sync_signal">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="OneStageSynchronizer_1" PORT="sync_signal"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/OneStageSynchronizer_0" HWVERSION="1.0" INSTANCE="OneStageSynchronizer_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="OneStageSynchronizerAndDigitalFilterBlock_ver_1_0" VLNV="setcorp:user:OneStageSynchronizerAndDigitalFilterBlock_ver_1_0:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="PHASE_SHIFT" VALUE="4"/>
+        <PARAMETER NAME="QUANTITY_CHANNELS" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_OneStageSynchronizer_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="async_signal" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_keysel_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="keysel_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="sync_signal" RIGHT="0" SIGIS="undef" SIGNAME="OneStageSynchronizer_0_sync_signal">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_SignalChangeControl_0" PORT="signalchange"/>
+            <CONNECTION INSTANCE="TransistorKeys0_KeyControllerP0N_ver_0" PORT="keysel"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/OneStageSynchronizer_1" HWVERSION="1.0" INSTANCE="OneStageSynchronizer_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="OneStageSynchronizerAndDigitalFilterBlock_ver_1_0" VLNV="setcorp:user:OneStageSynchronizerAndDigitalFilterBlock_ver_1_0:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="PHASE_SHIFT" VALUE="4"/>
+        <PARAMETER NAME="QUANTITY_CHANNELS" VALUE="8"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_OneStageSynchronizer_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="async_signal" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_acknowledges">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="acknowledges"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="sync_signal" RIGHT="0" SIGIS="undef" SIGNAME="OneStageSynchronizer_1_sync_signal">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackout"/>
+            <CONNECTION INSTANCE="xlslice_8" PORT="Din"/>
+            <CONNECTION INSTANCE="xlslice_9" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/OneStageSynchronizer_2" HWVERSION="1.0" INSTANCE="OneStageSynchronizer_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="OneStageSynchronizerAndDigitalFilterBlock_ver_1_0" VLNV="setcorp:user:OneStageSynchronizerAndDigitalFilterBlock_ver_1_0:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="PHASE_SHIFT" VALUE="4"/>
+        <PARAMETER NAME="QUANTITY_CHANNELS" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_OneStageSynchronizer_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="async_signal" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_keysel_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="keysel_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="sync_signal" RIGHT="0" SIGIS="undef" SIGNAME="OneStageSynchronizer_2_sync_signal">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_SignalChangeControl_0" PORT="signalchange"/>
+            <CONNECTION INSTANCE="TransistorKeys1_KeyControllerP0N_ver_0" PORT="keysel"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/TransistorKeys0/AcknowledgeChecker_v_0" HWVERSION="1.0" INSTANCE="TransistorKeys0_AcknowledgeChecker_v_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AcknowledgeChecker_ver_1_0" VLNV="setcorp:user:AcknowledgeChecker_ver_1_0:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="QUANTITY_ACKNOWLEDGES" VALUE="4"/>
+        <PARAMETER NAME="COUNTER" VALUE="500"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_AcknowledgeChecker_v_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ackin" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_9_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_9" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="currentpren" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_7_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_7" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ackpren" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_6_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_6" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="currentpr" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys0_AcknowledgeChecker_v_0_currentpr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_1" PORT="In0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="ackpr" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys0_AcknowledgeChecker_v_0_ackpr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="acktime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_acktime">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="acktime"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="keyin" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys0_KeyControllerP0N_ver_0_keysout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_KeyControllerP0N_ver_0" PORT="keysout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ready" SIGIS="undef" SIGNAME="External_Ports_ready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/TransistorKeys0/CalculatingDeadtime_0" HWVERSION="1.0" INSTANCE="TransistorKeys0_CalculatingDeadtime_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="CalculatingDeadtime" VLNV="setcorp:user:CalculatingDeadtime:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="COUNTER" VALUE="255"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_CalculatingDeadtime_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ce" SIGIS="undef" SIGNAME="TransistorKeys0_FrequencyDividerWith_2_clkdiv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_FrequencyDividerWith_2" PORT="clkdiv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="start" SIGIS="undef" SIGNAME="TransistorKeys0_KeyControllerP0N_ver_0_start">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_KeyControllerP0N_ver_0" PORT="start"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="deadtime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_deadtime">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="deadtime"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="isdeadtimeok" SIGIS="undef" SIGNAME="TransistorKeys0_CalculatingDeadtime_0_isdeadtimeok">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_KeyControllerP0N_ver_0" PORT="isdeadtimeok"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/TransistorKeys0/CalculatingMintime_v_0" HWVERSION="1.0" INSTANCE="TransistorKeys0_CalculatingMintime_v_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="CalculatingMintime_ver_1_0" VLNV="setcorp:user:CalculatingMintime_ver_1_0:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="COUNTER" VALUE="255"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_CalculatingMintime_v_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ce" SIGIS="undef" SIGNAME="TransistorKeys0_FrequencyDividerWith_0_clkdiv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_FrequencyDividerWith_0" PORT="clkdiv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="start" SIGIS="undef" SIGNAME="TransistorKeys0_SignalChangeControl_0_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_SignalChangeControl_0" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="en" SIGIS="undef" SIGNAME="External_Ports_mintimepren">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mintimepren"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="mintime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_mintime">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mintime"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="timeerror" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys0_CalculatingMintime_v_0_timeerror">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_6" PORT="In0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="error" SIGIS="undef" SIGNAME="TransistorKeys0_CalculatingMintime_v_0_error">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_4" PORT="In0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/TransistorKeys0/FrequencyDividerWith_0" HWVERSION="1.0" INSTANCE="TransistorKeys0_FrequencyDividerWith_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="FrequencyDividerWithReset_ver_1_0" VLNV="setcorp:user:FrequencyDividerWithReset_ver_1_0:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="COUNTER" VALUE="249"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_FrequencyDividerWith_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="TransistorKeys0_SignalChangeControl_0_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_SignalChangeControl_0" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clkdiv" SIGIS="undef" SIGNAME="TransistorKeys0_FrequencyDividerWith_0_clkdiv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_CalculatingMintime_v_0" PORT="ce"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/TransistorKeys0/FrequencyDividerWith_2" HWVERSION="1.0" INSTANCE="TransistorKeys0_FrequencyDividerWith_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="FrequencyDividerWithReset_ver_1_0" VLNV="setcorp:user:FrequencyDividerWithReset_ver_1_0:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="COUNTER" VALUE="249"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_FrequencyDividerWith_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="TransistorKeys0_KeyControllerP0N_ver_0_start">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_KeyControllerP0N_ver_0" PORT="start"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clkdiv" SIGIS="undef" SIGNAME="TransistorKeys0_FrequencyDividerWith_2_clkdiv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_CalculatingDeadtime_0" PORT="ce"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/TransistorKeys0/KeyControllerP0N_ver_0" HWVERSION="1.0" INSTANCE="TransistorKeys0_KeyControllerP0N_ver_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="KeyControllerP0N_ver_2_0" VLNV="setcorp:user:KeyControllerP0N_ver_2_0:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_KeyControllerP0N_ver_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="er0in" SIGIS="undef" SIGNAME="External_Ports_er0in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="er0in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="start" SIGIS="undef" SIGNAME="TransistorKeys0_KeyControllerP0N_ver_0_start">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_FrequencyDividerWith_2" PORT="reset"/>
+            <CONNECTION INSTANCE="TransistorKeys0_CalculatingDeadtime_0" PORT="start"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="isdeadtimeok" SIGIS="undef" SIGNAME="TransistorKeys0_CalculatingDeadtime_0_isdeadtimeok">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_CalculatingDeadtime_0" PORT="isdeadtimeok"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="linepren" SIGIS="undef" SIGNAME="External_Ports_linepren">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="linepren"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="linepr" SIGIS="undef" SIGNAME="TransistorKeys0_KeyControllerP0N_ver_0_linepr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_3" PORT="In0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="keysout" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys0_KeyControllerP0N_ver_0_keysout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_2" PORT="In0"/>
+            <CONNECTION INSTANCE="TransistorKeys0_AcknowledgeChecker_v_0" PORT="keyin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="keysel" RIGHT="0" SIGIS="undef" SIGNAME="OneStageSynchronizer_0_sync_signal">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="OneStageSynchronizer_0" PORT="sync_signal"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="keysen" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="breaken" SIGIS="undef" SIGNAME="External_Ports_breaken">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="breaken"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ready" SIGIS="undef" SIGNAME="External_Ports_ready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="ob" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ob_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ob_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="softshutdownen" SIGIS="undef" SIGNAME="External_Ports_softshutdownen">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="softshutdownen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="softshutdowntimer" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_softshutdowntimer">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="softshutdowntimer"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="softshutdownpr" SIGIS="undef" SIGNAME="TransistorKeys0_KeyControllerP0N_ver_0_softshutdownpr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_5" PORT="In0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/TransistorKeys0/SignalChangeControl_0" HWVERSION="1.0" INSTANCE="TransistorKeys0_SignalChangeControl_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="SignalChangeControl" VLNV="setcorp:user:SignalChangeControl:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_SignalChangeControl_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="reset" SIGIS="rst" SIGNAME="TransistorKeys0_SignalChangeControl_0_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_FrequencyDividerWith_0" PORT="reset"/>
+            <CONNECTION INSTANCE="TransistorKeys0_CalculatingMintime_v_0" PORT="start"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="signalchange" RIGHT="0" SIGIS="undef" SIGNAME="OneStageSynchronizer_0_sync_signal">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="OneStageSynchronizer_0" PORT="sync_signal"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/TransistorKeys1/AcknowledgeChecker_v_0" HWVERSION="1.0" INSTANCE="TransistorKeys1_AcknowledgeChecker_v_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AcknowledgeChecker_ver_1_0" VLNV="setcorp:user:AcknowledgeChecker_ver_1_0:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="QUANTITY_ACKNOWLEDGES" VALUE="4"/>
+        <PARAMETER NAME="COUNTER" VALUE="500"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_AcknowledgeChecker_v_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ackin" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_8_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_8" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="currentpren" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_4_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_4" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="ackpren" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_5_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_5" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="currentpr" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys1_AcknowledgeChecker_v_0_currentpr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_1" PORT="In1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="ackpr" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys1_AcknowledgeChecker_v_0_ackpr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="acktime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_acktime">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="acktime"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="keyin" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys1_KeyControllerP0N_ver_0_keysout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_KeyControllerP0N_ver_0" PORT="keysout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ready" SIGIS="undef" SIGNAME="External_Ports_ready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/TransistorKeys1/CalculatingDeadtime_0" HWVERSION="1.0" INSTANCE="TransistorKeys1_CalculatingDeadtime_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="CalculatingDeadtime" VLNV="setcorp:user:CalculatingDeadtime:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="COUNTER" VALUE="255"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_CalculatingDeadtime_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ce" SIGIS="undef" SIGNAME="TransistorKeys1_FrequencyDividerWith_2_clkdiv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_FrequencyDividerWith_2" PORT="clkdiv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="start" SIGIS="undef" SIGNAME="TransistorKeys1_KeyControllerP0N_ver_0_start">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_KeyControllerP0N_ver_0" PORT="start"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="deadtime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_deadtime">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="deadtime"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="isdeadtimeok" SIGIS="undef" SIGNAME="TransistorKeys1_CalculatingDeadtime_0_isdeadtimeok">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_KeyControllerP0N_ver_0" PORT="isdeadtimeok"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/TransistorKeys1/CalculatingMintime_v_0" HWVERSION="1.0" INSTANCE="TransistorKeys1_CalculatingMintime_v_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="CalculatingMintime_ver_1_0" VLNV="setcorp:user:CalculatingMintime_ver_1_0:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="COUNTER" VALUE="255"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_CalculatingMintime_v_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ce" SIGIS="undef" SIGNAME="TransistorKeys1_FrequencyDividerWith_0_clkdiv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_FrequencyDividerWith_0" PORT="clkdiv"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="start" SIGIS="undef" SIGNAME="TransistorKeys1_SignalChangeControl_0_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_SignalChangeControl_0" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="en" SIGIS="undef" SIGNAME="External_Ports_mintimepren">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mintimepren"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="mintime" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_mintime">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mintime"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="timeerror" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys1_CalculatingMintime_v_0_timeerror">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_6" PORT="In1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="error" SIGIS="undef" SIGNAME="TransistorKeys1_CalculatingMintime_v_0_error">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_4" PORT="In1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/TransistorKeys1/FrequencyDividerWith_0" HWVERSION="1.0" INSTANCE="TransistorKeys1_FrequencyDividerWith_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="FrequencyDividerWithReset_ver_1_0" VLNV="setcorp:user:FrequencyDividerWithReset_ver_1_0:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="COUNTER" VALUE="249"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_FrequencyDividerWith_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="TransistorKeys1_SignalChangeControl_0_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_SignalChangeControl_0" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clkdiv" SIGIS="undef" SIGNAME="TransistorKeys1_FrequencyDividerWith_0_clkdiv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_CalculatingMintime_v_0" PORT="ce"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/TransistorKeys1/FrequencyDividerWith_2" HWVERSION="1.0" INSTANCE="TransistorKeys1_FrequencyDividerWith_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="FrequencyDividerWithReset_ver_1_0" VLNV="setcorp:user:FrequencyDividerWithReset_ver_1_0:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="COUNTER" VALUE="249"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_FrequencyDividerWith_2_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="TransistorKeys1_KeyControllerP0N_ver_0_start">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_KeyControllerP0N_ver_0" PORT="start"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clkdiv" SIGIS="undef" SIGNAME="TransistorKeys1_FrequencyDividerWith_2_clkdiv">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_CalculatingDeadtime_0" PORT="ce"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/TransistorKeys1/KeyControllerP0N_ver_0" HWVERSION="1.0" INSTANCE="TransistorKeys1_KeyControllerP0N_ver_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="KeyControllerP0N_ver_2_0" VLNV="setcorp:user:KeyControllerP0N_ver_2_0:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_KeyControllerP0N_ver_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="er0in" SIGIS="undef" SIGNAME="External_Ports_er0in">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="er0in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="start" SIGIS="undef" SIGNAME="TransistorKeys1_KeyControllerP0N_ver_0_start">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_FrequencyDividerWith_2" PORT="reset"/>
+            <CONNECTION INSTANCE="TransistorKeys1_CalculatingDeadtime_0" PORT="start"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="isdeadtimeok" SIGIS="undef" SIGNAME="TransistorKeys1_CalculatingDeadtime_0_isdeadtimeok">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_CalculatingDeadtime_0" PORT="isdeadtimeok"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="linepren" SIGIS="undef" SIGNAME="External_Ports_linepren">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="linepren"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="linepr" SIGIS="undef" SIGNAME="TransistorKeys1_KeyControllerP0N_ver_0_linepr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_3" PORT="In1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="keysout" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys1_KeyControllerP0N_ver_0_keysout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_2" PORT="In1"/>
+            <CONNECTION INSTANCE="TransistorKeys1_AcknowledgeChecker_v_0" PORT="keyin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="keysel" RIGHT="0" SIGIS="undef" SIGNAME="OneStageSynchronizer_2_sync_signal">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="OneStageSynchronizer_2" PORT="sync_signal"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="keysen" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_1_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_1" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="breaken" SIGIS="undef" SIGNAME="External_Ports_breaken">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="breaken"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ready" SIGIS="undef" SIGNAME="External_Ports_ready">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="ob" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ob_1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ob_1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="softshutdownen" SIGIS="undef" SIGNAME="External_Ports_softshutdownen">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="softshutdownen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="softshutdowntimer" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_softshutdowntimer">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="softshutdowntimer"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="softshutdownpr" SIGIS="undef" SIGNAME="TransistorKeys1_KeyControllerP0N_ver_0_softshutdownpr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_5" PORT="In1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/TransistorKeys1/SignalChangeControl_0" HWVERSION="1.0" INSTANCE="TransistorKeys1_SignalChangeControl_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="SignalChangeControl" VLNV="setcorp:user:SignalChangeControl:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_SignalChangeControl_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="reset" SIGIS="rst" SIGNAME="TransistorKeys1_SignalChangeControl_0_reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_FrequencyDividerWith_0" PORT="reset"/>
+            <CONNECTION INSTANCE="TransistorKeys1_CalculatingMintime_v_0" PORT="start"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="signalchange" RIGHT="0" SIGIS="undef" SIGNAME="OneStageSynchronizer_2_sync_signal">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="OneStageSynchronizer_2" PORT="sync_signal"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/xlconcat_0" HWVERSION="2.1" INSTANCE="xlconcat_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="IN0_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="IN1_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="IN2_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN3_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN6_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN7_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="dout_width" VALUE="8"/>
+        <PARAMETER NAME="NUM_PORTS" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_xlconcat_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys0_AcknowledgeChecker_v_0_ackpr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_AcknowledgeChecker_v_0" PORT="ackpr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys1_AcknowledgeChecker_v_0_ackpr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_AcknowledgeChecker_v_0" PORT="ackpr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackpr"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/xlconcat_1" HWVERSION="2.1" INSTANCE="xlconcat_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="IN0_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="IN1_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="IN2_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN3_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN6_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN7_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="dout_width" VALUE="8"/>
+        <PARAMETER NAME="NUM_PORTS" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_xlconcat_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys0_AcknowledgeChecker_v_0_currentpr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_AcknowledgeChecker_v_0" PORT="currentpr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys1_AcknowledgeChecker_v_0_currentpr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_AcknowledgeChecker_v_0" PORT="currentpr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="currentpr"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/xlconcat_2" HWVERSION="2.1" INSTANCE="xlconcat_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="IN0_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="IN1_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="IN2_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN3_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN6_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN7_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="dout_width" VALUE="8"/>
+        <PARAMETER NAME="NUM_PORTS" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_xlconcat_2_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys0_KeyControllerP0N_ver_0_keysout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_KeyControllerP0N_ver_0" PORT="keysout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys1_KeyControllerP0N_ver_0_keysout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_KeyControllerP0N_ver_0" PORT="keysout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_2_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="keysout"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/xlconcat_3" HWVERSION="2.1" INSTANCE="xlconcat_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="IN0_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN1_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN2_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN3_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN6_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN7_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="dout_width" VALUE="2"/>
+        <PARAMETER NAME="NUM_PORTS" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_xlconcat_3_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys0_KeyControllerP0N_ver_0_linepr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_KeyControllerP0N_ver_0" PORT="linepr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys1_KeyControllerP0N_ver_0_linepr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_KeyControllerP0N_ver_0" PORT="linepr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_3_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="linepr"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/xlconcat_4" HWVERSION="2.1" INSTANCE="xlconcat_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="IN0_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN1_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN2_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN3_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN6_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN7_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="dout_width" VALUE="2"/>
+        <PARAMETER NAME="NUM_PORTS" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_xlconcat_4_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys0_CalculatingMintime_v_0_error">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_CalculatingMintime_v_0" PORT="error"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys1_CalculatingMintime_v_0_error">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_CalculatingMintime_v_0" PORT="error"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_4_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="mintimepr"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/xlconcat_5" HWVERSION="2.1" INSTANCE="xlconcat_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="IN0_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN1_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN2_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN3_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN6_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN7_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="dout_width" VALUE="2"/>
+        <PARAMETER NAME="NUM_PORTS" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_xlconcat_5_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys0_KeyControllerP0N_ver_0_softshutdownpr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_KeyControllerP0N_ver_0" PORT="softshutdownpr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys1_KeyControllerP0N_ver_0_softshutdownpr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_KeyControllerP0N_ver_0" PORT="softshutdownpr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_5_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="softshutdownpr"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="3" FULLNAME="/xlconcat_6" HWVERSION="2.1" INSTANCE="xlconcat_6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="IN0_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="IN1_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="IN2_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN3_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN6_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN7_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="dout_width" VALUE="16"/>
+        <PARAMETER NAME="NUM_PORTS" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_xlconcat_6_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys0_CalculatingMintime_v_0_timeerror">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_CalculatingMintime_v_0" PORT="timeerror"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="TransistorKeys1_CalculatingMintime_v_0_timeerror">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_CalculatingMintime_v_0" PORT="timeerror"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_6_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="timeerror"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/xlslice_0" HWVERSION="1.0" INSTANCE="xlslice_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="3"/>
+        <PARAMETER NAME="DIN_TO" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_xlslice_0_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_keysen">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="keysen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_KeyControllerP0N_ver_0" PORT="keysen"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/xlslice_1" HWVERSION="1.0" INSTANCE="xlslice_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="7"/>
+        <PARAMETER NAME="DIN_TO" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_xlslice_1_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_keysen">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="keysen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_1_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_KeyControllerP0N_ver_0" PORT="keysen"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/xlslice_4" HWVERSION="1.0" INSTANCE="xlslice_4" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="7"/>
+        <PARAMETER NAME="DIN_TO" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_xlslice_4_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_currentpren">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="currentpren"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_4_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_AcknowledgeChecker_v_0" PORT="currentpren"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/xlslice_5" HWVERSION="1.0" INSTANCE="xlslice_5" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="7"/>
+        <PARAMETER NAME="DIN_TO" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_xlslice_5_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackpren">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackpren"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_5_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_AcknowledgeChecker_v_0" PORT="ackpren"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/xlslice_6" HWVERSION="1.0" INSTANCE="xlslice_6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="3"/>
+        <PARAMETER NAME="DIN_TO" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_xlslice_6_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_ackpren">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ackpren"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_6_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_AcknowledgeChecker_v_0" PORT="ackpren"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/xlslice_7" HWVERSION="1.0" INSTANCE="xlslice_7" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="3"/>
+        <PARAMETER NAME="DIN_TO" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_xlslice_7_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_currentpren">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="currentpren"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_7_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_AcknowledgeChecker_v_0" PORT="currentpren"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/xlslice_8" HWVERSION="1.0" INSTANCE="xlslice_8" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="7"/>
+        <PARAMETER NAME="DIN_TO" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_xlslice_8_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="OneStageSynchronizer_1_sync_signal">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="OneStageSynchronizer_1" PORT="sync_signal"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_8_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys1_AcknowledgeChecker_v_0" PORT="ackin"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/xlslice_9" HWVERSION="1.0" INSTANCE="xlslice_9" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="3"/>
+        <PARAMETER NAME="DIN_TO" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="TransistorKeys_xlslice_9_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="OneStageSynchronizer_1_sync_signal">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="OneStageSynchronizer_1" PORT="sync_signal"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_9_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="TransistorKeys0_AcknowledgeChecker_v_0" PORT="ackin"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

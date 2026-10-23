@@ -1,0 +1,27 @@
+vhdl xil_defaultlib  \
+"../../../bd/TransistorKeys/ipshared/aef2/src/CalculatingDeadtime_ver_1_0.vhd" \
+"../../../bd/TransistorKeys/ip/TransistorKeys_CalculatingDeadtime_0_0/sim/TransistorKeys_CalculatingDeadtime_0_0.vhd" \
+"../../../bd/TransistorKeys/ipshared/eb44/src/FrequencyDividerWithReset_ver_1_0.vhd" \
+"../../../bd/TransistorKeys/ip/TransistorKeys_FrequencyDividerWith_0_0/sim/TransistorKeys_FrequencyDividerWith_0_0.vhd" \
+"../../../bd/TransistorKeys/ip/TransistorKeys_FrequencyDividerWith_2_0/sim/TransistorKeys_FrequencyDividerWith_2_0.vhd" \
+"../../../bd/TransistorKeys/ipshared/6862/src/CalculatingMintime_ver_1_0.vhd" \
+"../../../bd/TransistorKeys/ip/TransistorKeys_CalculatingMintime_v_0_0/sim/TransistorKeys_CalculatingMintime_v_0_0.vhd" \
+"../../../bd/TransistorKeys/ipshared/2d89/src/AcknowledgeChecker_ver_1_0.vhd" \
+"../../../bd/TransistorKeys/ip/TransistorKeys_AcknowledgeChecker_v_0_0/sim/TransistorKeys_AcknowledgeChecker_v_0_0.vhd" \
+"../../../bd/TransistorKeys/ipshared/932f/src/SignalChangeControl_ver_1_0.vhd" \
+"../../../bd/TransistorKeys/ip/TransistorKeys_SignalChangeControl_0_0/sim/TransistorKeys_SignalChangeControl_0_0.vhd" \
+"../../../bd/TransistorKeys/ipshared/4b12/src/KeyControllerP0N_ver_2_0.vhd" \
+"../../../bd/TransistorKeys/ip/TransistorKeys_KeyControllerP0N_ver_0_0/sim/TransistorKeys_KeyControllerP0N_ver_0_0.vhd" \
+"../../../bd/TransistorKeys/ip/TransistorKeys_CalculatingDeadtime_0_1/sim/TransistorKeys_CalculatingDeadtime_0_1.vhd" \
+"../../../bd/TransistorKeys/ip/TransistorKeys_FrequencyDividerWith_0_1/sim/TransistorKeys_FrequencyDividerWith_0_1.vhd" \
+"../../../bd/TransistorKeys/ip/TransistorKeys_FrequencyDividerWith_2_1/sim/TransistorKeys_FrequencyDividerWith_2_1.vhd" \
+"../../../bd/TransistorKeys/ip/TransistorKeys_CalculatingMintime_v_0_1/sim/TransistorKeys_CalculatingMintime_v_0_1.vhd" \
+"../../../bd/TransistorKeys/ip/TransistorKeys_AcknowledgeChecker_v_0_1/sim/TransistorKeys_AcknowledgeChecker_v_0_1.vhd" \
+"../../../bd/TransistorKeys/ip/TransistorKeys_SignalChangeControl_0_1/sim/TransistorKeys_SignalChangeControl_0_1.vhd" \
+"../../../bd/TransistorKeys/ip/TransistorKeys_KeyControllerP0N_ver_0_1/sim/TransistorKeys_KeyControllerP0N_ver_0_1.vhd" \
+"../../../bd/TransistorKeys/ipshared/ea89/src/OneStageSynchronizerAndDigitalFilterBlock_ver_1_0.vhd" \
+"../../../bd/TransistorKeys/ip/TransistorKeys_OneStageSynchronizer_1_0/sim/TransistorKeys_OneStageSynchronizer_1_0.vhd" \
+"../../../bd/TransistorKeys/ip/TransistorKeys_OneStageSynchronizer_0_0/sim/TransistorKeys_OneStageSynchronizer_0_0.vhd" \
+"../../../bd/TransistorKeys/ip/TransistorKeys_OneStageSynchronizer_2_0/sim/TransistorKeys_OneStageSynchronizer_2_0.vhd" \
+
+nosort

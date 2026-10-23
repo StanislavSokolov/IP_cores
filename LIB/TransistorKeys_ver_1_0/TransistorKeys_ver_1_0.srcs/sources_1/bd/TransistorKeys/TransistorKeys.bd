@@ -1,0 +1,1532 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xD2091EE669E47392",
+      "device": "xc7z020clg484-3",
+      "name": "TransistorKeys",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "TransistorKeys0": {
+        "CalculatingDeadtime_0": "",
+        "FrequencyDividerWith_0": "",
+        "FrequencyDividerWith_2": "",
+        "CalculatingMintime_v_0": "",
+        "AcknowledgeChecker_v_0": "",
+        "SignalChangeControl_0": "",
+        "KeyControllerP0N_ver_0": ""
+      },
+      "TransistorKeys1": {
+        "CalculatingDeadtime_0": "",
+        "FrequencyDividerWith_0": "",
+        "FrequencyDividerWith_2": "",
+        "CalculatingMintime_v_0": "",
+        "AcknowledgeChecker_v_0": "",
+        "SignalChangeControl_0": "",
+        "KeyControllerP0N_ver_0": ""
+      },
+      "xlslice_0": "",
+      "xlslice_1": "",
+      "xlslice_4": "",
+      "xlslice_5": "",
+      "xlslice_6": "",
+      "xlslice_7": "",
+      "OneStageSynchronizer_1": "",
+      "xlslice_8": "",
+      "xlslice_9": "",
+      "OneStageSynchronizer_0": "",
+      "OneStageSynchronizer_2": "",
+      "xlconcat_0": "",
+      "xlconcat_1": "",
+      "xlconcat_2": "",
+      "xlconcat_3": "",
+      "xlconcat_4": "",
+      "xlconcat_5": "",
+      "xlconcat_6": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "reset",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "TransistorKeys_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "ready": {
+        "direction": "I"
+      },
+      "reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "acktime": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "mintimepren": {
+        "direction": "I"
+      },
+      "mintime": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "deadtime": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "er0in": {
+        "direction": "I"
+      },
+      "linepren": {
+        "direction": "I"
+      },
+      "breaken": {
+        "direction": "I"
+      },
+      "softshutdownen": {
+        "direction": "I"
+      },
+      "ackpr": {
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "PortWidth": {
+            "value": "8",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "currentpr": {
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "PortWidth": {
+            "value": "8",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "ackpren": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "currentpren": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "softshutdowntimer": {
+        "direction": "I",
+        "left": "15",
+        "right": "0"
+      },
+      "ob_0": {
+        "direction": "I",
+        "left": "1",
+        "right": "0"
+      },
+      "keysel_0": {
+        "direction": "I",
+        "left": "1",
+        "right": "0"
+      },
+      "keysel_1": {
+        "direction": "I",
+        "left": "1",
+        "right": "0"
+      },
+      "ob_1": {
+        "direction": "I",
+        "left": "1",
+        "right": "0"
+      },
+      "acknowledges": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "keysout": {
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "PortWidth": {
+            "value": "8",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "timeerror": {
+        "direction": "O",
+        "left": "15",
+        "right": "0",
+        "parameters": {
+          "PortWidth": {
+            "value": "16",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "keysen": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "linepr": {
+        "direction": "O",
+        "left": "1",
+        "right": "0",
+        "parameters": {
+          "PortWidth": {
+            "value": "2",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "mintimepr": {
+        "direction": "O",
+        "left": "1",
+        "right": "0",
+        "parameters": {
+          "PortWidth": {
+            "value": "2",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "softshutdownpr": {
+        "direction": "O",
+        "left": "1",
+        "right": "0",
+        "parameters": {
+          "PortWidth": {
+            "value": "2",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "ackout": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      }
+    },
+    "components": {
+      "TransistorKeys0": {
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "deadtime": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "er0in": {
+            "direction": "I"
+          },
+          "linepren": {
+            "direction": "I"
+          },
+          "linepr_0": {
+            "direction": "O"
+          },
+          "keyout_0": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "keysel_0": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "breaken": {
+            "direction": "I"
+          },
+          "ready": {
+            "direction": "I"
+          },
+          "ob_0": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "softshutdownen": {
+            "direction": "I"
+          },
+          "softshutdowntimer": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "softshutdownpr_0": {
+            "direction": "O"
+          },
+          "mintimepren": {
+            "direction": "I"
+          },
+          "mintime": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "timeerror_0": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "mintimepr_0": {
+            "direction": "O"
+          },
+          "ackin_0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "currentpren_0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "ackpren_0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "currentpr_0": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "ackpr_0": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "acktime_0": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "keysen_0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          }
+        },
+        "components": {
+          "CalculatingDeadtime_0": {
+            "vlnv": "setcorp:user:CalculatingDeadtime:1.0",
+            "xci_name": "TransistorKeys_CalculatingDeadtime_0_0"
+          },
+          "FrequencyDividerWith_0": {
+            "vlnv": "setcorp:user:FrequencyDividerWithReset_ver_1_0:1.0",
+            "xci_name": "TransistorKeys_FrequencyDividerWith_0_0"
+          },
+          "FrequencyDividerWith_2": {
+            "vlnv": "setcorp:user:FrequencyDividerWithReset_ver_1_0:1.0",
+            "xci_name": "TransistorKeys_FrequencyDividerWith_2_0"
+          },
+          "CalculatingMintime_v_0": {
+            "vlnv": "setcorp:user:CalculatingMintime_ver_1_0:1.0",
+            "xci_name": "TransistorKeys_CalculatingMintime_v_0_0"
+          },
+          "AcknowledgeChecker_v_0": {
+            "vlnv": "setcorp:user:AcknowledgeChecker_ver_1_0:1.0",
+            "xci_name": "TransistorKeys_AcknowledgeChecker_v_0_0",
+            "parameters": {
+              "QUANTITY_ACKNOWLEDGES": {
+                "value": "4"
+              }
+            }
+          },
+          "SignalChangeControl_0": {
+            "vlnv": "setcorp:user:SignalChangeControl:1.0",
+            "xci_name": "TransistorKeys_SignalChangeControl_0_0"
+          },
+          "KeyControllerP0N_ver_0": {
+            "vlnv": "setcorp:user:KeyControllerP0N_ver_2_0:1.0",
+            "xci_name": "TransistorKeys_KeyControllerP0N_ver_0_0"
+          }
+        },
+        "nets": {
+          "FrequencyDividerWith_2_clkdiv": {
+            "ports": [
+              "FrequencyDividerWith_2/clkdiv",
+              "CalculatingDeadtime_0/ce"
+            ]
+          },
+          "KeyControllerP0N_ver_0_start": {
+            "ports": [
+              "KeyControllerP0N_ver_0/start",
+              "FrequencyDividerWith_2/reset",
+              "CalculatingDeadtime_0/start"
+            ]
+          },
+          "CalculatingDeadtime_0_isdeadtimeok": {
+            "ports": [
+              "CalculatingDeadtime_0/isdeadtimeok",
+              "KeyControllerP0N_ver_0/isdeadtimeok"
+            ]
+          },
+          "SignalChangeControl_0_reset": {
+            "ports": [
+              "SignalChangeControl_0/reset",
+              "FrequencyDividerWith_0/reset",
+              "CalculatingMintime_v_0/start"
+            ]
+          },
+          "FrequencyDividerWith_0_clkdiv": {
+            "ports": [
+              "FrequencyDividerWith_0/clkdiv",
+              "CalculatingMintime_v_0/ce"
+            ]
+          },
+          "clk_0_1": {
+            "ports": [
+              "clk",
+              "AcknowledgeChecker_v_0/clk",
+              "SignalChangeControl_0/clk",
+              "FrequencyDividerWith_0/clk",
+              "CalculatingMintime_v_0/clk",
+              "FrequencyDividerWith_2/clk",
+              "CalculatingDeadtime_0/clk",
+              "KeyControllerP0N_ver_0/clk"
+            ]
+          },
+          "Net1": {
+            "ports": [
+              "reset",
+              "AcknowledgeChecker_v_0/reset",
+              "CalculatingMintime_v_0/reset",
+              "CalculatingDeadtime_0/reset",
+              "KeyControllerP0N_ver_0/reset"
+            ]
+          },
+          "deadtime_0_1": {
+            "ports": [
+              "deadtime",
+              "CalculatingDeadtime_0/deadtime"
+            ]
+          },
+          "er0in_0_1": {
+            "ports": [
+              "er0in",
+              "KeyControllerP0N_ver_0/er0in"
+            ]
+          },
+          "linepren_0_1": {
+            "ports": [
+              "linepren",
+              "KeyControllerP0N_ver_0/linepren"
+            ]
+          },
+          "KeyControllerP0N_ver_0_linepr": {
+            "ports": [
+              "KeyControllerP0N_ver_0/linepr",
+              "linepr_0"
+            ]
+          },
+          "KeyControllerP0N_ver_0_keyout": {
+            "ports": [
+              "KeyControllerP0N_ver_0/keysout",
+              "keyout_0",
+              "AcknowledgeChecker_v_0/keyin"
+            ]
+          },
+          "keysel_0_1": {
+            "ports": [
+              "keysel_0",
+              "SignalChangeControl_0/signalchange",
+              "KeyControllerP0N_ver_0/keysel"
+            ]
+          },
+          "breaken_0_1": {
+            "ports": [
+              "breaken",
+              "KeyControllerP0N_ver_0/breaken"
+            ]
+          },
+          "Net": {
+            "ports": [
+              "ready",
+              "AcknowledgeChecker_v_0/ready",
+              "KeyControllerP0N_ver_0/ready"
+            ]
+          },
+          "ob_0_1": {
+            "ports": [
+              "ob_0",
+              "KeyControllerP0N_ver_0/ob"
+            ]
+          },
+          "softshutdownen_0_1": {
+            "ports": [
+              "softshutdownen",
+              "KeyControllerP0N_ver_0/softshutdownen"
+            ]
+          },
+          "softshutdowntimer_0_1": {
+            "ports": [
+              "softshutdowntimer",
+              "KeyControllerP0N_ver_0/softshutdowntimer"
+            ]
+          },
+          "KeyControllerP0N_ver_0_softshutdownpr": {
+            "ports": [
+              "KeyControllerP0N_ver_0/softshutdownpr",
+              "softshutdownpr_0"
+            ]
+          },
+          "en_0_1": {
+            "ports": [
+              "mintimepren",
+              "CalculatingMintime_v_0/en"
+            ]
+          },
+          "mintime_0_1": {
+            "ports": [
+              "mintime",
+              "CalculatingMintime_v_0/mintime"
+            ]
+          },
+          "CalculatingMintime_v_0_timeerror": {
+            "ports": [
+              "CalculatingMintime_v_0/timeerror",
+              "timeerror_0"
+            ]
+          },
+          "CalculatingMintime_v_0_error": {
+            "ports": [
+              "CalculatingMintime_v_0/error",
+              "mintimepr_0"
+            ]
+          },
+          "ackin_0_1": {
+            "ports": [
+              "ackin_0",
+              "AcknowledgeChecker_v_0/ackin"
+            ]
+          },
+          "currentpren_0_1": {
+            "ports": [
+              "currentpren_0",
+              "AcknowledgeChecker_v_0/currentpren"
+            ]
+          },
+          "ackpren_0_1": {
+            "ports": [
+              "ackpren_0",
+              "AcknowledgeChecker_v_0/ackpren"
+            ]
+          },
+          "AcknowledgeChecker_v_0_currentpr": {
+            "ports": [
+              "AcknowledgeChecker_v_0/currentpr",
+              "currentpr_0"
+            ]
+          },
+          "AcknowledgeChecker_v_0_ackpr": {
+            "ports": [
+              "AcknowledgeChecker_v_0/ackpr",
+              "ackpr_0"
+            ]
+          },
+          "acktime_0_1": {
+            "ports": [
+              "acktime_0",
+              "AcknowledgeChecker_v_0/acktime"
+            ]
+          },
+          "keysen_1_1": {
+            "ports": [
+              "keysen_0",
+              "KeyControllerP0N_ver_0/keysen"
+            ]
+          }
+        }
+      },
+      "TransistorKeys1": {
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "deadtime": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "er0in": {
+            "direction": "I"
+          },
+          "linepren": {
+            "direction": "I"
+          },
+          "linepr_0": {
+            "direction": "O"
+          },
+          "keyout_0": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "keysel_0": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "breaken": {
+            "direction": "I"
+          },
+          "ready": {
+            "direction": "I"
+          },
+          "ob_0": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "softshutdownen": {
+            "direction": "I"
+          },
+          "softshutdowntimer": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "softshutdownpr_0": {
+            "direction": "O"
+          },
+          "mintimepren": {
+            "direction": "I"
+          },
+          "mintime": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "timeerror_0": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "mintimepr_1": {
+            "direction": "O"
+          },
+          "ackin_0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "currentpren_0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "ackpren_0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "currentpr_0": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "ackpr_0": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "acktime_0": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "keysen_0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          }
+        },
+        "components": {
+          "CalculatingDeadtime_0": {
+            "vlnv": "setcorp:user:CalculatingDeadtime:1.0",
+            "xci_name": "TransistorKeys_CalculatingDeadtime_0_1"
+          },
+          "FrequencyDividerWith_0": {
+            "vlnv": "setcorp:user:FrequencyDividerWithReset_ver_1_0:1.0",
+            "xci_name": "TransistorKeys_FrequencyDividerWith_0_1"
+          },
+          "FrequencyDividerWith_2": {
+            "vlnv": "setcorp:user:FrequencyDividerWithReset_ver_1_0:1.0",
+            "xci_name": "TransistorKeys_FrequencyDividerWith_2_1"
+          },
+          "CalculatingMintime_v_0": {
+            "vlnv": "setcorp:user:CalculatingMintime_ver_1_0:1.0",
+            "xci_name": "TransistorKeys_CalculatingMintime_v_0_1"
+          },
+          "AcknowledgeChecker_v_0": {
+            "vlnv": "setcorp:user:AcknowledgeChecker_ver_1_0:1.0",
+            "xci_name": "TransistorKeys_AcknowledgeChecker_v_0_1",
+            "parameters": {
+              "QUANTITY_ACKNOWLEDGES": {
+                "value": "4"
+              }
+            }
+          },
+          "SignalChangeControl_0": {
+            "vlnv": "setcorp:user:SignalChangeControl:1.0",
+            "xci_name": "TransistorKeys_SignalChangeControl_0_1"
+          },
+          "KeyControllerP0N_ver_0": {
+            "vlnv": "setcorp:user:KeyControllerP0N_ver_2_0:1.0",
+            "xci_name": "TransistorKeys_KeyControllerP0N_ver_0_1"
+          }
+        },
+        "nets": {
+          "FrequencyDividerWith_2_clkdiv": {
+            "ports": [
+              "FrequencyDividerWith_2/clkdiv",
+              "CalculatingDeadtime_0/ce"
+            ]
+          },
+          "KeyControllerP0N_ver_0_start": {
+            "ports": [
+              "KeyControllerP0N_ver_0/start",
+              "FrequencyDividerWith_2/reset",
+              "CalculatingDeadtime_0/start"
+            ]
+          },
+          "CalculatingDeadtime_0_isdeadtimeok": {
+            "ports": [
+              "CalculatingDeadtime_0/isdeadtimeok",
+              "KeyControllerP0N_ver_0/isdeadtimeok"
+            ]
+          },
+          "SignalChangeControl_0_reset": {
+            "ports": [
+              "SignalChangeControl_0/reset",
+              "FrequencyDividerWith_0/reset",
+              "CalculatingMintime_v_0/start"
+            ]
+          },
+          "FrequencyDividerWith_0_clkdiv": {
+            "ports": [
+              "FrequencyDividerWith_0/clkdiv",
+              "CalculatingMintime_v_0/ce"
+            ]
+          },
+          "clk_0_1": {
+            "ports": [
+              "clk",
+              "AcknowledgeChecker_v_0/clk",
+              "SignalChangeControl_0/clk",
+              "FrequencyDividerWith_0/clk",
+              "CalculatingMintime_v_0/clk",
+              "FrequencyDividerWith_2/clk",
+              "CalculatingDeadtime_0/clk",
+              "KeyControllerP0N_ver_0/clk"
+            ]
+          },
+          "Net1": {
+            "ports": [
+              "reset",
+              "AcknowledgeChecker_v_0/reset",
+              "CalculatingMintime_v_0/reset",
+              "CalculatingDeadtime_0/reset",
+              "KeyControllerP0N_ver_0/reset"
+            ]
+          },
+          "deadtime_0_1": {
+            "ports": [
+              "deadtime",
+              "CalculatingDeadtime_0/deadtime"
+            ]
+          },
+          "er0in_0_1": {
+            "ports": [
+              "er0in",
+              "KeyControllerP0N_ver_0/er0in"
+            ]
+          },
+          "linepren_0_1": {
+            "ports": [
+              "linepren",
+              "KeyControllerP0N_ver_0/linepren"
+            ]
+          },
+          "KeyControllerP0N_ver_0_linepr": {
+            "ports": [
+              "KeyControllerP0N_ver_0/linepr",
+              "linepr_0"
+            ]
+          },
+          "KeyControllerP0N_ver_0_keyout": {
+            "ports": [
+              "KeyControllerP0N_ver_0/keysout",
+              "keyout_0",
+              "AcknowledgeChecker_v_0/keyin"
+            ]
+          },
+          "keysel_0_1": {
+            "ports": [
+              "keysel_0",
+              "SignalChangeControl_0/signalchange",
+              "KeyControllerP0N_ver_0/keysel"
+            ]
+          },
+          "breaken_0_1": {
+            "ports": [
+              "breaken",
+              "KeyControllerP0N_ver_0/breaken"
+            ]
+          },
+          "Net": {
+            "ports": [
+              "ready",
+              "AcknowledgeChecker_v_0/ready",
+              "KeyControllerP0N_ver_0/ready"
+            ]
+          },
+          "ob_0_1": {
+            "ports": [
+              "ob_0",
+              "KeyControllerP0N_ver_0/ob"
+            ]
+          },
+          "softshutdownen_0_1": {
+            "ports": [
+              "softshutdownen",
+              "KeyControllerP0N_ver_0/softshutdownen"
+            ]
+          },
+          "softshutdowntimer_0_1": {
+            "ports": [
+              "softshutdowntimer",
+              "KeyControllerP0N_ver_0/softshutdowntimer"
+            ]
+          },
+          "KeyControllerP0N_ver_0_softshutdownpr": {
+            "ports": [
+              "KeyControllerP0N_ver_0/softshutdownpr",
+              "softshutdownpr_0"
+            ]
+          },
+          "en_0_1": {
+            "ports": [
+              "mintimepren",
+              "CalculatingMintime_v_0/en"
+            ]
+          },
+          "mintime_0_1": {
+            "ports": [
+              "mintime",
+              "CalculatingMintime_v_0/mintime"
+            ]
+          },
+          "CalculatingMintime_v_0_timeerror": {
+            "ports": [
+              "CalculatingMintime_v_0/timeerror",
+              "timeerror_0"
+            ]
+          },
+          "CalculatingMintime_v_0_error": {
+            "ports": [
+              "CalculatingMintime_v_0/error",
+              "mintimepr_1"
+            ]
+          },
+          "ackin_0_1": {
+            "ports": [
+              "ackin_0",
+              "AcknowledgeChecker_v_0/ackin"
+            ]
+          },
+          "currentpren_0_1": {
+            "ports": [
+              "currentpren_0",
+              "AcknowledgeChecker_v_0/currentpren"
+            ]
+          },
+          "ackpren_0_1": {
+            "ports": [
+              "ackpren_0",
+              "AcknowledgeChecker_v_0/ackpren"
+            ]
+          },
+          "AcknowledgeChecker_v_0_currentpr": {
+            "ports": [
+              "AcknowledgeChecker_v_0/currentpr",
+              "currentpr_0"
+            ]
+          },
+          "AcknowledgeChecker_v_0_ackpr": {
+            "ports": [
+              "AcknowledgeChecker_v_0/ackpr",
+              "ackpr_0"
+            ]
+          },
+          "acktime_0_1": {
+            "ports": [
+              "acktime_0",
+              "AcknowledgeChecker_v_0/acktime"
+            ]
+          },
+          "keysen_0_1": {
+            "ports": [
+              "keysen_0",
+              "KeyControllerP0N_ver_0/keysen"
+            ]
+          }
+        }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "TransistorKeys_xlslice_0_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "3"
+          },
+          "DIN_TO": {
+            "value": "0"
+          },
+          "DIN_WIDTH": {
+            "value": "8"
+          },
+          "DOUT_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "xlslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "TransistorKeys_xlslice_1_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "7"
+          },
+          "DIN_TO": {
+            "value": "4"
+          },
+          "DIN_WIDTH": {
+            "value": "8"
+          },
+          "DOUT_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "xlslice_4": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "TransistorKeys_xlslice_4_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "7"
+          },
+          "DIN_TO": {
+            "value": "4"
+          },
+          "DIN_WIDTH": {
+            "value": "8"
+          },
+          "DOUT_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "xlslice_5": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "TransistorKeys_xlslice_5_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "7"
+          },
+          "DIN_TO": {
+            "value": "4"
+          },
+          "DIN_WIDTH": {
+            "value": "8"
+          },
+          "DOUT_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "xlslice_6": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "TransistorKeys_xlslice_6_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "3"
+          },
+          "DIN_TO": {
+            "value": "0"
+          },
+          "DIN_WIDTH": {
+            "value": "8"
+          },
+          "DOUT_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "xlslice_7": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "TransistorKeys_xlslice_7_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "3"
+          },
+          "DIN_TO": {
+            "value": "0"
+          },
+          "DIN_WIDTH": {
+            "value": "8"
+          },
+          "DOUT_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "OneStageSynchronizer_1": {
+        "vlnv": "setcorp:user:OneStageSynchronizerAndDigitalFilterBlock_ver_1_0:1.0",
+        "xci_name": "TransistorKeys_OneStageSynchronizer_1_0",
+        "parameters": {
+          "PHASE_SHIFT": {
+            "value": "4"
+          },
+          "QUANTITY_CHANNELS": {
+            "value": "8"
+          }
+        }
+      },
+      "xlslice_8": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "TransistorKeys_xlslice_8_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "7"
+          },
+          "DIN_TO": {
+            "value": "4"
+          },
+          "DIN_WIDTH": {
+            "value": "8"
+          },
+          "DOUT_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "xlslice_9": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "xci_name": "TransistorKeys_xlslice_9_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "3"
+          },
+          "DIN_TO": {
+            "value": "0"
+          },
+          "DIN_WIDTH": {
+            "value": "8"
+          },
+          "DOUT_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "OneStageSynchronizer_0": {
+        "vlnv": "setcorp:user:OneStageSynchronizerAndDigitalFilterBlock_ver_1_0:1.0",
+        "xci_name": "TransistorKeys_OneStageSynchronizer_0_0",
+        "parameters": {
+          "PHASE_SHIFT": {
+            "value": "4"
+          },
+          "QUANTITY_CHANNELS": {
+            "value": "2"
+          }
+        }
+      },
+      "OneStageSynchronizer_2": {
+        "vlnv": "setcorp:user:OneStageSynchronizerAndDigitalFilterBlock_ver_1_0:1.0",
+        "xci_name": "TransistorKeys_OneStageSynchronizer_2_0",
+        "parameters": {
+          "PHASE_SHIFT": {
+            "value": "4"
+          },
+          "QUANTITY_CHANNELS": {
+            "value": "2"
+          }
+        }
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "TransistorKeys_xlconcat_0_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "4"
+          },
+          "IN1_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "xlconcat_1": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "TransistorKeys_xlconcat_1_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "4"
+          },
+          "IN1_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "xlconcat_2": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "TransistorKeys_xlconcat_2_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "4"
+          },
+          "IN1_WIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "xlconcat_3": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "TransistorKeys_xlconcat_3_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "xlconcat_4": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "TransistorKeys_xlconcat_4_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "xlconcat_5": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "TransistorKeys_xlconcat_5_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "1"
+          },
+          "IN1_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "xlconcat_6": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "TransistorKeys_xlconcat_6_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "8"
+          },
+          "IN1_WIDTH": {
+            "value": "8"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "TransistorKeys0/clk",
+          "TransistorKeys1/clk",
+          "OneStageSynchronizer_1/clk",
+          "OneStageSynchronizer_0/clk",
+          "OneStageSynchronizer_2/clk"
+        ]
+      },
+      "acktime_0_1": {
+        "ports": [
+          "acktime",
+          "TransistorKeys0/acktime_0",
+          "TransistorKeys1/acktime_0"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "ready",
+          "TransistorKeys0/ready",
+          "TransistorKeys1/ready"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "reset",
+          "TransistorKeys0/reset",
+          "TransistorKeys1/reset"
+        ]
+      },
+      "en_0_1": {
+        "ports": [
+          "mintimepren",
+          "TransistorKeys0/mintimepren",
+          "TransistorKeys1/mintimepren"
+        ]
+      },
+      "mintime_0_1": {
+        "ports": [
+          "mintime",
+          "TransistorKeys0/mintime",
+          "TransistorKeys1/mintime"
+        ]
+      },
+      "deadtime_0_1": {
+        "ports": [
+          "deadtime",
+          "TransistorKeys0/deadtime",
+          "TransistorKeys1/deadtime"
+        ]
+      },
+      "er0in_0_1": {
+        "ports": [
+          "er0in",
+          "TransistorKeys0/er0in",
+          "TransistorKeys1/er0in"
+        ]
+      },
+      "linepren_0_1": {
+        "ports": [
+          "linepren",
+          "TransistorKeys0/linepren",
+          "TransistorKeys1/linepren"
+        ]
+      },
+      "breaken_0_1": {
+        "ports": [
+          "breaken",
+          "TransistorKeys0/breaken",
+          "TransistorKeys1/breaken"
+        ]
+      },
+      "softshutdownen_0_1": {
+        "ports": [
+          "softshutdownen",
+          "TransistorKeys0/softshutdownen",
+          "TransistorKeys1/softshutdownen"
+        ]
+      },
+      "softshutdowntimer_0_1": {
+        "ports": [
+          "softshutdowntimer",
+          "TransistorKeys0/softshutdowntimer",
+          "TransistorKeys1/softshutdowntimer"
+        ]
+      },
+      "ob_0_1": {
+        "ports": [
+          "ob_0",
+          "TransistorKeys0/ob_0"
+        ]
+      },
+      "ob_0_0_1": {
+        "ports": [
+          "ob_1",
+          "TransistorKeys1/ob_0"
+        ]
+      },
+      "keysen_0_2": {
+        "ports": [
+          "xlslice_0/Dout",
+          "TransistorKeys0/keysen_0"
+        ]
+      },
+      "keysen_2": {
+        "ports": [
+          "keysen",
+          "xlslice_0/Din",
+          "xlslice_1/Din"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "xlslice_1/Dout",
+          "TransistorKeys1/keysen_0"
+        ]
+      },
+      "xlslice_4_Dout": {
+        "ports": [
+          "xlslice_4/Dout",
+          "TransistorKeys1/currentpren_0"
+        ]
+      },
+      "xlslice_5_Dout": {
+        "ports": [
+          "xlslice_5/Dout",
+          "TransistorKeys1/ackpren_0"
+        ]
+      },
+      "xlslice_6_Dout": {
+        "ports": [
+          "xlslice_6/Dout",
+          "TransistorKeys0/ackpren_0"
+        ]
+      },
+      "xlslice_7_Dout": {
+        "ports": [
+          "xlslice_7/Dout",
+          "TransistorKeys0/currentpren_0"
+        ]
+      },
+      "ackpren_2": {
+        "ports": [
+          "ackpren",
+          "xlslice_6/Din",
+          "xlslice_5/Din"
+        ]
+      },
+      "currentpren_2": {
+        "ports": [
+          "currentpren",
+          "xlslice_7/Din",
+          "xlslice_4/Din"
+        ]
+      },
+      "xlslice_8_Dout": {
+        "ports": [
+          "xlslice_8/Dout",
+          "TransistorKeys1/ackin_0"
+        ]
+      },
+      "xlslice_9_Dout": {
+        "ports": [
+          "xlslice_9/Dout",
+          "TransistorKeys0/ackin_0"
+        ]
+      },
+      "keysel_0_1": {
+        "ports": [
+          "keysel_0",
+          "OneStageSynchronizer_0/async_signal"
+        ]
+      },
+      "keysel_0_2": {
+        "ports": [
+          "OneStageSynchronizer_0/sync_signal",
+          "TransistorKeys0/keysel_0"
+        ]
+      },
+      "keysel_0_3": {
+        "ports": [
+          "OneStageSynchronizer_2/sync_signal",
+          "TransistorKeys1/keysel_0"
+        ]
+      },
+      "keysel_1_1": {
+        "ports": [
+          "keysel_1",
+          "OneStageSynchronizer_2/async_signal"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "ackpr"
+        ]
+      },
+      "TransistorKeys0_ackpr_0": {
+        "ports": [
+          "TransistorKeys0/ackpr_0",
+          "xlconcat_0/In0"
+        ]
+      },
+      "TransistorKeys1_ackpr_0": {
+        "ports": [
+          "TransistorKeys1/ackpr_0",
+          "xlconcat_0/In1"
+        ]
+      },
+      "xlconcat_1_dout": {
+        "ports": [
+          "xlconcat_1/dout",
+          "currentpr"
+        ]
+      },
+      "TransistorKeys0_currentpr_0": {
+        "ports": [
+          "TransistorKeys0/currentpr_0",
+          "xlconcat_1/In0"
+        ]
+      },
+      "TransistorKeys1_currentpr_0": {
+        "ports": [
+          "TransistorKeys1/currentpr_0",
+          "xlconcat_1/In1"
+        ]
+      },
+      "xlconcat_2_dout": {
+        "ports": [
+          "xlconcat_2/dout",
+          "keysout"
+        ]
+      },
+      "TransistorKeys0_keyout_0": {
+        "ports": [
+          "TransistorKeys0/keyout_0",
+          "xlconcat_2/In0"
+        ]
+      },
+      "TransistorKeys1_keyout_0": {
+        "ports": [
+          "TransistorKeys1/keyout_0",
+          "xlconcat_2/In1"
+        ]
+      },
+      "TransistorKeys1_linepr_0": {
+        "ports": [
+          "TransistorKeys1/linepr_0",
+          "xlconcat_3/In1"
+        ]
+      },
+      "TransistorKeys0_linepr_0": {
+        "ports": [
+          "TransistorKeys0/linepr_0",
+          "xlconcat_3/In0"
+        ]
+      },
+      "xlconcat_3_dout": {
+        "ports": [
+          "xlconcat_3/dout",
+          "linepr"
+        ]
+      },
+      "xlconcat_3_dout1": {
+        "ports": [
+          "xlconcat_4/dout",
+          "mintimepr"
+        ]
+      },
+      "TransistorKeys0_mintimepr_0": {
+        "ports": [
+          "TransistorKeys0/mintimepr_0",
+          "xlconcat_4/In0"
+        ]
+      },
+      "TransistorKeys1_mintimepr_1": {
+        "ports": [
+          "TransistorKeys1/mintimepr_1",
+          "xlconcat_4/In1"
+        ]
+      },
+      "xlconcat_5_dout": {
+        "ports": [
+          "xlconcat_5/dout",
+          "softshutdownpr"
+        ]
+      },
+      "TransistorKeys1_softshutdownpr_0": {
+        "ports": [
+          "TransistorKeys1/softshutdownpr_0",
+          "xlconcat_5/In1"
+        ]
+      },
+      "TransistorKeys0_softshutdownpr_0": {
+        "ports": [
+          "TransistorKeys0/softshutdownpr_0",
+          "xlconcat_5/In0"
+        ]
+      },
+      "TransistorKeys0_timeerror_0": {
+        "ports": [
+          "TransistorKeys0/timeerror_0",
+          "xlconcat_6/In0"
+        ]
+      },
+      "TransistorKeys1_timeerror_0": {
+        "ports": [
+          "TransistorKeys1/timeerror_0",
+          "xlconcat_6/In1"
+        ]
+      },
+      "xlconcat_6_dout": {
+        "ports": [
+          "xlconcat_6/dout",
+          "timeerror"
+        ]
+      },
+      "OneStageSynchronizer_1_sync_signal": {
+        "ports": [
+          "OneStageSynchronizer_1/sync_signal",
+          "ackout",
+          "xlslice_8/Din",
+          "xlslice_9/Din"
+        ]
+      },
+      "acknowledges_1": {
+        "ports": [
+          "acknowledges",
+          "OneStageSynchronizer_1/async_signal"
+        ]
+      }
+    }
+  }
+}

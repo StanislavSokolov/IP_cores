@@ -1,0 +1,37 @@
+-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-- --------------------------------------------------------------------------------
+-- Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+-- Date        : Thu Oct 22 11:47:49 2026
+-- Host        : STAS-W10 running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode synth_stub -rename_top TransistorKeys_CalculatingMintime_v_0_1 -prefix
+--               TransistorKeys_CalculatingMintime_v_0_1_ design_1_CalculatingMintime_v_0_0_stub.vhdl
+-- Design      : design_1_CalculatingMintime_v_0_0
+-- Purpose     : Stub declaration of top-level module interface
+-- Device      : xc7z020clg484-3
+-- --------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity TransistorKeys_CalculatingMintime_v_0_1 is
+  Port ( 
+    clk : in STD_LOGIC;
+    ce : in STD_LOGIC;
+    start : in STD_LOGIC;
+    en : in STD_LOGIC;
+    reset : in STD_LOGIC;
+    mintime : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    timeerror : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    error : out STD_LOGIC
+  );
+
+end TransistorKeys_CalculatingMintime_v_0_1;
+
+architecture stub of TransistorKeys_CalculatingMintime_v_0_1 is
+attribute syn_black_box : boolean;
+attribute black_box_pad_pin : string;
+attribute syn_black_box of stub : architecture is true;
+attribute black_box_pad_pin of stub : architecture is "clk,ce,start,en,reset,mintime[7:0],timeerror[7:0],error";
+attribute x_core_info : string;
+attribute x_core_info of stub : architecture is "CalculatingMintime_ver_1_0,Vivado 2019.1";
+begin
+end;

@@ -1,0 +1,20 @@
+
+*** Running vivado
+    with args -log TransistorKeys_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source TransistorKeys_wrapper.tcl -notrace
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source TransistorKeys_wrapper.tcl -notrace
+
+*** Halting run - EA reset detected ***
+
+
+
+    while executing
+"start_step init_design"
+    (file "TransistorKeys_wrapper.tcl" line 65)
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 22 16:19:22 2026...
