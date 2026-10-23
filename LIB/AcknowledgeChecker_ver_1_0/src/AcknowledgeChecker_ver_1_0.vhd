@@ -1,7 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use ieee.std_logic_arith.all;
-use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
 
 entity AcknowledgeChecker_ver_1_0 is
     generic(
@@ -20,7 +19,7 @@ entity AcknowledgeChecker_ver_1_0 is
 		currentpr : out std_logic_vector(QUANTITY_ACKNOWLEDGES - 1 downto 0) := (others => '0');
 		ackpr : out std_logic_vector(QUANTITY_ACKNOWLEDGES - 1 downto 0) := (others => '0');
 
-        acktime : in std_logic_vector(QUANTITY_ACKNOWLEDGES - 1 downto 0);
+        acktime : in std_logic_vector(7 downto 0);
 
         keyin : in std_logic_vector(QUANTITY_ACKNOWLEDGES - 1 downto 0);
         
@@ -67,7 +66,7 @@ begin
 							end if;
 							cnts(i) := 0;
 						when Check =>
-							if cnts(i) < conv_integer(acktime) then
+							if cnts(i) < to_integer(unsigned(acktime)) then
 								cnts(i) := cnts(i) + 1;
 								if ackin(i) = '1' and ackInPrev(i) = '0' then
 									acknowledges(i) <= WaitingStrobeEnd;
@@ -80,7 +79,7 @@ begin
 								end if;
 							end if;
 						when WaitingStrobeEnd =>
-							if cnts(i) < conv_integer(acktime) then
+							if cnts(i) < to_integer(unsigned(acktime)) then
 								cnts(i) := cnts(i) + 1;
 								if ackin(i) = '0' then
 									acknowledges(i) <= Waiting;
